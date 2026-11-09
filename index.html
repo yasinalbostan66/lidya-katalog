@@ -1504,6 +1504,11 @@
 <div class="hero-text">
 <h2>Dünya Markaları Lidya Grup Güvencesiyle Yanınızda</h2>
 <p>Lidya Grup ürünler sayfasında yer alan en güncel dijital üretim presleri, endüstriyel flatbed ve hibrit UV sistemleri, oluklu mukavva ambalaj makineleri, baskı sonrası otomatik kırım/lak üniteleri ve tekstil çözümlerinin detaylı teknik broşürlerini aşağıda inceleyebilirsiniz.</p>
+<div style="margin-top: 15px;">
+  <button onclick="openComparisonModal()" class="btn btn-compare" style="font-size: 0.98rem; padding: 0.75rem 1.4rem; box-shadow: 0 4px 16px rgba(215,25,32,0.4);">
+    <span style="font-size:1.2rem;">⚖️</span> Markaları & Makineleri Karşılaştır (8 Marka • 60 Model)
+  </button>
+</div>
 </div>
 <div class="hero-stats">
 <div class="stat-item">
@@ -1526,6 +1531,7 @@
 <span style="color: var(--accent);">★</span> Lidya Grup Yetkili Distribütörlükleri:
       </div>
 <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+<button onclick="openComparisonModal()" style="cursor: pointer; background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); border: 1.5px solid #d71920; padding: 5px 14px; border-radius: 6px; font-size: 0.92rem; font-weight: 800; color: #ffffff; box-shadow: 0 4px 12px rgba(215,25,32,0.35); display: inline-flex; align-items: center; gap: 6px;">⚖️ Markaları Karşılaştır</button>
 <button onclick="filterCategory('xerox')" style="cursor: pointer; background: #fee2e2; border: 1px solid #f87171; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #b91c1c;">XEROX</button>
 <button onclick="filterCategory('efi')" style="cursor: pointer; background: #fef3c7; border: 1px solid #fbbf24; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #b45309;">EFI</button>
 <button onclick="filterCategory('keundo')" style="cursor: pointer; background: #e0e7ff; border: 1px solid #818cf8; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #4338ca;">KEUNDO (17)</button>
@@ -4956,5 +4962,10 @@
   });
 </script>
 
+<!-- Persistent Floating Compare Button (Always Visible) -->
+<button id="floatingCompareQuickBtn" onclick="openComparisonModal()" title="Markaları ve Modelleri Karşılaştır" style="position:fixed; bottom:22px; left:18px; z-index:9997; background:linear-gradient(135deg, #d71920 0%, #b9151b 100%); color:#ffffff; border:1.5px solid rgba(255,255,255,0.35); padding:10px 18px; border-radius:30px; box-shadow:0 6px 20px rgba(215,25,32,0.45); font-size:0.92rem; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.25s ease;">
+  <span style="font-size:1.15rem;">⚖️</span>
+  <span>Markaları Karşılaştır</span>
+</button>
 </body>
 </html>

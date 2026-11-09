@@ -4,6 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 <title>Lidya Grup | Dijital Baskı ve Sonlandırma Makineleri Ürün Kataloğu &amp; Broşürleri</title>
 <style>
     :root {
@@ -25,6 +28,11 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
     }
 
     body {
@@ -67,22 +75,35 @@
       gap: 1.25rem;
     }
 
-    .lidya-official-logo {
-      height: 60px;
-      width: auto;
-      border-radius: 4px;
-      display: block;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    .lidya-logo-badge {
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      text-decoration: none;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
     }
 
-    .lidya-official-logo:hover {
+    .lidya-logo-badge:hover {
       transform: scale(1.04);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .lidya-official-logo {
+      height: 52px;
+      width: auto;
+      border-radius: 2px;
+      display: block;
+      object-fit: contain;
     }
 
     .brand-info-text {
-      border-left: 2px solid rgba(255, 255, 255, 0.2);
+      border-left: 3px solid #d71920;
       padding-left: 1.25rem;
     }
 
@@ -90,15 +111,23 @@
       font-size: 1.35rem;
       font-weight: 800;
       letter-spacing: -0.3px;
-      color: white;
+      color: #ffffff;
       margin: 0;
       line-height: 1.2;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .brand-info-text h1 span {
+      color: #38bdf8;
     }
 
     .brand-info-text p {
-      font-size: 0.85rem;
-      color: #94a3b8;
+      font-size: 0.88rem;
+      color: #ffffff;
+      font-weight: 600;
       margin-top: 4px;
+      opacity: 0.95;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
     }
 
     .header-actions {
@@ -628,22 +657,41 @@
         gap: 0.65rem !important;
       }
 
+      .lidya-logo-badge {
+        padding: 5px 8px !important;
+        border-radius: 6px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.35) !important;
+      }
+
       .lidya-official-logo {
-        height: 38px !important;
+        height: 42px !important;
       }
 
       .brand-info-text {
-        padding-left: 0.65rem !important;
+        border-left: 3px solid #d71920 !important;
+        padding-left: 0.75rem !important;
       }
 
       .brand-info-text h1 {
-        font-size: 0.98rem !important;
-        line-height: 1.15 !important;
+        font-size: 1.05rem !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.7) !important;
+      }
+
+      .brand-info-text h1 span {
+        color: #38bdf8 !important;
       }
 
       .brand-info-text p {
-        font-size: 0.68rem !important;
+        font-size: 0.76rem !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
         margin-top: 2px !important;
+        opacity: 0.95 !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.6) !important;
+        line-height: 1.25 !important;
       }
 
       .header-actions {
@@ -876,7 +924,7 @@
 <div class="header-top">
 <div class="brand-logo-title">
 <!-- Lidya Grup Official Logo -->
-<a href="https://www.lidyagrup.com.tr" style="text-decoration: none; display: flex; align-items: center;" target="_blank" title="Lidya Grup Resmi Web Sitesi">
+<a href="https://www.lidyagrup.com.tr" class="lidya-logo-badge" target="_blank" title="Lidya Grup Resmi Web Sitesi">
 <img alt="Lidya Grup Logo" class="lidya-official-logo" src="lidya_grup_logo.png"/>
 </a>
 <div class="brand-info-text">

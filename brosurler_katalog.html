@@ -4,6 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 <title>Lidya Grup | Dijital Baskı ve Sonlandırma Makineleri Ürün Kataloğu &amp; Broşürleri</title>
 <style>
     :root {
@@ -27,6 +30,11 @@
       padding: 0;
     }
 
+    html, body {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
@@ -39,9 +47,8 @@
     header {
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
       color: white;
-      padding: 2.5rem 1.5rem 2rem;
-      position: sticky;
-      top: 0;
+      padding: 1.5rem 1.5rem 1.25rem;
+      position: relative;
       z-index: 100;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
@@ -68,22 +75,35 @@
       gap: 1.25rem;
     }
 
-    .lidya-official-logo {
-      height: 60px;
-      width: auto;
-      border-radius: 4px;
-      display: block;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    .lidya-logo-badge {
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      text-decoration: none;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
     }
 
-    .lidya-official-logo:hover {
+    .lidya-logo-badge:hover {
       transform: scale(1.04);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .lidya-official-logo {
+      height: 52px;
+      width: auto;
+      border-radius: 2px;
+      display: block;
+      object-fit: contain;
     }
 
     .brand-info-text {
-      border-left: 2px solid rgba(255, 255, 255, 0.2);
+      border-left: 3px solid #d71920;
       padding-left: 1.25rem;
     }
 
@@ -91,15 +111,23 @@
       font-size: 1.35rem;
       font-weight: 800;
       letter-spacing: -0.3px;
-      color: white;
+      color: #ffffff;
       margin: 0;
       line-height: 1.2;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .brand-info-text h1 span {
+      color: #38bdf8;
     }
 
     .brand-info-text p {
-      font-size: 0.85rem;
-      color: #94a3b8;
+      font-size: 0.88rem;
+      color: #ffffff;
+      font-weight: 600;
       margin-top: 4px;
+      opacity: 0.95;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
     }
 
     .header-actions {
@@ -606,6 +634,157 @@
       color: #64748b;
     }
 
+    /* ========================================================
+       MOBILE RESPONSIVE: HEADER SCROLLS NATURALLY (NO STICKY)
+       FULL-SCREEN VIEW FOR PRODUCTS & IMAGES
+       ======================================================== */
+    @media (max-width: 768px) {
+      header {
+        position: relative !important;
+        top: auto !important;
+        padding: 0.85rem 0.85rem 0.75rem !important;
+      }
+
+      .header-container {
+        gap: 0.75rem !important;
+      }
+
+      .header-top {
+        gap: 0.65rem !important;
+      }
+
+      .brand-logo-title {
+        gap: 0.65rem !important;
+      }
+
+      .lidya-logo-badge {
+        padding: 5px 8px !important;
+        border-radius: 6px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.35) !important;
+      }
+
+      .lidya-official-logo {
+        height: 42px !important;
+      }
+
+      .brand-info-text {
+        border-left: 3px solid #d71920 !important;
+        padding-left: 0.75rem !important;
+      }
+
+      .brand-info-text h1 {
+        font-size: 1.05rem !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.7) !important;
+      }
+
+      .brand-info-text h1 span {
+        color: #38bdf8 !important;
+      }
+
+      .brand-info-text p {
+        font-size: 0.76rem !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        margin-top: 2px !important;
+        opacity: 0.95 !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.6) !important;
+        line-height: 1.25 !important;
+      }
+
+      .header-actions {
+        width: 100% !important;
+        display: flex !important;
+        gap: 6px !important;
+      }
+
+      .header-actions .btn {
+        flex: 1 !important;
+        padding: 0.45rem 0.6rem !important;
+        font-size: 0.76rem !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
+
+      .controls-row {
+        gap: 0.5rem !important;
+      }
+
+      .search-box {
+        min-width: 100% !important;
+      }
+
+      .search-box input {
+        font-size: 0.85rem !important;
+        padding: 0.5rem 0.75rem 0.5rem 2.2rem !important;
+      }
+
+      .search-icon {
+        left: 0.65rem !important;
+        font-size: 0.85rem !important;
+      }
+
+      .nav-tabs {
+        width: 100% !important;
+        padding-bottom: 4px !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      .tab-btn {
+        font-size: 0.75rem !important;
+        padding: 0.35rem 0.65rem !important;
+      }
+
+      .hero-banner {
+        padding: 1.25rem 1rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+
+      .hero-text h2 {
+        font-size: 1.25rem !important;
+      }
+
+      .hero-text p {
+        font-size: 0.82rem !important;
+      }
+
+      .hero-stats {
+        gap: 0.75rem !important;
+        margin-top: 1rem !important;
+      }
+
+      .stat-num {
+        font-size: 1.35rem !important;
+      }
+
+      .stat-label {
+        font-size: 0.70rem !important;
+      }
+
+      .partners-ribbon {
+        padding: 0.75rem 1rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+
+      .category-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+      }
+
+      .category-header a {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+    }
+
     /* PRINT STYLES FOR HIGH-RESOLUTION PDF OUTPUT */
     @media print {
       body {
@@ -745,7 +924,7 @@
 <div class="header-top">
 <div class="brand-logo-title">
 <!-- Lidya Grup Official Logo -->
-<a href="https://www.lidyagrup.com.tr" style="text-decoration: none; display: flex; align-items: center;" target="_blank" title="Lidya Grup Resmi Web Sitesi">
+<a href="https://www.lidyagrup.com.tr" class="lidya-logo-badge" target="_blank" title="Lidya Grup Resmi Web Sitesi">
 <img alt="Lidya Grup Logo" class="lidya-official-logo" src="lidya_grup_logo.png"/>
 </a>
 <div class="brand-info-text">
@@ -754,10 +933,10 @@
 </div>
 </div>
 <div class="header-actions">
-<button class="btn btn-gold" onclick="window.print()">
+<a class="btn btn-gold" id="printCatalogBtn" href="GENEL_URUN_KATALOGU.html" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2m-4 0H8v4h8v-4z"></path></svg>
-            PDF Olarak Yazdır / Kaydet
-          </button>
+            <span id="printBtnText">🖨️ Tüm Kataloğu Yazdır / PDF İndir (60 Ürün)</span>
+          </a>
 <a class="btn btn-outline" href="https://www.lidyagrup.com.tr" target="_blank">
             lidyagrup.com.tr ↗
           </a>
@@ -827,8 +1006,12 @@
 <div class="category-title">
 <span>Xerox Dijital Üretim &amp; Ofis Baskı Sistemleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="01_Xerox_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Xerox A4 Kataloğunu Aç / Yazdır (7 Model) ↗
+</a>
 <span class="category-badge">Tabaka Dijital Pres</span>
-</div>
+</div></div>
 <div class="products-grid">
 
       <!-- Xerox Iridesse Production Press -->
@@ -968,7 +1151,7 @@
         <div class="card-top">
           <span class="brand-tag tag-xerox">Xerox Production</span>
           <div class="card-media">
-            <img src="images/xerox_px500.webp" alt="Xerox Proficio™ PX500">
+            <img src="images/xerox_px500.jpg" alt="Xerox Proficio™ PX500">
           </div>
           <h3 class="card-title">Xerox Proficio™ PX500</h3>
           <p class="card-subtitle">100 ppm Hız, 5. Renk İstasyonu ve Gelişmiş PredictPrint Otomasyonu</p>
@@ -1012,7 +1195,7 @@
         <div class="card-top">
           <span class="brand-tag tag-xerox">Xerox Production</span>
           <div class="card-media">
-            <img src="images/xerox_px300.webp" alt="Xerox Proficio™ PX300">
+            <img src="images/xerox_px300.jpg" alt="Xerox Proficio™ PX300">
           </div>
           <h3 class="card-title">Xerox Proficio™ PX300</h3>
           <p class="card-subtitle">85 ppm Hız, 5. Renk Desteği, Dahili 200 ipm Tarayıcı ve Kompakt Üretim</p>
@@ -1147,15 +1330,19 @@
 <div class="category-title">
 <span>EFI Endüstriyel Baskı &amp; Oluklu Mukavva Ambalaj</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="02_EFI_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ EFI A4 Kataloğunu Aç / Yazdır (3 Model) ↗
+</a>
 <span class="category-badge">Endüstriyel Süper Geniş &amp; Single-Pass</span>
-</div>
+</div></div>
 <div class="products-grid">
 <!-- EFI Nozomi 14000 -->
 <div class="product-card" data-keywords="efi nozomi 14000 led aq tek gecis single pass oluklu mukavva ambalaj kutu koli gida" onclick="openA4Brochure('efi-nozomi-14000-led-aq-serisi', event)" title="EFI™ Nozomi 14000 LED / AQ Serisi - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
 <div class="card-top">
 <span class="brand-tag tag-efi">EFI Ambalaj</span>
 <div class="card-media">
-<img alt="EFI™ Nozomi 14000 LED / AQ Serisi" src="images/efi_nozomi.webp"/>
+<img alt="EFI™ Nozomi 14000 LED / AQ Serisi" src="images/efi_nozomi.jpg"/>
 </div>
 <h3 class="card-title">EFI™ Nozomi 14000 LED / AQ Serisi</h3>
 <p class="card-subtitle">Oluklu Mukavva ve Ambalajda Tek Geçişli (Single-Pass) Devrim</p>
@@ -1195,7 +1382,7 @@
 <div class="card-top">
 <span class="brand-tag tag-efi">EFI Geniş Format</span>
 <div class="card-media">
-<img alt="EFI™ Pro 32r+ Roll-to-Roll UV LED" src="images/efi_pro32r.webp"/>
+<img alt="EFI™ Pro 32r+ Roll-to-Roll UV LED" src="images/efi_pro32r.jpg"/>
 </div>
 <h3 class="card-title">EFI™ Pro 32r+ Roll-to-Roll UV LED</h3>
 <p class="card-subtitle">3.2 Metre Rulo Baskıda Üstün LED UV Verimliliği</p>
@@ -1235,7 +1422,7 @@
 <div class="card-top">
 <span class="brand-tag tag-efi">EFI Hibrit</span>
 <div class="card-media">
-<img alt="EFI™ Pro 30h+ Hibrit LED UV" src="images/efi_pro30h.webp"/>
+<img alt="EFI™ Pro 30h+ Hibrit LED UV" src="images/efi_pro30h.jpg"/>
 </div>
 <h3 class="card-title">EFI™ Pro 30h+ Hibrit LED UV</h3>
 <p class="card-subtitle">Hem Sert Plaka Hem Esnek Rulo: Tek Gövdede Hibrit Güç</p>
@@ -1278,8 +1465,12 @@
 <div class="category-title">
 <span>Keundo Dijital Baskı Sistemleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="03_Keundo_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Keundo A4 Kataloğunu Aç / Yazdır (8 Model) ↗
+</a>
 <span class="category-badge">4 Ürün Grubu • 17 Model</span>
-</div>
+</div></div>
 <!-- Sub-Group 1: ECO Solvent -->
 <div style="background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-left: 4px solid #4f46e5; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
 <div>
@@ -1643,8 +1834,12 @@
 <div class="category-title">
 <span>Flora Dijital Baskı Sistemleri (Bobin &amp; Geniş Format UV)</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="04_Flora_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Flora A4 Kataloğunu Aç / Yazdır (7 Model) ↗
+</a>
 <span class="category-badge">2 Ürün Grubu • 7 Model</span>
-</div>
+</div></div>
 <!-- Sub-Group Banner 1: Bobin -->
 <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid #16a34a; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
 <div>
@@ -1967,8 +2162,12 @@
 <div class="category-title">
 <span>Duplo Baskı Sonrası &amp; Sonlandırma Sistemleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="05_Duplo_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Duplo A4 Kataloğunu Aç / Yazdır (12 Model) ↗
+</a>
 <span class="category-badge">6 Ürün Grubu • 21 Model</span>
-</div>
+</div></div>
 <!-- Sub-Group 1: Lak ve Süsleme -->
 <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
 <div>
@@ -2587,15 +2786,19 @@
 <div class="category-title">
 <span>Epson Geniş Format &amp; CAD / GIS Sistemleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="06_Epson_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Epson A4 Kataloğunu Aç / Yazdır (4 Model) ↗
+</a>
 <span class="category-badge">Eko-Solvent Signage &amp; CAD Poster</span>
-</div>
+</div></div>
 <div class="products-grid">
 <!-- Epson SC-S Serisi -->
 <div class="product-card" data-keywords="epson surecolor sc-s9100 sc-s8100 sc-s7100 eko solvent tabela arac giydirme greenguard 10 renk" onclick="openA4Brochure('epson-surecolor-sc-s9100-sc-s8100', event)" title="Epson SureColor SC-S9100 / SC-S8100 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
 <div class="card-top">
 <span class="brand-tag tag-epson">Epson Signage</span>
 <div class="card-media">
-<img alt="Epson SureColor SC-S9100 / SC-S8100" src="images/epson_scs8100.webp"/>
+<img alt="Epson SureColor SC-S9100 / SC-S8100" src="images/epson_scs8100.jpg"/>
 </div>
 <h3 class="card-title">Epson SureColor SC-S9100 / SC-S8100</h3>
 <p class="card-subtitle">Tabela ve Araç Giydirmede Dünya Standardı Renk Doğruluğu</p>
@@ -2633,7 +2836,7 @@
 <div class="card-top">
 <span class="brand-tag tag-epson">Epson CAD &amp; Poster</span>
 <div class="card-media">
-<img alt="Epson SureColor SC-T3405 / SC-T5405" src="images/epson_surecolor_sample.webp"/>
+<img alt="Epson SureColor SC-T3405 / SC-T5405" src="images/epson_surecolor_sample.jpg"/>
 </div>
 <h3 class="card-title">Epson SureColor SC-T3405 / SC-T5405</h3>
 <p class="card-subtitle">Mimari CAD, Mühendislik Çizimleri ve Perakende Poster Yazıcısı</p>
@@ -2674,8 +2877,12 @@
 <div class="category-title">
 <span>Sutec Dijital Baskı Çözümleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="07_Sutec_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ Sutec A4 Kataloğunu Aç / Yazdır (3 Model) ↗
+</a>
 <span class="category-badge">Lidya Grup Öz Markası</span>
-</div>
+</div></div>
 <div class="products-grid">
 <!-- Sutec DTF 3200 -->
 <div class="product-card" data-keywords="sutec dtf 3200 tekstil transfer baski tisort forma pamuk polyester firinli sarma entegre" onclick="openA4Brochure('sutec-dtf-3200-direct-to-film-hatt', event)" title="Sutec DTF 3200 (Direct-to-Film) Hattı - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
@@ -2760,8 +2967,12 @@
 <div class="category-title">
 <span>JWEI Dijital Kesim ve Sonlandırma Sistemleri</span>
 </div>
+<div style="display:flex; align-items:center; gap:10px;">
+<a href="08_JWEI_Brosuru.html" target="_blank" class="brand-a4-btn" style="background: linear-gradient(135deg, #d71920 0%, #b9151b 100%); color: #fff; font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(215,25,32,0.3);">
+🖨️ JWEI A4 Kataloğunu Aç / Yazdır (16 Model) ↗
+</a>
 <span class="category-badge">3 Resmi Seri • 15 Endüstriyel Model</span>
-</div>
+</div></div>
 <!-- Sub-Group 1: IG Serisi (LST) -->
 <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-left: 4px solid #059669; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
 <div>
@@ -3518,6 +3729,18 @@
 </div>
 </footer>
 <script>
+    const BRAND_BROCHURES = {
+      'all': { url: 'GENEL_URUN_KATALOGU.html', name: 'Tüm Portföy', count: '60 Ürün' },
+      'xerox': { url: '01_Xerox_Brosuru.html', name: 'Xerox', count: '7 Model' },
+      'efi': { url: '02_EFI_Brosuru.html', name: 'EFI', count: '8 Model' },
+      'keundo': { url: '03_Keundo_Brosuru.html', name: 'Keundo', count: '17 Model' },
+      'flora': { url: '04_Flora_Brosuru.html', name: 'Flora', count: '7 Model' },
+      'duplo': { url: '05_Duplo_Brosuru.html', name: 'Duplo', count: '21 Model' },
+      'epson': { url: '06_Epson_Brosuru.html', name: 'Epson', count: '5 Model' },
+      'sutec': { url: '07_Sutec_Brosuru.html', name: 'Sutec', count: '4 Model' },
+      'jwei': { url: '08_JWEI_Brosuru.html', name: 'JWEI', count: '15 Model' }
+    };
+
     function filterCategory(category, clickedBtn) {
       // Update tab styles
       const targetBtn = clickedBtn || document.querySelector(`.tab-btn[data-cat-btn="${category}"]`) || (category === 'all' ? document.querySelector('.tab-btn') : null);
@@ -3537,6 +3760,19 @@
           block.style.display = 'none';
         }
       });
+
+      // Dynamically update the Print / PDF Download button for the selected brand!
+      const info = BRAND_BROCHURES[category] || BRAND_BROCHURES['all'];
+      const printBtn = document.getElementById('printCatalogBtn');
+      const printBtnText = document.getElementById('printBtnText');
+      if (printBtn && printBtnText) {
+        printBtn.href = info.url;
+        if (category === 'all') {
+          printBtnText.textContent = `🖨️ Tüm Kataloğu Yazdır / PDF İndir (${info.count})`;
+        } else {
+          printBtnText.textContent = `🖨️ ${info.name} A4 Kataloğunu Yazdır / PDF İndir (${info.count})`;
+        }
+      }
 
       // Scroll smoothly to content
       if (category !== 'all') {
@@ -3597,6 +3833,17 @@
       }
       window.open(`a4_brosur.html?model=${slug}`, '_blank');
     }
+</script>
+
+<!-- Mobile Friendly Floating Back to Top Button -->
+<button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Aramaya & Yukarı Dön" style="display:none; position:fixed; bottom:22px; right:18px; z-index:9999; background:#d71920; color:white; border:none; width:46px; height:46px; border-radius:50%; box-shadow:0 4px 18px rgba(0,0,0,0.35); font-size:1.3rem; font-weight:800; cursor:pointer; align-items:center; justify-content:center; transition:all 0.25s ease;">
+  ↑
+</button>
+<script>
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTopBtn');
+    if (btn) btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+  });
 </script>
 </body>
 </html>

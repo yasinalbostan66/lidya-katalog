@@ -38,3 +38,4 @@ Bu proje GitHub Pages üzerinde doğrudan çalışacak şekilde tasarlanmıştı
 2. Sol menüden **Pages** seçeneğine tıklayın.
 3. **Build and deployment > Branch** kısmından `main` dalını ve `/ (root)` dizinini seçip **Save** butonuna basın.
 4. Birkaç saniye içinde siteniz `https://<kullanici-adiniz>.github.io/<depo-adiniz>/` adresinde yayına alınacaktır.
+

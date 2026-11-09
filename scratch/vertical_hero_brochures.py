@@ -513,6 +513,24 @@ template = """<!DOCTYPE html>
       justify-content: space-between;
     }
 
+    /* Mobile Responsive Toolbar */
+    @media (max-width: 768px) {
+      .top-bar {
+        position: relative !important;
+        top: auto !important;
+        padding: 0.6rem 1rem !important;
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: stretch !important;
+      }
+      .top-bar .logo-wrap {
+        justify-content: center !important;
+      }
+      .top-bar .btn-group {
+        justify-content: center !important;
+      }
+    }
+
     /* ========================================================
        PRINT & PDF PERFECTION: DIKEY (PORTRAIT) 1 MACHINE = 1 FULL PAGE
        ZERO BLANK PAGES, EXACT 296mm FIT, NO OVERFLOW

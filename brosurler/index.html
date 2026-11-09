@@ -39,9 +39,8 @@
     header {
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
       color: white;
-      padding: 2.5rem 1.5rem 2rem;
-      position: sticky;
-      top: 0;
+      padding: 1.5rem 1.5rem 1.25rem;
+      position: relative;
       z-index: 100;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
@@ -604,6 +603,138 @@
       text-align: center;
       font-size: 0.85rem;
       color: #64748b;
+    }
+
+    /* ========================================================
+       MOBILE RESPONSIVE: HEADER SCROLLS NATURALLY (NO STICKY)
+       FULL-SCREEN VIEW FOR PRODUCTS & IMAGES
+       ======================================================== */
+    @media (max-width: 768px) {
+      header {
+        position: relative !important;
+        top: auto !important;
+        padding: 0.85rem 0.85rem 0.75rem !important;
+      }
+
+      .header-container {
+        gap: 0.75rem !important;
+      }
+
+      .header-top {
+        gap: 0.65rem !important;
+      }
+
+      .brand-logo-title {
+        gap: 0.65rem !important;
+      }
+
+      .lidya-official-logo {
+        height: 38px !important;
+      }
+
+      .brand-info-text {
+        padding-left: 0.65rem !important;
+      }
+
+      .brand-info-text h1 {
+        font-size: 0.98rem !important;
+        line-height: 1.15 !important;
+      }
+
+      .brand-info-text p {
+        font-size: 0.68rem !important;
+        margin-top: 2px !important;
+      }
+
+      .header-actions {
+        width: 100% !important;
+        display: flex !important;
+        gap: 6px !important;
+      }
+
+      .header-actions .btn {
+        flex: 1 !important;
+        padding: 0.45rem 0.6rem !important;
+        font-size: 0.76rem !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
+
+      .controls-row {
+        gap: 0.5rem !important;
+      }
+
+      .search-box {
+        min-width: 100% !important;
+      }
+
+      .search-box input {
+        font-size: 0.85rem !important;
+        padding: 0.5rem 0.75rem 0.5rem 2.2rem !important;
+      }
+
+      .search-icon {
+        left: 0.65rem !important;
+        font-size: 0.85rem !important;
+      }
+
+      .nav-tabs {
+        width: 100% !important;
+        padding-bottom: 4px !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      .tab-btn {
+        font-size: 0.75rem !important;
+        padding: 0.35rem 0.65rem !important;
+      }
+
+      .hero-banner {
+        padding: 1.25rem 1rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+
+      .hero-text h2 {
+        font-size: 1.25rem !important;
+      }
+
+      .hero-text p {
+        font-size: 0.82rem !important;
+      }
+
+      .hero-stats {
+        gap: 0.75rem !important;
+        margin-top: 1rem !important;
+      }
+
+      .stat-num {
+        font-size: 1.35rem !important;
+      }
+
+      .stat-label {
+        font-size: 0.70rem !important;
+      }
+
+      .partners-ribbon {
+        padding: 0.75rem 1rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+
+      .category-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+      }
+
+      .category-header a {
+        width: 100% !important;
+        justify-content: center !important;
+      }
     }
 
     /* PRINT STYLES FOR HIGH-RESOLUTION PDF OUTPUT */
@@ -3553,13 +3684,13 @@
     const BRAND_BROCHURES = {
       'all': { url: 'GENEL_URUN_KATALOGU.html', name: 'Tüm Portföy', count: '60 Ürün' },
       'xerox': { url: '01_Xerox_Brosuru.html', name: 'Xerox', count: '7 Model' },
-      'efi': { url: '02_EFI_Brosuru.html', name: 'EFI', count: '3 Model' },
-      'keundo': { url: '03_Keundo_Brosuru.html', name: 'Keundo', count: '8 Model' },
+      'efi': { url: '02_EFI_Brosuru.html', name: 'EFI', count: '8 Model' },
+      'keundo': { url: '03_Keundo_Brosuru.html', name: 'Keundo', count: '17 Model' },
       'flora': { url: '04_Flora_Brosuru.html', name: 'Flora', count: '7 Model' },
-      'duplo': { url: '05_Duplo_Brosuru.html', name: 'Duplo', count: '12 Model' },
-      'epson': { url: '06_Epson_Brosuru.html', name: 'Epson', count: '4 Model' },
-      'sutec': { url: '07_Sutec_Brosuru.html', name: 'Sutec', count: '3 Model' },
-      'jwei': { url: '08_JWEI_Brosuru.html', name: 'JWEI', count: '16 Model' }
+      'duplo': { url: '05_Duplo_Brosuru.html', name: 'Duplo', count: '21 Model' },
+      'epson': { url: '06_Epson_Brosuru.html', name: 'Epson', count: '5 Model' },
+      'sutec': { url: '07_Sutec_Brosuru.html', name: 'Sutec', count: '4 Model' },
+      'jwei': { url: '08_JWEI_Brosuru.html', name: 'JWEI', count: '15 Model' }
     };
 
     function filterCategory(category, clickedBtn) {
@@ -3654,6 +3785,17 @@
       }
       window.open(`a4_brosur.html?model=${slug}`, '_blank');
     }
+</script>
+
+<!-- Mobile Friendly Floating Back to Top Button -->
+<button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Aramaya & Yukarı Dön" style="display:none; position:fixed; bottom:22px; right:18px; z-index:9999; background:#d71920; color:white; border:none; width:46px; height:46px; border-radius:50%; box-shadow:0 4px 18px rgba(0,0,0,0.35); font-size:1.3rem; font-weight:800; cursor:pointer; align-items:center; justify-content:center; transition:all 0.25s ease;">
+  ↑
+</button>
+<script>
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTopBtn');
+    if (btn) btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+  });
 </script>
 </body>
 </html>

@@ -86,6 +86,17 @@
       "Kitap Kapağı",
       "Güvenlikli Sertifika",
       "Etiket & Sticker"
+    ],
+    "pros": [
+      "Tek geçişte CMYK + Altın, Gümüş, Beyaz, Şeffaf ve Fluo Pembe ile rakipsiz katma değerli baskı",
+      "52-400 gsm arasındaki tüm malzemelerde ve çift taraflı modda 120 ppm sabit üretim hızı",
+      "Full Width Array (FWA) ile tek tuşla otomatik spektrofotometrik profil ve hizalama",
+      "330 x 1200 mm ekstra uzun afiş (banner) baskı desteği"
+    ],
+    "cons": [
+      "Yüksek seviye ilk yatırım bütçesi (endüstriyel matbaa ve prestij ajanslara yöneliktir)",
+      "Tabaka bazlıdır; geniş format rulo veya rijit tabela levha basımı yapmaz",
+      "Özel kuru mürekkeplerin etkin kullanımı için grafik tasarım ve DFE operatör uzmanlığı önerilir"
     ]
   },
   "xerox-versant-4100-press": {
@@ -170,6 +181,15 @@
       "Kuşe & Dokulu Kağıt",
       "Kişiselleştirilmiş Baskı",
       "Kitapçık & Katalog"
+    ],
+    "pros": [
+      "Ticari matbaalar için optimum fiyat/performans ve 100 ppm sabit hız",
+      "FWA entegre otomasyon ile fireyi sıfıra indiren otomatik ön-arka çakışma",
+      "Düşük eriyikli EA Toner ile ofset matlığında kaliteli homojen parlaklık",
+      "330 x 1200 mm afiş desteği ve zengin inline sonlandırma (kitapçık, zımba)"
+    ],
+    "cons": [
+      "Standart konfigürasyonda CMYK 4 renktir (özel altın/gümüş için Iridesse veya PrimeLink CMYK Plus düşünülmelidir)"
     ]
   },
   "xerox-primelink-c9200-b9100-serisi": {
@@ -246,6 +266,15 @@
       "Fatura & Sözleşme",
       "Afiş & Banner",
       "Renkli Broşür"
+    ],
+    "pros": [
+      "Ofis çok işlevliliği (fotokopi/tarama) ile matbaa presi kalitesini tek gövdede sunar",
+      "Adaptive CMYK Plus yükseltmesi ile Altın, Gümüş, Beyaz ve Floresan toner imkanı",
+      "270 ipm çift taraflı ultra hızlı renkli doküman tarayıcısı",
+      "330 x 1300 mm afiş baskısı ve 350 gsm otomatik çift taraflı destek"
+    ],
+    "cons": [
+      "Baskı hızı (65-81 ppm), büyük endüstriyel preslere (120-150 ppm) kıyasla orta seviyedir"
     ]
   },
   "efi-nozomi-14000-led-aq-serisi": {
@@ -290,6 +319,15 @@
       "POP / POS Standlar",
       "Gıda Ambalajı",
       "Raf Tipi Kutu (SRP)"
+    ],
+    "pros": [
+      "Saatte 10.000 m² (75 m/dk) tek geçişle dünyanın en hızlı dijital oluklu mukavva presi",
+      "Kalıp ve klişe maliyetini sıfırlayarak kutu ambalajında saatleri dakikalara indirir",
+      "Gıdaya temas sertifikalı kokusuz su bazlı (AQ) ve LED-UV mürekkep seçenekleri",
+      "0.8 mm'den 12 mm'ye kadar çift dalga oluklu mukavvada mukavemet koruması"
+    ],
+    "cons": [
+      "Fabrika ölçeğinde alan, özel lojistik ve yüksek endüstriyel yatırım sermayesi gerektirir"
     ]
   },
   "efi-pro-32r-roll-to-roll-uv-led": {
@@ -334,6 +372,14 @@
       "Backlit Tabela",
       "Araç Kaplama Folyosu",
       "Duvar Kağıdı"
+    ],
+    "pros": [
+      "3.2 metre rulo-rulo üretimde 255 m²/saat yüksek hız ve çift rulo aynı anda basabilme",
+      "Entegre inline soğuk kesim bıçakları ile baskı çıkışında boyuna dilimleme",
+      "Çok düşük mürekkep tüketimi ile rulo vinil ve banner işlerinde maksimum kar marjı"
+    ],
+    "cons": [
+      "Yalnızca rulo malzemeler içindir (rijit kalın ahşap/forex levha basamaz, levha için Pro 30h gereklidir)"
     ]
   },
   "efi-pro-30h-hibrit-led-uv": {
@@ -378,6 +424,16 @@
       "Ahşap & Cam Tablolar",
       "Işıklı Reklam Panoları",
       "Fuar Standları"
+    ],
+    "pros": [
+      "3.2 metre hibrit sistem: Hem rulo vinil hem de 5 cm kalınlıkta sert ahşap/pleksi levha basar",
+      "UltraDrop 7 pL piezo kafalar ve 1200 dpi ile fotogerçekçi mikro detaylar",
+      "Çift Beyaz kanalı ve LED soğuk kürleme ile ısıya duyarlı levhalarda sıfır deformasyon",
+      "Saatte 247 m² üretim modu ile kesintisiz vardiyalı endüstriyel dayanım"
+    ],
+    "cons": [
+      "Geniş format atölye alanı (en az 8-10 metre rulo besleme/çıkış sahası) gerektirir",
+      "Tabaka kağıt/broşür işleri için uygun değildir (geniş format tabela/afiş odaklıdır)"
     ]
   },
   "keundo-k1-16s-k2-18s": {
@@ -422,6 +478,14 @@
       "Işıklı Tabela & Raket",
       "One Way Vision",
       "Canvas Tablo"
+    ],
+    "pros": [
+      "K1-16S: Tek Epson kafa ile ekonomik, kararlı ve yüksek kaliteli 1.6 metre rulo baskı.",
+      "K2-18S: Çift kafa konfigürasyonu ile saatte 65 m²'ye varan yüksek hızlı dış mekan üretimi.",
+      "Ön, orta ve arka kademeli dijital ısıtma tablaları ile mürekkebin yüzeye kusursuz tutunması."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-k4-18s-k4-3204s": {
@@ -466,6 +530,14 @@
       "Bina Giydirme Mesh",
       "Geniş Branda Cephe",
       "Fotoğrafik Reklam"
+    ],
+    "pros": [
+      "K4-18S: 4 baskı kafası ve 8 renk desteği ile fotoğrafik pürüzsüz geçişler ve seri üretim.",
+      "K4-3204S: Dikişsiz 3.2 metre dev vinil branda ve bina cephe giydirme afişleri.",
+      "Japon THK yüksek hassasiyetli sessiz lineer ray mimarisi ve ağır sanayi tipi çelik şase."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-k6090uv": {
@@ -509,6 +581,14 @@
       "Kişiye Özel Promosyon",
       "Telefon Kılıfı",
       "Ödül & Plaket"
+    ],
+    "pros": [
+      "Özel rotary aparatı ile termos, matara, kupa, şişe ve mumlara 360 derece kesintisiz baskı.",
+      "CMYK + Beyaz + Vernik (Gloss Varnish) ile dokulu kabartma ve Braille görme engelli alfabesi.",
+      "150 mm kalınlığa kadar ahşap kutular, telefon kılıfları, plaketler ve sert zemin objeler."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-sq-2513-sq-3220": {
@@ -553,6 +633,15 @@
       "Mobilya & Mutfak Kapak",
       "Akrilik & Pleksi Display",
       "Alüminyum Kompozit"
+    ],
+    "pros": [
+      "250 x 130 cm vakum bölgeli ağır döküm masa ve 100 mm malzeme kalınlığı",
+      "Ricoh Gen6 endüstriyel kafalar ve CMYK + Lc + Lm + Beyaz + Vernik zenginliği",
+      "Cam, ahşap, deri ve metalde 3D kabartmalı doku ve Braille alfabesi kabiliyeti",
+      "Yüksek mekanik kararlılık ve piyasadaki en avantajlı F/P yedek parça maliyeti"
+    ],
+    "cons": [
+      "Flatbed masadır; sürekli rulo vinil üretimi için Keundo SQ3200H hibrit serisi daha uygundur"
     ]
   },
   "keundo-sq-1800h-sq1806-plus": {
@@ -596,6 +685,14 @@
       "Dekota & Foreks Plaka",
       "Folyo & Vinil Branda",
       "Ambalaj Numunesi"
+    ],
+    "pros": [
+      "SQ-1800H: 5 adet Ricoh Gen6 kafa ile ağır hizmet tipi endüstriyel rulo ve plaka üretimi.",
+      "SQ1806 Plus: 6 adet Epson kafa mimarisi ile fotoğrafik renk doygunluğu ve yüksek detay.",
+      "Açılır-kapanır katlanabilir uzatma tablaları ile hem yer tasarrufu hem 50 mm levha desteği."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-sq2500h-sq3200h": {
@@ -639,6 +736,14 @@
       "Büyük Boy Ahşap Levha",
       "Fuar Stand Panelleri",
       "Işıklı Kutu Grafikleri"
+    ],
+    "pros": [
+      "3.2 metreye varan genişlik ile hem süper geniş rulo vinil/kumaş hem 2x3m sert paneller.",
+      "Ağır hizmet tipi vakumlu konveyör bant sistemi ile malzemeyi kaydırmadan milimetrik taşıma.",
+      "Gelişmiş çift negatif basınç kontrolü ve otomatik kafa çarpışma sensörleri."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-q1-q2-q4-serisi-led-uv": {
@@ -683,6 +788,14 @@
       "Şeffaf Cam Filmleri",
       "Işıklı Vitrin Afişi",
       "Kokusuz İç Mekan"
+    ],
+    "pros": [
+      "Q1-16UV: 1.6m kompakt rulo LED-UV, CMYK ve beyaz desteğiyle kokusuz üretim.",
+      "Q2-18UV: 1.8m çift kafa ile eşzamanlı renk + beyaz çift taraflı vitrin filmi baskısı.",
+      "Q4-18UV: 4 kafa ile yüksek üretim hızı, kabartmalı vernik ve çok katmanlı efektler."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "keundo-q4-32uv-m3200-m5000": {
@@ -726,6 +839,14 @@
       "Bina Cephe Reklamı",
       "Işıklı Tekstil Kumaş",
       "Havalimanı Panoları"
+    ],
+    "pros": [
+      "Q4-32UV: 3.2m ebadında 4x Epson i3200-U1 kafa ile fotoğrafik ışıklı kumaş ve tabela üretimi.",
+      "M3200 & M5000: 3.2m ve 5.0m ebadında 5x Ricoh Gen6 kafa ile ağır sanayi tipi rulo UV presleri.",
+      "Dikişsiz 5 metre eninde havalimanı dev panoları ve mega bina giydirme reklamları."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "flora-phenix-440-440c": {
@@ -814,6 +935,14 @@
       "Kullanım Kılavuzları",
       "Kurumsal Baskı",
       "VDP Değişken Veri"
+    ],
+    "pros": [
+      "150 m/dk (dakikada 2.000+ A4 sayfa) ultra yüksek hızlı bobin beslemeli kitap presi",
+      "Tirajlı kitap, sınav denemesi ve kamu evraklarında ofset baskıdan daha ekonomik birim maliyet",
+      "Su bazlı pigment boyalar ile çevre dostu, kağıda anında nüfuz eden matlaşmayan çıktı"
+    ],
+    "cons": [
+      "Bobin beslemeli yayıncılık sistemidir; tek tek tabaka kağıt veya kuşe sertifikalar için uygun değildir"
     ]
   },
   "flora-swift-440": {
@@ -906,6 +1035,14 @@
       "Doğrudan Posta & Ekstre",
       "Yüksek Hacimli Mono Baskı",
       "VDP Değişken Veri"
+    ],
+    "pros": [
+      "150 m/dk (dakikada 2.000+ A4 sayfa) ultra yüksek hızlı bobin beslemeli kitap presi",
+      "Tirajlı kitap, sınav denemesi ve kamu evraklarında ofset baskıdan daha ekonomik birim maliyet",
+      "Su bazlı pigment boyalar ile çevre dostu, kağıda anında nüfuz eden matlaşmayan çıktı"
+    ],
+    "cons": [
+      "Bobin beslemeli yayıncılık sistemidir; tek tek tabaka kağıt veya kuşe sertifikalar için uygun değildir"
     ]
   },
   "phenix-330-330c": {
@@ -995,6 +1132,14 @@
       "İlaç & Kozmetik Prospektüsü",
       "Broşür & Katalog",
       "Endüstriyel Etiket & Ambalaj"
+    ],
+    "pros": [
+      "150 m/dk (dakikada 2.000+ A4 sayfa) ultra yüksek hızlı bobin beslemeli kitap presi",
+      "Tirajlı kitap, sınav denemesi ve kamu evraklarında ofset baskıdan daha ekonomik birim maliyet",
+      "Su bazlı pigment boyalar ile çevre dostu, kağıda anında nüfuz eden matlaşmayan çıktı"
+    ],
+    "cons": [
+      "Bobin beslemeli yayıncılık sistemidir; tek tek tabaka kağıt veya kuşe sertifikalar için uygun değildir"
     ]
   },
   "flora-xtra-5000h-uv-hibrit": {
@@ -1043,6 +1188,14 @@
       "Bina Cephe Giydirme",
       "Mega Billboard",
       "Işıklı Kumaş & Branda"
+    ],
+    "pros": [
+      "5.0 metre tek parça devasa baskı eni: Cephe giydirme ve megaboard reklamda dikişsiz görüntü",
+      "Aynı anda 2 veya 3 farklı rulo bağlayarak bağımsız paralel üretim yapabilme",
+      "Endüstriyel LED UV kürleme ve Konica Minolta / Ricoh kafalar ile yüksek güvenilirlik"
+    ],
+    "cons": [
+      "En az 6 metre eninde büyük endüstriyel tesis alanı gerektirir"
     ]
   },
   "flora-xtra-3300h-uv-hibrit": {
@@ -1091,6 +1244,14 @@
       "Rijit Dekota & Pleksi",
       "Tekstil & Canvas",
       "Araç Üstü Folyo"
+    ],
+    "pros": [
+      "Standart 3.2 m rulo malzemeler ile sert reklam levhalarını tek bir makinede birleştirir.",
+      "136 m²/saat üretim hızı ile reklam ve tabela atölyelerinin seri işlerinde yüksek kârlılık.",
+      "Gelişmiş UV LED kürleme sistemi ile anında kuruma ve düşük elektrik tüketimi."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "flora-xtra-3220led-flatbed-uv": {
@@ -1139,6 +1300,14 @@
       "Ahşap & Mobilya",
       "Metal Levhalar",
       "Akrilik & Pleksi Display"
+    ],
+    "pros": [
+      "Standart 205x305 cm akrilik, pleksi ve MDF plakaları bölmeden tek seferde basar.",
+      "100 mm malzeme kalınlığı desteğiyle kalın ahşap kapılar, metal paneller ve endüstriyel parçalar.",
+      "8 bağımsız vakum bölgesi ve hava üfleme yastığı ile ağır cam plakaları parmakla kaydırma."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "flora-q25-profesyonel-flatbed-uv": {
@@ -1187,6 +1356,14 @@
       "Promosyon & Hediye",
       "Ambalaj & Numune",
       "3D Dokulu Kabartma"
+    ],
+    "pros": [
+      "Standart 125 x 250 cm plakalar için optimize edilmiş yüksek hassasiyetli endüstriyel flatbed.",
+      "4.5 pl mikro damla boyutu ile fotoğraf kalitesinde pürüzsüz geçişler ve keskin küçük yazılar.",
+      "6 bölgeli güçlü vakum tablası ile hem küçük promoyon objelerini hem büyük plakaları sabitler."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "dusense-ddc-810": {
@@ -1231,6 +1408,14 @@
       "Kitap & Dergi Kapağı",
       "Özel Davetiye",
       "Şarap Etiketi"
+    ],
+    "pros": [
+      "Fiziksel kalıp veya serigrafi kalıbı olmadan dijital 20-80 mikron 3D noktasal kabartma lak",
+      "Tek geçişte soğuk folyo yaldız (Altın, Gümüş, Hologram) ile eşsiz lüks dokunuş",
+      "Çift CCD kamera ile ön-arka baskı kaymalarını otomatik kompanse ederek sıfır fire sağlar"
+    ],
+    "cons": [
+      "Mürekkep/renk basmaz; basılmış tabakaların üzerine lüks efekt ve sonlandırma amaçlıdır"
     ]
   },
   "dusense-ddc-8000": {
@@ -1275,6 +1460,14 @@
       "Altın & Gümüş Yaldız",
       "Lüks Kozmetik Kutusu",
       "Sert Kapak Cilt"
+    ],
+    "pros": [
+      "Fiziksel kalıp veya serigrafi kalıbı olmadan dijital 20-80 mikron 3D noktasal kabartma lak",
+      "Tek geçişte soğuk folyo yaldız (Altın, Gümüş, Hologram) ile eşsiz lüks dokunuş",
+      "Çift CCD kamera ile ön-arka baskı kaymalarını otomatik kompanse ederek sıfır fire sağlar"
+    ],
+    "cons": [
+      "Mürekkep/renk basmaz; basılmış tabakaların üzerine lüks efekt ve sonlandırma amaçlıdır"
     ]
   },
   "duplo-dc-618": {
@@ -1319,6 +1512,14 @@
       "Menü & Broşür",
       "Perforasyonlu Bilet",
       "Doğrudan Postalama"
+    ],
+    "pros": [
+      "Tek geçişte dilimleme, kesme, pilyaj (katlama izi) ve perforajı aynı anda tamamlar",
+      "Barkod okuyucu ile işi otomatik tanır, operatör ayar süresini sıfıra indirir",
+      "Dijital baskıda oluşan toner çatlamasını rotary pilyaj mekanizması ile tamamen engeller"
+    ],
+    "cons": [
+      "Maksimum tabaka ebadı 330 x 1200 mm'dir; devasa B1 ofset tabakaları için giyotin gerekir"
     ]
   },
   "duplo-dc-648": {
@@ -1362,6 +1563,14 @@
       "Kupon & Çek Defteri",
       "Cepli Dosyalar",
       "Ticari Dijital Matbaa"
+    ],
+    "pros": [
+      "Tek geçişte dilimleme, kesme, pilyaj (katlama izi) ve perforajı aynı anda tamamlar",
+      "Barkod okuyucu ile işi otomatik tanır, operatör ayar süresini sıfıra indirir",
+      "Dijital baskıda oluşan toner çatlamasını rotary pilyaj mekanizması ile tamamen engeller"
+    ],
+    "cons": [
+      "Maksimum tabaka ebadı 330 x 1200 mm'dir; devasa B1 ofset tabakaları için giyotin gerekir"
     ]
   },
   "duplo-dc-746": {
@@ -1405,6 +1614,14 @@
       "Değişken Veri Baskısı",
       "Çok Parçalı Kartlar",
       "Güvenlikli Kuponlar"
+    ],
+    "pros": [
+      "Tek geçişte dilimleme, kesme, pilyaj (katlama izi) ve perforajı aynı anda tamamlar",
+      "Barkod okuyucu ile işi otomatik tanır, operatör ayar süresini sıfıra indirir",
+      "Dijital baskıda oluşan toner çatlamasını rotary pilyaj mekanizması ile tamamen engeller"
+    ],
+    "cons": [
+      "Maksimum tabaka ebadı 330 x 1200 mm'dir; devasa B1 ofset tabakaları için giyotin gerekir"
     ]
   },
   "duplo-dc-20k-b2-dc-f100": {
@@ -1448,6 +1665,14 @@
       "In-line Katlama",
       "Giyotin Tasarrufu",
       "Broşür Üretim Hattı"
+    ],
+    "pros": [
+      "DC-20K B2: 750 x 530 mm boyutundaki B2 ofset/dijital tabakaları giyotine girmeden doğrudan işler.",
+      "DC-F100: DC serisine bağlanarak pilyajı açılmış tabakaları tek geçişte mektup veya akordiyon katlar.",
+      "Büyük format preslerden çıkan tabakaları tek hamlede paketlemeye hazır hale getirir."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-dbm-700-booklet-system": {
@@ -1491,6 +1716,14 @@
       "Aylık Dergiler",
       "Faaliyet Raporları",
       "Okul Yıllıkları"
+    ],
+    "pros": [
+      "Duplo'nun en yüksek kapasiteli endüstriyel tel dikiş ve kitapçık yapma hattıdır.",
+      "Kare Sırt (Square Spine) ünitesi ile tel dikişli kitapçığa Amerikan cilt sırtı görünümü kazandırır.",
+      "Ağır gramajlı kuşe kapakları ve 200 sayfaya kadar olan kalın katalogları mükemmel zımbalar."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-dbm-350-dbm-150": {
@@ -1534,6 +1767,14 @@
       "Kullanım Kılavuzları",
       "Bülten & Duyurular",
       "Hızlı Dijital Matbaa"
+    ],
+    "pros": [
+      "DBM-150: Dünyanın en kompakt tam otomatik kitapçık sistemi; okullar ve ofisler için ideal.",
+      "DBM-350: Yoğun dijital matbaalar için saatte 3.000 kitapçık üreten sağlam tel dikiş mekanizması.",
+      "Otomatik ön kenar tıraşlama bıçağı ile jilet gibi düzgün kitapçık kenarları çıkarır."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-isaddle-range": {
@@ -1577,6 +1818,14 @@
       "Mimari Kataloglar",
       "Lüks Otomotiv Broşürü",
       "Harmanlamalı Yayınlar"
+    ],
+    "pros": [
+      "Mimari sunumlar ve fotoğraf albümleri için popüler olan A4 yatay kitapçıkları tam hızda diker.",
+      "Eyer tipi taşıma sistemi sayesinde tabakalar sırtından katlanıp dikilerek sıfır kabarma sağlar.",
+      "DSC-10/60i vakumlu harmanlama kuleleri ile ofset ve dijital formaları tek hatta birleştirir."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-pfi-blade-b2-b3": {
@@ -1621,6 +1870,14 @@
       "Kişiselleştirilmiş Kutu",
       "Şekilli Etiket & Sticker",
       "POP Teşhir Ürünleri"
+    ],
+    "pros": [
+      "Pahalı bıçak kalıplarına gerek kalmadan bilgisayardaki vektör çizimi (DXF/PLT) okuyarak kesim yapar.",
+      "Kesim bıçağı, teğetsel bıçak, pilyaj tekeri ve çizim kalemi takımları ile tam donanımlıdır.",
+      "Karton kutular, etiketler, köpük, PVC ve mıknatıslı tabakalarda 1.5 mm derinliğe kadar çalışır."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "pfi-dicut-310-dsm-1000-b2": {
@@ -1664,6 +1921,14 @@
       "Pencereli Zarf & Kutu",
       "Cepli Sunum Dosyası",
       "Yüksek Tiraj Etiket"
+    ],
+    "pros": [
+      "PFi DiCut 310: Manyetik esnek kalıplar ile saatte 4.000 tabaka hızında döner kesim ve atık ayıklama.",
+      "DSM-1000 B2: B2 formatında cepli klasörler, lüks kutular için çelik kalıplı kesim ve gofre kabartma.",
+      "Yüksek adetli şekilli kart, etiket ve ambalaj işlerinde rakipsiz hız ve birim maliyet avantajı."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-df-1300l": {
@@ -1707,6 +1972,14 @@
       "Kuşe Kağıt Katlama",
       "Hassas Dijital Baskı",
       "Katalog İnsertleri"
+    ],
+    "pros": [
+      "Vakumlu hava emişli besleme kafası, sürtünmeli lastiklerin kuşe kağıtta bıraktığı izleri engeller.",
+      "648 mm'ye varan uzun tabaka desteği ile 6 panelli A4 akordiyon katlamalı broşürleri tek seferde katlar.",
+      "Dakikada 310 tabakaya varan üretim hızı ile yoğun matbaa ve kopyalama merkezlerinin gözdesidir."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-df-999-990-870-850": {
@@ -1750,6 +2023,14 @@
       "Kurumsal Posta",
       "Masaüstü Ofis",
       "El İlanı & Broşür"
+    ],
+    "pros": [
+      "DF-999 & DF-990: 260 tabaka/dk rekor hız, ultrasonik çift sayfa algılama ve sessiz gövde.",
+      "DF-870 & DF-850: Kompakt masaüstü tasarımı, otomatik motorlu çanta ayarı ve 241 sayfa/dk verim.",
+      "Fatura, sözleşme, bülten ve el ilanı katlamada personel zamanını sıfıra indirir."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "duplo-pfi-bind-2100-pur": {
@@ -1794,6 +2075,14 @@
       "Üniversite Tezleri",
       "Kuşe Roman & Şiir Kitabı",
       "Kurumsal Raporlar"
+    ],
+    "pros": [
+      "Açık tutkal haznesi yerine kapalı tüp sistemi kullanır; günlük saatler süren zahmetli temizliği ortadan kaldırır.",
+      "Ağır tonerli, laklı veya sentetik kuşe kağıtları ömür boyu yaprak dökmeyecek güçte yapıştırır.",
+      "Otomatik kapak besleme ve kitap kalınlığını ölçerek pilyaj ayarını kendisi yapan akıllı sistem."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "epson-surecolor-sc-s9100-sc-s8100": {
@@ -1833,6 +2122,14 @@
       "Premium Araç Giydirme",
       "Işıklı Vitrin Afişi",
       "Fine Art Kanvas Tablo"
+    ],
+    "pros": [
+      "UltraChrome GS3 10 Renk ile %98.2 Pantone doğruluğu ve fotoğraf kalitesinde geçişler",
+      "Kokusuz Greenguard Gold sertifikası ile iç mekan duvar kağıdı ve çocuk odalarında güvenli",
+      "PrecisionCore mikropiezzo kafa ile mikron seviyesinde damla hassasiyeti"
+    ],
+    "cons": [
+      "Solvent/reçine rulo medyalar içindir; sert kalın levha basamaz"
     ]
   },
   "epson-surecolor-sc-t3405-sc-t5405": {
@@ -1872,6 +2169,14 @@
       "İnşaat Şantiye Çizimleri",
       "GIS Haritaları",
       "Mağaza İçi Afişler"
+    ],
+    "pros": [
+      "UltraChrome GS3 10 Renk ile %98.2 Pantone doğruluğu ve fotoğraf kalitesinde geçişler",
+      "Kokusuz Greenguard Gold sertifikası ile iç mekan duvar kağıdı ve çocuk odalarında güvenli",
+      "PrecisionCore mikropiezzo kafa ile mikron seviyesinde damla hassasiyeti"
+    ],
+    "cons": [
+      "Solvent/reçine rulo medyalar içindir; sert kalın levha basamaz"
     ]
   },
   "sutec-dtf-3200-direct-to-film-hatt": {
@@ -1912,6 +2217,14 @@
       "Spor Forması & Mont",
       "Şapka, Çanta, Ayakkabı",
       "İş Elbiseleri"
+    ],
+    "pros": [
+      "Pamuk, polyester, kot, deri dahil tüm kumaş türlerine zemin rengi fark etmeksizin mükemmel yapışma",
+      "Baskı, sıcak tutkal tozlama, fırınlama ve rulo sarımı tek gövdede tam otomatik",
+      "Epson i3200 kafalar ve canlı neon/floresan renk seçenekleri"
+    ],
+    "cons": [
+      "Film transfer presi (ısı presi) gerektirir; rulo kumaş doğrudan boyama (metraj baskı) için değildir"
     ]
   },
   "sutec-end-striyel-flatbed-uv-serisi": {
@@ -1949,6 +2262,14 @@
       "Promosyonel Eşya",
       "Plaket & Ödül",
       "Deri Cüzdan & Ajanda"
+    ],
+    "pros": [
+      "Lidya Grup mühendisliğiyle Türkiye pazarının zorlu şartlarına göre konfigüre edilmiş yapı.",
+      "Ahşap, pleksi, deri, metal ve hediyelik eşyalar için dayanıklı ve çizilmez baskılar.",
+      "%100 yerel ve kesintisiz teknik servis, boya ve parça güvencesi."
+    ],
+    "cons": [
+      "Belirtilen medya ebatları ve aylık görev döngüsü sınırları dahilinde kullanılması önerilir"
     ]
   },
   "jwei-lst03-0604-rm": {
@@ -2037,7 +2358,15 @@
       "fotoblok."
     ],
     "full_title": "JWEI LST03-0604-RM Kompakt Otomatik Dijital Kesim ve Kırım Sistemi",
-    "description": "JWEI LST03-0604-RM, kısa tirajlı ve kişiselleştirilmiş ambalaj üretimi yapan matbaalar, ajanslar ve butik üreticiler için geliştirilmiş kompakt bir dijital kesim ve kırım çözümüdür. Kalıp ihtiyacını ortadan kaldırarak üretim süreçlerini hızlandırır ve maliyetleri düşürür. Otomatik vakumlu besleme, kesim ve toplama süreçlerini tek bir kompakt gövdede birleştirir."
+    "description": "JWEI LST03-0604-RM, kısa tirajlı ve kişiselleştirilmiş ambalaj üretimi yapan matbaalar, ajanslar ve butik üreticiler için geliştirilmiş kompakt bir dijital kesim ve kırım çözümüdür. Kalıp ihtiyacını ortadan kaldırarak üretim süreçlerini hızlandırır ve maliyetleri düşürür. Otomatik vakumlu besleme, kesim ve toplama süreçlerini tek bir kompakt gövdede birleştirir.",
+    "pros": [
+      "Otomatik emişli tabaka besleme mekanizması ile operatörsüz sürekli kutu ve etiket kesimi",
+      "Kalıp yaptırmaya gerek olmadan çizim dosyasından anında yarım kesim ve kırım",
+      "Kompakt yapısıyla kutu numuneleri, etiket serileri ve butik ambalajda hızlı geri dönüş"
+    ],
+    "cons": [
+      "60x40 cm veya 80x60 cm tabaka ebatları içindir; büyük pleksi tabelalar için SG serisi önerilir"
+    ]
   },
   "jwei-lst03-0806-rm": {
     "id": "jwei-lst03-0806-rm",
@@ -2124,7 +2453,15 @@
       "özel davetiye ve kartlar."
     ],
     "full_title": "JWEI LST03Ⅱ-0806-RM Otomatik Dijital Kutu Kesim ve Kırım Sistemi",
-    "description": "JWEI LST03Ⅱ-0806-RM, 800 x 600 mm B2 tabaka ebadı ile kısa ve orta tirajlı kutu, etiket ve ambalaj üretimleri için geliştirilmiş yeni nesil endüstriyel ambalaj kesim sistemidir. Optimize edilmiş vakumlu besleme sistemi %95'e varan otomatik alma başarısı ile operatör müdahalesine gerek kalmadan saatlerce kesintisiz çalışır."
+    "description": "JWEI LST03Ⅱ-0806-RM, 800 x 600 mm B2 tabaka ebadı ile kısa ve orta tirajlı kutu, etiket ve ambalaj üretimleri için geliştirilmiş yeni nesil endüstriyel ambalaj kesim sistemidir. Optimize edilmiş vakumlu besleme sistemi %95'e varan otomatik alma başarısı ile operatör müdahalesine gerek kalmadan saatlerce kesintisiz çalışır.",
+    "pros": [
+      "Otomatik emişli tabaka besleme mekanizması ile operatörsüz sürekli kutu ve etiket kesimi",
+      "Kalıp yaptırmaya gerek olmadan çizim dosyasından anında yarım kesim ve kırım",
+      "Kompakt yapısıyla kutu numuneleri, etiket serileri ve butik ambalajda hızlı geri dönüş"
+    ],
+    "cons": [
+      "60x40 cm veya 80x60 cm tabaka ebatları içindir; büyük pleksi tabelalar için SG serisi önerilir"
+    ]
   },
   "jwei-lst03-0912-rm": {
     "id": "jwei-lst03-0912-rm",
@@ -2201,7 +2538,15 @@
       "endüstriyel ambalaj prototipleri."
     ],
     "full_title": "JWEI LST03Ⅱ-0912-RM Geniş Format Otomatik Ambalaj Kesim Sistemi",
-    "description": "JWEI LST03Ⅱ-0912-RM, ambalaj ve baskı sonrası üretim hatlarında kalıpsız büyük ebatlı kutu ihtiyacını karşılamak için geliştirilmiş tam otomatik dijital kesim sistemidir. 900 x 1200 mm ekstra geniş çalışma alanı sayesinde büyük ebatlı koli, mukavva kutu ve teşhir standı parçalarını tek tabakada işler."
+    "description": "JWEI LST03Ⅱ-0912-RM, ambalaj ve baskı sonrası üretim hatlarında kalıpsız büyük ebatlı kutu ihtiyacını karşılamak için geliştirilmiş tam otomatik dijital kesim sistemidir. 900 x 1200 mm ekstra geniş çalışma alanı sayesinde büyük ebatlı koli, mukavva kutu ve teşhir standı parçalarını tek tabakada işler.",
+    "pros": [
+      "Otomatik emişli tabaka besleme mekanizması ile operatörsüz sürekli kutu ve etiket kesimi",
+      "Kalıp yaptırmaya gerek olmadan çizim dosyasından anında yarım kesim ve kırım",
+      "Kompakt yapısıyla kutu numuneleri, etiket serileri ve butik ambalajda hızlı geri dönüş"
+    ],
+    "cons": [
+      "60x40 cm veya 80x60 cm tabaka ebatları içindir; büyük pleksi tabelalar için SG serisi önerilir"
+    ]
   },
   "jwei-sc1311": {
     "id": "jwei-sc1311",
@@ -2285,7 +2630,15 @@
       "Conta."
     ],
     "full_title": "JWEI SC1311 Profesyonel Dijital Kesim Masası",
-    "description": "JWEI SC1311; kompakt atölyeler, dijital baskı merkezleri ve ambalaj tasarım laboratuvarları için 1300 x 1100 mm net çalışma alanı sunar. 1800 mm/s hızı ve ±0.05 mm tekrarlama hassasiyeti ile ince folyodan sert pleksiye kadar geniş malzeme yelpazesini kusursuz işler."
+    "description": "JWEI SC1311; kompakt atölyeler, dijital baskı merkezleri ve ambalaj tasarım laboratuvarları için 1300 x 1100 mm net çalışma alanı sunar. 1800 mm/s hızı ve ±0.05 mm tekrarlama hassasiyeti ile ince folyodan sert pleksiye kadar geniş malzeme yelpazesini kusursuz işler.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sc1325": {
     "id": "jwei-sc1325",
@@ -2359,7 +2712,15 @@
       "alüminyum kompozit cephe derzleri."
     ],
     "full_title": "JWEI SC1325 Profesyonel Reklam & Tabela Kesim Masası",
-    "description": "JWEI SC1325, reklam ve tabela sektöründe en yaygın kullanılan 1.25 x 2.50 metre standart plaka ölçülerini tek seferde masaya alıp işlemek üzere optimize edilmiştir. 1800 mm/s kesim hızı ile hem yumuşak grafik materyalleri hem de sert kompozit ve pleksileri pürüzsüz keser."
+    "description": "JWEI SC1325, reklam ve tabela sektöründe en yaygın kullanılan 1.25 x 2.50 metre standart plaka ölçülerini tek seferde masaya alıp işlemek üzere optimize edilmiştir. 1800 mm/s kesim hızı ile hem yumuşak grafik materyalleri hem de sert kompozit ve pleksileri pürüzsüz keser.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sc1618": {
     "id": "jwei-sc1618",
@@ -2428,7 +2789,15 @@
       "endüstriyel ambalaj."
     ],
     "full_title": "JWEI SC1618 Oluklu Mukavva ve Stand Kesim Masası",
-    "description": "JWEI SC1618, ambalaj üreticileri ve POP/POS teşhir standı imalatçıları için özel olarak 1600 x 1800 mm ebadında tasarlanmıştır. Kalın oluklu mukavvalar, petek paneller (re-board) ve kalın plastik levhalarda yüksek hassasiyetli kesim ve pilyaj yapar."
+    "description": "JWEI SC1618, ambalaj üreticileri ve POP/POS teşhir standı imalatçıları için özel olarak 1600 x 1800 mm ebadında tasarlanmıştır. Kalın oluklu mukavvalar, petek paneller (re-board) ve kalın plastik levhalarda yüksek hassasiyetli kesim ve pilyaj yapar.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sc1625": {
     "id": "jwei-sc1625",
@@ -2504,7 +2873,15 @@
       "ambalaj."
     ],
     "full_title": "JWEI SC1625 Endüstriyel Standart Levha Kesim Merkezi",
-    "description": "JWEI SC1625, Türkiye ve dünya pazarında reklam, ambalaj ve endüstriyel sonlandırmada en çok tercih edilen 1.6 x 2.5 metre çalışma alanına sahiptir. Hem 1.5x2.5m levha malzemeleri hem de geniş format dijital baskı çıktılarını eş zamanlı işleyebilen çok yönlü bir üretim merkezidir."
+    "description": "JWEI SC1625, Türkiye ve dünya pazarında reklam, ambalaj ve endüstriyel sonlandırmada en çok tercih edilen 1.6 x 2.5 metre çalışma alanına sahiptir. Hem 1.5x2.5m levha malzemeleri hem de geniş format dijital baskı çıktılarını eş zamanlı işleyebilen çok yönlü bir üretim merkezidir.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sc2030": {
     "id": "jwei-sc2030",
@@ -2577,7 +2954,15 @@
       "2x3m akrilik/dekota levhalar."
     ],
     "full_title": "JWEI SC2030 Büyük Format Ağır Hizmet Kesim Masası",
-    "description": "JWEI SC2030; büyük ebatlı açık hava reklam panoları, 2x3 metre plaka pleksi/dekota kesimleri ve endüstriyel üretim hatları için tasarlanmış geniş tablalı kesim sistemidir. Güçlendirilmiş çift taraflı köprü portalı ve yüksek güçlü vakum sistemi ile en zorlu plakalarda bile sıfır esneme ile çalışır."
+    "description": "JWEI SC2030; büyük ebatlı açık hava reklam panoları, 2x3 metre plaka pleksi/dekota kesimleri ve endüstriyel üretim hatları için tasarlanmış geniş tablalı kesim sistemidir. Güçlendirilmiş çift taraflı köprü portalı ve yüksek güçlü vakum sistemi ile en zorlu plakalarda bile sıfır esneme ile çalışır.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg1311": {
     "id": "jwei-sg1311",
@@ -2647,7 +3032,15 @@
       "karton ve prototip seri üretimi."
     ],
     "full_title": "JWEI SG1311 Otomatik Yükleme & Boşaltmalı Dijital Kesim Sistemi",
-    "description": "JWEI SG1311; kompakt boyutlarda ultra yüksek üretim hızı ve otomatik malzeme akışı arayan işletmeler için tasarlanmıştır. 2000 mm/s maksimum kesim hızı ve konveyör bandı sayesinde rulo veya tabaka malzemeleri otomatik içeri çeker, keser ve arkadaki toplama masasına boşaltır."
+    "description": "JWEI SG1311; kompakt boyutlarda ultra yüksek üretim hızı ve otomatik malzeme akışı arayan işletmeler için tasarlanmıştır. 2000 mm/s maksimum kesim hızı ve konveyör bandı sayesinde rulo veya tabaka malzemeleri otomatik içeri çeker, keser ve arkadaki toplama masasına boşaltır.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg1612": {
     "id": "jwei-sg1612",
@@ -2718,7 +3111,15 @@
       "folyo."
     ],
     "full_title": "JWEI SG1612 Kompakt Ultra Yüksek Hızlı Konveyörlü CNC Kesim Sistemi",
-    "description": "JWEI SG1612; tekstil, tabela, conta ve ambalaj atölyelerinde 1.6 metre rulo ve tabaka genişliğini ultra hızda işlemek üzere optimize edilmiştir. 2000 mm/s kesim hızı ile seri imalat gerektiren siparişleri rekor sürede tamamlar."
+    "description": "JWEI SG1612; tekstil, tabela, conta ve ambalaj atölyelerinde 1.6 metre rulo ve tabaka genişliğini ultra hızda işlemek üzere optimize edilmiştir. 2000 mm/s kesim hızı ile seri imalat gerektiren siparişleri rekor sürede tamamlar.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg1625-otomatik-hat": {
     "id": "jwei-sg1625-otomatik-hat",
@@ -2766,6 +3167,14 @@
       "Seri Koli İmalatı",
       "Kompozit Derzleme",
       "Endüstri 4.0 Fabrika"
+    ],
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
     ]
   },
   "jwei-sg1635": {
@@ -2835,7 +3244,15 @@
       "display sistemleri."
     ],
     "full_title": "JWEI SG1635 Ekstra Uzun Levha & Panel Kesim Sistemi",
-    "description": "JWEI SG1635; 3.5 metre boyundaki ekstra uzun kompozit paneller, mimari cephe kaplamaları ve büyük boy display panelleri için tasarlanmıştır. 2000 mm/s kesim hızı ve ±0.05 mm tekrar hassasiyeti ile uzun malzemelerde bile hatasız ve stabil çalışma sunar."
+    "description": "JWEI SG1635; 3.5 metre boyundaki ekstra uzun kompozit paneller, mimari cephe kaplamaları ve büyük boy display panelleri için tasarlanmıştır. 2000 mm/s kesim hızı ve ±0.05 mm tekrar hassasiyeti ile uzun malzemelerde bile hatasız ve stabil çalışma sunar.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg2132": {
     "id": "jwei-sg2132",
@@ -2908,7 +3325,15 @@
       "polietilen/kestamid kesim."
     ],
     "full_title": "JWEI SG2132 Ağır Sanayi Freze & Pnömatik Bıçaklı Kesim Sistemi",
-    "description": "JWEI SG2132; büyük ebatlı reklam panoları, alüminyum kompozit cephe levhaları, ağır sanayi contaları ve endüstriyel plastik üreticileri için 2.1 x 3.2 metre devasa çalışma alanı sunar. 2000 mm/s hız, pnömatik salınımlı bıçak ve güçlü freze motoru tek platformda birleşir."
+    "description": "JWEI SG2132; büyük ebatlı reklam panoları, alüminyum kompozit cephe levhaları, ağır sanayi contaları ve endüstriyel plastik üreticileri için 2.1 x 3.2 metre devasa çalışma alanı sunar. 2000 mm/s hız, pnömatik salınımlı bıçak ve güçlü freze motoru tek platformda birleşir.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg3216": {
     "id": "jwei-sg3216",
@@ -2973,7 +3398,15 @@
       "mimari pleksi."
     ],
     "full_title": "JWEI SG3216 3.2 Metre Plaka Eni Dijital Kesim Merkezi",
-    "description": "JWEI SG3216; 3200 mm genişlik ve 1600 mm derinlik ile 3.2 metrelik geniş levhaları enlemesine yükleyip kesmek isteyen işletmeler için tasarlanmıştır. 2000 mm/s hızı ve ±0.05 mm hassasiyeti ile geniş levhalarda operatörün malzeme yüklemesini kolaylaştırır."
+    "description": "JWEI SG3216; 3200 mm genişlik ve 1600 mm derinlik ile 3.2 metrelik geniş levhaları enlemesine yükleyip kesmek isteyen işletmeler için tasarlanmıştır. 2000 mm/s hızı ve ±0.05 mm hassasiyeti ile geniş levhalarda operatörün malzeme yüklemesini kolaylaştırır.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg3232": {
     "id": "jwei-sg3232",
@@ -3046,7 +3479,15 @@
       "ağır kompozit işleme."
     ],
     "full_title": "JWEI SG3232 Devasa 10 m² Kare Format Endüstriyel CNC Kesim Sistemi",
-    "description": "JWEI SG3232, SG serisinin en büyük çalışma alanına sahip modelidir. 3.2 x 3.2 metre (10.24 metrekare) devasa çalışma alanı sayesinde tek parçada dev panelleri, cephe kaplamalarını ve yüksek hacimli seri kesimleri işler."
+    "description": "JWEI SG3232, SG serisinin en büyük çalışma alanına sahip modelidir. 3.2 x 3.2 metre (10.24 metrekare) devasa çalışma alanı sayesinde tek parçada dev panelleri, cephe kaplamalarını ve yüksek hacimli seri kesimleri işler.",
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
+    ]
   },
   "jwei-sg1625": {
     "id": "jwei-sg1625",
@@ -3117,6 +3558,14 @@
       "büyük tabela hatları",
       "kompozit derzleme",
       "pleksi display seri üretimi."
+    ],
+    "pros": [
+      "1.8 kW CNC freze motoru ve salınımlı bıçak ile pleksi, alüminyum kompozit, reboard ve ahşap işleme",
+      "3.2 x 3.2 metreye varan dev çalışma alanı ve 50 mm derinlik kapasitesi",
+      "1.500 mm/sn kesim hızı ile endüstriyel reklam atölyelerinde maksimum verim"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve talaş emme/vakum tahliye altyapısı gerektirir"
     ]
   },
   "xerox-igen-5-press": {
@@ -3197,6 +3646,16 @@
       "PANTONE Marka Renkleri",
       "Doğrudan Pazarlama",
       "Prestij Yayıncılık"
+    ],
+    "pros": [
+      "150 sayfa/dk ve ayda 1.000.000+ sayfa devasa endüstriyel üretim gücü",
+      "5. Renk istasyonu ile genişletilmiş renk gamutu (Turuncu, Yeşil, Mavi veya Beyaz)",
+      "Ağır karton ambalaj ve yüksek tirajlı yayıncılıkta en düşük sayfa başı birim maliyet",
+      "Hammadde deformasyonunu önleyen düşük sıcaklıklı kurutma ve vakumlu besleme"
+    ],
+    "cons": [
+      "Geniş atölye alanı ve 3 fazlı endüstriyel enerji altyapısı gerektirir",
+      "Düşük adetli veya aralıklı butik işler yerine yüksek tirajlı vardiyalı üretime uygundur"
     ]
   },
   "xerox-px500": {
@@ -3281,6 +3740,14 @@
       "Sentetik & Zarf Baskısı",
       "Uzun Afiş & Banner",
       "Premium Yayıncılık"
+    ],
+    "pros": [
+      "Yüksek tirajlı ofis ve kurumsal baskı merkezleri için optimize edilmiş kompakt yapı",
+      "Hızlı ilk kopya çıkış süresi ve düşük enerji tüketimi",
+      "Güvenli doküman yönetimi ve şifreli yazdırma standartları"
+    ],
+    "cons": [
+      "Ağır gramajlı (350+ gsm) lüks ambalaj işleri yerine standart ofis ve doküman formatlarına yöneliktir"
     ]
   },
   "xerox-px300": {
@@ -3361,6 +3828,14 @@
       "Dahili Tarama & Arşiv",
       "5. Renk Katma Değer",
       "Promosyon & Broşür"
+    ],
+    "pros": [
+      "Yüksek tirajlı ofis ve kurumsal baskı merkezleri için optimize edilmiş kompakt yapı",
+      "Hızlı ilk kopya çıkış süresi ve düşük enerji tüketimi",
+      "Güvenli doküman yönetimi ve şifreli yazdırma standartları"
+    ],
+    "cons": [
+      "Ağır gramajlı (350+ gsm) lüks ambalaj işleri yerine standart ofis ve doküman formatlarına yöneliktir"
     ]
   },
   "xerox-primelink-c9200-serisi": {
@@ -3437,6 +3912,15 @@
       "Fatura & Sözleşme",
       "Afiş & Banner",
       "Renkli Broşür"
+    ],
+    "pros": [
+      "Ofis çok işlevliliği (fotokopi/tarama) ile matbaa presi kalitesini tek gövdede sunar",
+      "Adaptive CMYK Plus yükseltmesi ile Altın, Gümüş, Beyaz ve Floresan toner imkanı",
+      "270 ipm çift taraflı ultra hızlı renkli doküman tarayıcısı",
+      "330 x 1300 mm afiş baskısı ve 350 gsm otomatik çift taraflı destek"
+    ],
+    "cons": [
+      "Baskı hızı (65-81 ppm), büyük endüstriyel preslere (120-150 ppm) kıyasla orta seviyedir"
     ]
   },
   "xerox-primelink-b9100-series": {
@@ -3517,6 +4001,14 @@
       "Milli Eğitim & Sınav",
       "Hukuk & Sözleşme",
       "Yüksek Hacimli Mono"
+    ],
+    "pros": [
+      "136 sayfa/dk yüksek monokrom hız ve ayda 3 milyon sayfa görev döngüsü",
+      "Kitap yayıncılığı ve sınav evraklarında sektördeki en düşük sayfa başı baskı maliyeti",
+      "2400 x 2400 dpi mikro netlik ve entegre inline tel dikiş/kitapçık yapımı"
+    ],
+    "cons": [
+      "Yalnızca siyah-beyaz (monokrom) baskı içindir, renkli baskı yapmaz"
     ]
   }
 }

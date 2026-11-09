@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIDYA GRUP | XEROX DİJİTAL ÜRETİM BASKI SİSTEMLERİ RESMİ ÜRÜN BROŞÜRÜ | Lidya Grup Resmi Ürün Kataloğu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lidya-red: #d71920;
+      --lidya-red-dark: #b9151b;
+      --lidya-navy: #0f172a;
+      --lidya-slate: #1e293b;
+      --lidya-muted: #475569;
+      --lidya-border: #cbd5e1;
+      --lidya-border-light: #e2e8f0;
+      --lidya-bg: #f8fafc;
+      --lidya-emerald: #059669;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b1120;
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--lidya-slate);
+      line-height: 1.35;
+      padding-bottom: 3rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Screen Top Toolbar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      padding: 0.65rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .top-bar .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .top-bar .logo-wrap img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .top-bar .logo-wrap span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f8fafc;
+      border-left: 1px solid rgba(255,255,255,0.25);
+      padding-left: 12px;
+    }
+
+    .top-bar .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary {
+      background: var(--lidya-red);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(215, 25, 32, 0.4);
+    }
+    .btn-primary:hover {
+      background: var(--lidya-red-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.16);
+    }
+
+    /* Multi-Sheet Vertical Catalog Container */
+    .catalog-wrapper {
+      max-width: 210mm;
+      margin: 1.5rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Cover Page (Screen & Base) */
+    .cover-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 18mm 14mm 14mm 14mm;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      position: relative;
+      box-sizing: border-box;
+      min-height: 285mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cover-page::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 70%, #0f172a 70%, #0f172a 100%);
+    }
+
+    .cover-page h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.4px;
+    }
+    .cover-page .subtitle-meta {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-bottom: 0.8rem;
+      line-height: 1.35;
+    }
+    .cover-page pre {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.56rem;
+      line-height: 1.24;
+      color: #1e293b;
+      margin: 0.8rem 0;
+      overflow: hidden;
+    }
+
+    /* ========================================================
+       VERTICAL (DİKEY) PRODUCT SHEET (1 Full Page per Machine)
+       Large Hero Image + Vertical Natural Flow
+       ======================================================== */
+    .product-page-sheet {
+      background: #ffffff;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      padding: 5mm 9mm 4mm 9mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      min-height: 285mm;
+    }
+
+    /* Red Corporate Header Ribbon */
+    .product-page-sheet::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 68%, #0f172a 68%, #0f172a 100%);
+    }
+
+    /* Header Bar */
+    .sheet-header-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+
+    .header-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-logo-group img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+    .header-company-text {
+      border-left: 2px solid #cbd5e1;
+      padding-left: 7px;
+    }
+    .comp-name {
+      font-size: 0.80rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.1;
+    }
+    .comp-name span { color: var(--lidya-red); }
+    .comp-sub {
+      font-size: 0.56rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .header-badge-group {
+      text-align: right;
+    }
+    .header-phone {
+      font-size: 0.63rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .header-phone strong {
+      color: var(--lidya-red);
+    }
+
+    /* Title & Slogan */
+    .product-title-section {
+      margin-top: 1.5mm;
+      margin-bottom: 1.5mm;
+    }
+    .title-row-flex {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .machine-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.15;
+      letter-spacing: -0.2px;
+    }
+    .machine-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #047857;
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .machine-slogan {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #475569;
+      font-style: italic;
+      margin-top: 1.5px;
+    }
+
+    /* ========================================================
+       PROMINENT LARGE HERO IMAGE FRAME (Full Width Dikey)
+       ======================================================== */
+    .hero-image-frame {
+      width: 100%;
+      height: 60mm;
+      background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      overflow: hidden;
+      margin-bottom: 1.8mm;
+    }
+
+    .hero-image-frame img {
+      max-width: 95%;
+      max-height: 94%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+    }
+
+    .hero-image-frame .stamp-badge {
+      position: absolute;
+      bottom: 4px;
+      right: 7px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #ffffff;
+      font-size: 0.52rem;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    /* Middle Modular Ribbon (Overview & Key Features Side by Side) */
+    .overview-ribbon {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5mm;
+      margin-bottom: 1.8mm;
+    }
+
+    .section-pill-label {
+      font-size: 0.63rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 1.2mm;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section-pill-label::before {
+      content: "";
+      width: 2.5px;
+      height: 8px;
+      background: var(--lidya-red);
+      display: inline-block;
+      border-radius: 1px;
+    }
+
+    .desc-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+      font-size: 0.67rem;
+      color: #334155;
+      line-height: 1.28;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .bullets-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+    }
+    .bullets-card ul {
+      list-style: none;
+    }
+    .bullets-card li {
+      font-size: 0.64rem;
+      color: #334155;
+      line-height: 1.24;
+      margin-bottom: 1mm;
+      position: relative;
+      padding-left: 12px;
+    }
+    .bullets-card li:last-child { margin-bottom: 0; }
+    .bullets-card li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--lidya-emerald);
+      font-weight: 900;
+      font-size: 0.62rem;
+    }
+
+    /* Full-Width Engineering Specs Table */
+    .specs-table-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #ffffff;
+      margin-bottom: 1.8mm;
+    }
+
+    .table-head-strip {
+      background: var(--lidya-navy);
+      color: #ffffff;
+      font-size: 0.60rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 2.5px 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    table.specs-table-dikey {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.64rem;
+    }
+
+    table.specs-table-dikey td {
+      padding: 2px 6px;
+      border-bottom: 1px solid #f1f5f9;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    table.specs-table-dikey tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    table.specs-table-dikey td.k-col {
+      font-weight: 700;
+      color: #475569;
+      width: 32%;
+      background: #f1f5f9;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    table.specs-table-dikey td.v-col {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* 4-Pillar Distributor Guarantee Ribbon */
+    .guarantee-bar-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8mm;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 4px;
+      padding: 1.5mm 2.2mm;
+      margin-bottom: 1.5mm;
+    }
+    .g-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .g-title {
+      font-size: 0.58rem;
+      font-weight: 800;
+      color: #991b1b;
+      line-height: 1.15;
+    }
+    .g-desc {
+      font-size: 0.52rem;
+      color: #7f1d1d;
+      line-height: 1.18;
+    }
+
+    /* Footer */
+    .sheet-footer-line {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 1.5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.57rem;
+      color: #64748b;
+      line-height: 1.25;
+    }
+    .sheet-footer-line strong {
+      color: #0f172a;
+    }
+    .stamp-dist {
+      font-weight: 800;
+      color: var(--lidya-red);
+      font-size: 0.61rem;
+      text-transform: uppercase;
+    }
+
+    /* Summary / Closing Page */
+    .summary-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 10mm 14mm;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      min-height: 285mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ========================================================
+       PRINT & PDF PERFECTION: DIKEY (PORTRAIT) 1 MACHINE = 1 FULL PAGE
+       ZERO BLANK PAGES, EXACT 296mm FIT, NO OVERFLOW
+       ======================================================== */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      html, body {
+        width: 210mm !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .top-bar {
+        display: none !important;
+      }
+
+      .catalog-wrapper {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: block !important;
+      }
+
+      /* Cover Page: Exactly 1 A4 Page */
+      .cover-page {
+        page-break-before: avoid !important;
+        break-before: avoid !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm 6mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      /* Product Sheet: Exactly 1 A4 Page */
+      .product-page-sheet {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 4mm 9mm 3.5mm 9mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      .hero-image-frame {
+        height: 56mm !important;
+        max-height: 56mm !important;
+        margin-bottom: 1.5mm !important;
+        padding: 4px 8px !important;
+      }
+      .hero-image-frame img {
+        max-height: 50mm !important;
+      }
+
+      .product-title-section {
+        margin-top: 1mm !important;
+        margin-bottom: 1.5mm !important;
+      }
+      .machine-title {
+        font-size: 1.15rem !important;
+        line-height: 1.15 !important;
+      }
+      .machine-slogan {
+        font-size: 0.68rem !important;
+        margin-top: 1px !important;
+      }
+
+      .overview-ribbon {
+        margin-bottom: 1.5mm !important;
+        gap: 2.2mm !important;
+      }
+      .desc-card {
+        padding: 1.5mm 2.2mm !important;
+        font-size: 0.63rem !important;
+        line-height: 1.24 !important;
+        max-height: 38mm !important;
+        overflow: hidden !important;
+      }
+      .bullets-card {
+        padding: 1.5mm 2.2mm !important;
+      }
+      .bullets-card li {
+        font-size: 0.61rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.7mm !important;
+      }
+
+      .specs-table-card {
+        margin-bottom: 1.5mm !important;
+      }
+      .table-head-strip {
+        padding: 2px 6px !important;
+        font-size: 0.56rem !important;
+      }
+      table.specs-table-dikey td {
+        padding: 1.7px 5px !important;
+        font-size: 0.61rem !important;
+        line-height: 1.16 !important;
+      }
+
+      .guarantee-bar-strip {
+        margin-bottom: 1.2mm !important;
+        padding: 1.2mm 2mm !important;
+      }
+      .g-title {
+        font-size: 0.54rem !important;
+      }
+      .g-desc {
+        font-size: 0.48rem !important;
+        line-height: 1.14 !important;
+      }
+
+      .sheet-footer-line {
+        padding-top: 1.2mm !important;
+        font-size: 0.54rem !important;
+      }
+
+      /* Summary Page: Exactly 1 A4 Page */
+      .summary-page {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls Bar (No Print) -->
+  <div class="top-bar">
+    <div class="logo-wrap">
+      <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+      <span>Xerox Resmi Ürün Kataloğu</span>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="window.print()">
+        🖨️ PDF Olarak İndir / Yazdır (A4)
+      </button>
+      <a href="index.html" class="btn btn-outline">🏠 Ana Portal</a>
+    </div>
+  </div>
+
+  <div class="catalog-wrapper">
+    
+    <!-- COVER & TOC PAGE (EXACTLY 1 A4 PAGE) -->
+    <div class="cover-page">
+      <div class="sheet-header-line" style="border-bottom: 2.5px solid #d71920; padding-bottom: 2.5mm; margin-bottom: 3.5mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo" style="height:44px; width:auto; object-fit:contain;">
+          <div class="header-company-text" style="padding-left:10px;">
+            <div style="font-size:1.0rem; font-weight:800; color:var(--lidya-navy); letter-spacing:0.3px;">LİDYA GRUP <span style="color:var(--lidya-red);">BİLİŞİM SİSTEMLERİ</span></div>
+            <div style="font-size:0.62rem; font-weight:600; color:#64748b;">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:28px; max-width:125px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden; display:flex; flex-direction:column; justify-content:center;">
+        <div style="display:inline-block; font-size:0.65rem; font-weight:800; color:#047857; background:#d1fae5; border:1px solid #6ee7b7; padding:2px 8px; border-radius:3px; margin-bottom:6px; align-self:flex-start;">
+          RESMİ DİSTRİBÜTÖR ÜRÜN VE ÇÖZÜM KATALOĞU (2026)
+        </div>
+        <h1 style="font-size:1.6rem; font-weight:800; color:var(--lidya-navy); line-height:1.2; margin-bottom:0.5rem; letter-spacing:-0.3px;">
+          XEROX DİJİTAL ÜRETİM BASKI SİSTEMLERİ RESMİ ÜRÜN BROŞÜRÜ
+        </h1>
+        <div class="subtitle-meta">Lidya Grup Distribütörlüğünde Xerox Yüksek Hacimli ve Profesyonel Dijital Baskı Teknolojileri</div><div class="subtitle-meta">Web: <a href="https://www.lidyagrup.com.tr" target="_blank" style="color:var(--lidya-red);">www.lidyagrup.com.tr</a> | Çağrı Merkezi: 0542 352 72 99 | E-posta: yasin.albostanli@lidyagrup.com.tr</div><div class="subtitle-meta">Genel Müdürlük: Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İstanbul</div>
+        
+        
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:6px 10px; margin:0.6rem 0; overflow:hidden;">
+        <div style="font-size:0.62rem; font-weight:800; color:var(--lidya-navy); text-transform:uppercase; margin-bottom:4px; letter-spacing:0.5px;">📋 XEROX MODEL GAMI & ÜRÜN İNDEKSİ</div>
+        <pre style="font-family:'JetBrains Mono', monospace; font-size:0.52rem; line-height:1.2; color:#1e293b; background:transparent; border:none; padding:0; margin:0; overflow:hidden;"><code>LİDYA GRUP XEROX DİJİTAL ÜRETİM BASKI AİLESİ
+│
+├── 1. ULTRA YÜKSEK HACİM & ENDÜSTRİYEL SEGMENT
+│   ├── 1.1 Xerox Iridesse™ Production Press (Tek Geçişte 6 Renk Color FLX - 120 ppm)
+│   └── 1.2 Xerox iGen® 5 Press (5. Renk İstasyonu & 1 Milyon Sayfa/Ay - 150 ppm)
+│
+├── 2. YENİ NESİL RENKLİ ÜRETİM & AKILLI OTOMASYON
+│   ├── 1.3 Xerox Versant® 4100 Press (Full Width Array & 52-400 gsm Sabit - 100 ppm)
+│   ├── 1.4 Xerox Proficio™ PX500 (PredictPrint AI & 5. Renk İstasyonu - 100 ppm)
+│   └── 1.5 Xerox Proficio™ PX300 (Kompakt Üretim, Dahili Tarayıcı & 5. Renk - 85 ppm)
+│
+└── 3. ÇOK İŞLEVLİ PROFESYONEL ÜRETİM SİSTEMLERİ
+    ├── 1.6 Xerox PrimeLink® C9200 Serisi (Renkli Çok İşlevli & 330x1300 mm Afiş - 65-81 ppm)
+    └── 1.7 Xerox PrimeLink® B9100 Series (Siyah-Beyaz Üretim Canavarı - 100-136 ppm)</code></pre>
+      </div>
+
+      </div>
+
+      <!-- Distributor Credentials Card -->
+      <div class="guarantee-bar-strip" style="margin-top:auto; margin-bottom:2.5mm;">
+        <div class="g-item">
+          <div class="g-title">🏢 Resmi Distribütör</div>
+          <div class="g-desc">Lidya Grup güvencesiyle 100% orijinal donanım & parça.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">🛠️ Sertifikalı Hizmet</div>
+          <div class="g-desc">Doğrudan üretici eğitimli uzman mühendis kadrosu.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 Kesintisiz İletişim</div>
+          <div class="g-desc">0542 352 72 99 & yasin.albostanli@lidyagrup.com.tr</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Finansman Kolaylığı</div>
+          <div class="g-desc">Leasing, proje finansmanı ve avantajlı taksit modelleri.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • A4 KATALOG BASKISI</div>
+      </div>
+    </div>
+
+    <!-- PRODUCT PAGE: Xerox Iridesse™ Production Press -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox Iridesse™ Production Press</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Tek Geçişte 6 Renk Color FLX Teknolojisi, Metalik Parlaklık ve 120 ppm Kesintisiz Hız"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_iridesse.avif" alt="Xerox Iridesse™ Production Press">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox Iridesse™ Production Press, dijital baskıda sınırları ortadan kaldıran Color FLX teknolojisi sayesinde standart CMYK renklerin yanı sıra tek geçişte Altın, Gümüş, Beyaz, Şeffaf Lak ve Floresan Pembe özel tonerlerini kullanarak eşsiz katma değerli baskılar üretir. 52 g/m²'den 400 g/m²'ye kadar tüm kağıt gramajlarında 120 sayfa/dakika hızını korur.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Tek Geçişte 6 Renk (Color FLX)</td><td class="v-col">CMYK katmanının altına veya üstüne aynı anda 2 özel renk uygulama kabiliyeti (Altın/Gümüş alt zemin veya Beyaz + Şeffaf üst vernik).</td></tr><tr><td class="k-col">Sabit Üretim Hızı</td><td class="v-col">52 g/m²'den 400 g/m²'ye kadar tüm kağıt gramajlarında ve otomatik çift taraflı modda **120 sayfa/dakika** kesintisiz hız.</td></tr><tr><td class="k-col">Ultra HD Çözünürlük</td><td class="v-col">2400 x 2400 dpi VCSEL ROS baskı ve 1200 x 1200 x 10-bit RIP renderleme hassasiyeti ile benzersiz ton geçişleri ve keskin mikro detaylar.</td></tr><tr><td class="k-col">Ekstra Uzun Tabaka (XLS Banner)</td><td class="v-col">330 x 1200 mm'ye kadar banner, 6 kanatlı akordiyon broşür ve kitap şömiz baskı desteği.</td></tr><tr><td class="k-col">Full Width Array (FWA) Otomasyonu</td><td class="v-col">Dakikalar içinde spektrofotometrik otomatik renk kalibrasyonu, ton yoğunluğu dengelemesi ve hizalama profili oluşturma.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">Xerox Iridesse Production Press</td></tr><tr><td class="k-col">Baskı Hızı</td><td class="v-col">120 sayfa/dk (A4), 60 sayfa/dk (A3/SRA3)</td></tr><tr><td class="k-col">Saatlik Kapasite</td><td class="v-col">7.200 A4 baskı/saat, 3.600 A3 baskı/saat</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox iGen® 5 Press -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox iGen® 5 Press</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"150 ppm Hız, 5. Renk İstasyonu ve 1 Milyon Sayfa/Ay Endüstriyel Üretim Platformu"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_igen5.avif" alt="Xerox iGen® 5 Press">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox iGen® 5 Press, ticari matbaalar ve büyük ölçekli üretim merkezleri için geliştirilmiş endüstriyel seviyede amiral gemisi dijital baskı sistemidir. 5. renk istasyonu sayesinde CMYK'ya ek olarak Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı toner kullanılarak PANTONE renklerinin %90'ından fazlası yüksek doğrulukla basılır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">150 ppm Endüstriyel Üretim Gücü</td><td class="v-col">Dakikada 150 sayfaya varan rekor hız ve aylık 1.000.000 sayfa endüstriyel görev döngüsü.</td></tr><tr><td class="k-col">5. Renk İstasyonu</td><td class="v-col">Genişletilmiş renk gamutu ve kurumsal marka renkleri için Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı.</td></tr><tr><td class="k-col">Ekstra Uzun Tabaka (XLS)</td><td class="v-col">364 x 660 mm standart ve 364 x 889 mm boyutuyla büyük boy ambalaj kutuları ve çok panelli broşürler.</td></tr><tr><td class="k-col">Auto Density Control</td><td class="v-col">Entegre spektrofotometre ve gerçek zamanlı yoğunluk denetimi ile tabakadan tabakaya sıfır renk sapması.</td></tr><tr><td class="k-col">FreeFlow Print Server & HyperRIP</td><td class="v-col">Çoklu çekirdek mimarisiyle aynı anda birden fazla RIP işlemini paralel yürüterek sıfır bekleme süresi.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">Xerox iGen 5 Press (90 / 120 / 150 Modelleri)</td></tr><tr><td class="k-col">Maksimum Baskı Hızı</td><td class="v-col">150 sayfa / dakika (A4)</td></tr><tr><td class="k-col">Baskı Çözünürlüğü</td><td class="v-col">2400 x 2400 dpi (Object-based Halftoning)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox Versant® 4100 Press -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox Versant® 4100 Press</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Akıllı Otomasyon, Ağır Gramaj Gücü ve 100 ppm Kusursuz Renkler"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_versant.png" alt="Xerox Versant® 4100 Press">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox Versant® 4100 Press, ticari matbaalar ve yüksek hacimli dijital baskı merkezleri için geliştirilmiş endüstri standardı renkli üretim presidir. 52 ila 400 g/m² arasındaki tüm malzemelerde 100 sayfa/dakika hızında çalışır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız ve Gramaj Gücü</td><td class="v-col">52 ila 400 g/m² arasındaki kuşe, karton ve dokulu kağıtlarda 100 ppm sabit üretim hızı.</td></tr><tr><td class="k-col">Full Width Array (FWA)</td><td class="v-col">Tek tuşla otomatik ön-arka çakışma, yoğunluk dengesi ve spektrofotometrik profil kalibrasyonu.</td></tr><tr><td class="k-col">Zengin Sonlandırma Seçenekleri</td><td class="v-col">Çevrimiçi kitapçık yapımı, kare sırt ciltleme, 3 kenar kesim, delme ve z-kırım modülleri.</td></tr><tr><td class="k-col">Ultra HD Baskı Kalitesi</td><td class="v-col">2400 x 2400 dpi VCSEL ROS lazer ve EA Düşük Eriyikli Kuru Mürekkep teknolojisi.</td></tr><tr><td class="k-col">Geniş Medya Çeşitliliği</td><td class="v-col">Kuşe, 1. hamur, dokulu kağıtlar, sentetik ve polyester etiketler, mıknatıslı tabakalar.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">Xerox Versant 4100 Press</td></tr><tr><td class="k-col">Baskı Hızı (A4)</td><td class="v-col">100 ppm (52–300 gsm), 80 ppm (301–400 gsm)</td></tr><tr><td class="k-col">Baskı Hızı (A3)</td><td class="v-col">52 ppm (52–300 gsm), 44 ppm (301–400 gsm)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox Proficio™ PX500 -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox Proficio™ PX500</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"100 ppm Hız, 5. Renk İstasyonu Desteği ve Gelişmiş PredictPrint Otomasyonu"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_px500.webp" alt="Xerox Proficio™ PX500">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox Proficio™ PX500, yüksek hacimli ticari baskı merkezleri ve kurumsal üretim ortamları için geliştirilen yeni nesil renkli üretim baskı sistemidir. Xerox'un gelişmiş HD EA toner teknolojisi, Ultra HD çözünürlük sistemi ve PredictPrint yapay zeka destekli medya yönetimini bir araya getirir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">100 ppm Sabit Hız</td><td class="v-col">Tüm onaylı medya türlerinde (52-400 gsm) hız kaybı yaşamadan kesintisiz üretim gücü.</td></tr><tr><td class="k-col">5. Renk İstasyonu Desteği</td><td class="v-col">Floresan Pembe, Clear şeffaf vernik ve Low Gloss Clear özel efektleri.</td></tr><tr><td class="k-col">PredictPrint Media Manager</td><td class="v-col">Bulut tabanlı yapay zeka ile barkod okutarak saniyeler içinde mükemmel makine ayarı.</td></tr><tr><td class="k-col">Full Width Array & Quality Control Module</td><td class="v-col">Kapalı devre gerçek zamanlı renk doğruluğu ve netlik denetimi.</td></tr><tr><td class="k-col">330 x 1300 mm Ekstra Uzun Tabaka</td><td class="v-col">9.900 yapraklık maksimum kağıt kapasitesi ve geniş sonlandırma seçenekleri.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">Xerox Proficio PX500</td></tr><tr><td class="k-col">Baskı Hızı</td><td class="v-col">100 ppm (A4) - Tüm gramajlarda sabit</td></tr><tr><td class="k-col">Baskı Çözünürlüğü</td><td class="v-col">2400 x 2400 dpi LED Imaging</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox Proficio™ PX300 -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox Proficio™ PX300</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"85 ppm Hız, 5. Renk Desteği, Dahili 200 ipm Tarayıcı ve Kompakt Üretim Gücü"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_px300.webp" alt="Xerox Proficio™ PX300">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox Proficio™ PX300, küçük ve orta ölçekli baskı merkezleri, dijital kopyalama ofisleri ve kurumsal reprografi departmanları için geliştirilmiş kompakt ve çok işlevli renkli üretim presidir. 85 ppm baskı hızı, HD EA toner teknolojisi ve Ultra HD LED görüntüleme ile keskin metinler ve zengin renkler sunar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">85 ppm Kompakt Hız</td><td class="v-col">750.000 sayfa/ay görev döngüsü ve 85 sayfa/dk yüksek verimlilik.</td></tr><tr><td class="k-col">Dahili Yüksek Hızlı Tarayıcı</td><td class="v-col">Tek geçişli çift taraflı 200 ipm renkli doküman tarayıcısı ve fotokopi.</td></tr><tr><td class="k-col">5. Renk Desteği</td><td class="v-col">İsteğe bağlı Floresan Pembe, Clear ve Low Gloss Clear vernik efektleri.</td></tr><tr><td class="k-col">Geniş Medya Esnekliği</td><td class="v-col">52 - 400 gsm kağıt desteği, otomatik çift taraflı 350 gsm ve 330 x 1300 mm banner.</td></tr><tr><td class="k-col">Closed Loop Process Control & SIQA</td><td class="v-col">Basit görüntü kalitesi ayarı ile hızlı ön-arka kayıt ve renk tutarlılığı.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">Xerox Proficio PX300</td></tr><tr><td class="k-col">Baskı Hızı</td><td class="v-col">85 ppm (A4)</td></tr><tr><td class="k-col">Baskı Çözünürlüğü</td><td class="v-col">2400 x 2400 dpi LED Imaging</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox PrimeLink® C9200 Serisi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox PrimeLink® C9200 Serisi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"65 - 81 ppm Hız, 330 x 1300 mm Afiş Desteği ve 270 ipm Yüksek Hızlı Tarayıcı"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_primelink_c9200.avif" alt="Xerox PrimeLink® C9200 Serisi">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox PrimeLink® C9200 Serisi (C9265, C9275, C9281), yoğun ofis ortamları, kurumsal reprografi merkezleri ve hızlı dijital matbaalar için ofis çok işlevliliği ile üretim presi gücünü tek platformda buluşturur. 2400 x 2400 dpi Ultra HD çözünürlük, 270 ipm tek geçişli çift taraflı tarayıcı ve 330 x 1300 mm afiş baskı kabiliyeti sunar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Esnek Hız Seçenekleri</td><td class="v-col">C9265 (65 ppm), C9275 (75 ppm) ve C9281 (81 sayfa/dk renkli ve siyah-beyaz).</td></tr><tr><td class="k-col">270 ipm Ultra Hızlı Tarayıcı</td><td class="v-col">Tek geçişli çift taraflı renkli tarama, fotokopi ve güvenli doküman yönetimi.</td></tr><tr><td class="k-col">Ekstra Uzun Afiş (Banner)</td><td class="v-col">330 x 1300 mm (13 x 51 inç) afiş baskısı ve 350 g/m² kalınlığa kadar otomatik çift taraflı destek.</td></tr><tr><td class="k-col">Adaptive CMYK Plus Kiti</td><td class="v-col">Altın, Gümüş, Beyaz, Şeffaf ve Floresan toner modülleri ile lüks baskı yükseltmesi.</td></tr><tr><td class="k-col">Zengin Sonlandırma</td><td class="v-col">Zımbalama, delgeç, kitapçık yapımı, C/Z katlama ve geniş kapasiteli istifleyiciler.</td></tr><tr><td class="k-col">Model Kodları</td><td class="v-col">PLC9265 (65 ppm) / PLC9275 (75 ppm) / PLC9281 (81 ppm)</td></tr><tr><td class="k-col">Baskı Hızı</td><td class="v-col">65 / 75 / 81 sayfa/dk (Renkli ve Siyah-Beyaz)</td></tr><tr><td class="k-col">Baskı Çözünürlüğü</td><td class="v-col">2400 x 2400 dpi Ultra HD</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Xerox PrimeLink® B9100 Series -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Xerox PrimeLink® B9100 Series</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"100 - 136 ppm S/B Hız, 3 Milyon Sayfa Görev Döngüsü ve Endüstriyel Güvenlik"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/xerox_primelink_b9100.avif" alt="Xerox PrimeLink® B9100 Series">
+        <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Xerox PrimeLink® B9100 Serisi (B9100, B9110, B9125, B9136), kitap yayıncılığı, fatura baskı merkezleri, okul-sınav evrakları ve yoğun ofis arşivleme operasyonları için geliştirilmiş yüksek hızlı monokrom üretim baskı makinesidir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">100 - 136 ppm S/B Hız Kapasitesi</td><td class="v-col">B9100 (100 ppm), B9110 (110 ppm), B9125 (125 ppm) ve B9136 (136 sayfa/dk).</td></tr><tr><td class="k-col">Endüstriyel Aylık Hacim</td><td class="v-col">3.000.000 sayfa görev döngüsü ve 700.000 sayfaya varan önerilen aylık baskı kapasitesi.</td></tr><tr><td class="k-col">270 ipm Doküman Tarayıcısı</td><td class="v-col">250 yapraklık çift taraflı tek geçişli otomatik besleyici ile yüksek hızlı arşivleme.</td></tr><tr><td class="k-col">330 x 660 mm Medya Desteği</td><td class="v-col">60 - 350 g/m² gramaj aralığında kitap kapakları ve geniş formatlı formlar.</td></tr><tr><td class="k-col">Gelişmiş Sonlandırma</td><td class="v-col">Plockmatic Pro kitapçık yapıcı, GBC eWire delgi, Tape Binder inline ciltleme ve çoklu zımbalama.</td></tr><tr><td class="k-col">Model Kodları</td><td class="v-col">B9100 (100 ppm) / B9110 (110 ppm) / B9125 (125 ppm) / B9136 (136 ppm)</td></tr><tr><td class="k-col">Baskı Hızı (A4)</td><td class="v-col">100 / 110 / 125 / 136 sayfa/dakika</td></tr><tr><td class="k-col">Baskı Hızı (A3/SRA3)</td><td class="v-col">68 ppm (A3), 55 ppm (SRA3)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- CORPORATE SUMMARY & WARRANTY CLOSING PAGE -->
+    <div class="summary-page">
+      <div class="sheet-header-line" style="border-bottom:2px solid #d71920; padding-bottom:2mm; margin-bottom:3mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/xerox.svg" alt="Xerox Logo" style="height:26px; max-width:115px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden;">
+        <h2 style="font-size:1.25rem; font-weight:800; color:var(--lidya-navy); margin-bottom:0.8rem; border-left:4px solid var(--lidya-red); padding-left:8px;">
+          4. LİDYA GRUP RESMİ DİSTRİBÜTÖR GÜVENCESİ
+        </h2>
+        <div style="font-size:0.75rem; line-height:1.45; color:#334155;">
+          <ul style="list-style:disc;margin-left:1.2rem;margin-bottom:0.8rem;"><li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Yetkili Kurulum & Eğitim:</strong> Xerox sertifikalı uzman mühendis kadrosu tarafından anahtar teslim kurulum ve operatör eğitimi.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Orijinal Sarf & Yedek Parça Stoğu:</strong> Lidya Grup depolarında sürekli hazır orijinal EA tonerler, drum üniteleri, fırınlar ve sarf malzemeleri.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>7/24 Teknik Destek Hattı:</strong> 0542 352 72 99 çağrı merkezi ve uzaktan bağlantılı anında müdahale.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Lidya Finansman:</strong> Esnek leasing, operasyonel kiralama ve taksitli satın alma çözümleri.</li>
+</ul><p style="margin-bottom:0.6rem;">*Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş. güvencesiyle sunulmaktadır. Doküman: LGB-XEROX-2026-TDS.*</p>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line" style="margin-top:auto;">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-GARANTİ</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

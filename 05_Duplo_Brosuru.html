@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIDYA GRUP | DUPLO BASKI SONRASI & SONLANDIRMA SİSTEMLERİ ÜRÜN BROŞÜRÜ | Lidya Grup Resmi Ürün Kataloğu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lidya-red: #d71920;
+      --lidya-red-dark: #b9151b;
+      --lidya-navy: #0f172a;
+      --lidya-slate: #1e293b;
+      --lidya-muted: #475569;
+      --lidya-border: #cbd5e1;
+      --lidya-border-light: #e2e8f0;
+      --lidya-bg: #f8fafc;
+      --lidya-emerald: #059669;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b1120;
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--lidya-slate);
+      line-height: 1.35;
+      padding-bottom: 3rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Screen Top Toolbar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      padding: 0.65rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .top-bar .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .top-bar .logo-wrap img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .top-bar .logo-wrap span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f8fafc;
+      border-left: 1px solid rgba(255,255,255,0.25);
+      padding-left: 12px;
+    }
+
+    .top-bar .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary {
+      background: var(--lidya-red);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(215, 25, 32, 0.4);
+    }
+    .btn-primary:hover {
+      background: var(--lidya-red-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.16);
+    }
+
+    /* Multi-Sheet Vertical Catalog Container */
+    .catalog-wrapper {
+      max-width: 210mm;
+      margin: 1.5rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Cover Page (Screen & Base) */
+    .cover-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 18mm 14mm 14mm 14mm;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      position: relative;
+      box-sizing: border-box;
+      min-height: 285mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cover-page::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 70%, #0f172a 70%, #0f172a 100%);
+    }
+
+    .cover-page h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.4px;
+    }
+    .cover-page .subtitle-meta {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-bottom: 0.8rem;
+      line-height: 1.35;
+    }
+    .cover-page pre {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.56rem;
+      line-height: 1.24;
+      color: #1e293b;
+      margin: 0.8rem 0;
+      overflow: hidden;
+    }
+
+    /* ========================================================
+       VERTICAL (DİKEY) PRODUCT SHEET (1 Full Page per Machine)
+       Large Hero Image + Vertical Natural Flow
+       ======================================================== */
+    .product-page-sheet {
+      background: #ffffff;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      padding: 5mm 9mm 4mm 9mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      min-height: 285mm;
+    }
+
+    /* Red Corporate Header Ribbon */
+    .product-page-sheet::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 68%, #0f172a 68%, #0f172a 100%);
+    }
+
+    /* Header Bar */
+    .sheet-header-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+
+    .header-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-logo-group img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+    .header-company-text {
+      border-left: 2px solid #cbd5e1;
+      padding-left: 7px;
+    }
+    .comp-name {
+      font-size: 0.80rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.1;
+    }
+    .comp-name span { color: var(--lidya-red); }
+    .comp-sub {
+      font-size: 0.56rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .header-badge-group {
+      text-align: right;
+    }
+    .header-phone {
+      font-size: 0.63rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .header-phone strong {
+      color: var(--lidya-red);
+    }
+
+    /* Title & Slogan */
+    .product-title-section {
+      margin-top: 1.5mm;
+      margin-bottom: 1.5mm;
+    }
+    .title-row-flex {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .machine-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.15;
+      letter-spacing: -0.2px;
+    }
+    .machine-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #047857;
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .machine-slogan {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #475569;
+      font-style: italic;
+      margin-top: 1.5px;
+    }
+
+    /* ========================================================
+       PROMINENT LARGE HERO IMAGE FRAME (Full Width Dikey)
+       ======================================================== */
+    .hero-image-frame {
+      width: 100%;
+      height: 60mm;
+      background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      overflow: hidden;
+      margin-bottom: 1.8mm;
+    }
+
+    .hero-image-frame img {
+      max-width: 95%;
+      max-height: 94%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+    }
+
+    .hero-image-frame .stamp-badge {
+      position: absolute;
+      bottom: 4px;
+      right: 7px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #ffffff;
+      font-size: 0.52rem;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    /* Middle Modular Ribbon (Overview & Key Features Side by Side) */
+    .overview-ribbon {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5mm;
+      margin-bottom: 1.8mm;
+    }
+
+    .section-pill-label {
+      font-size: 0.63rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 1.2mm;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section-pill-label::before {
+      content: "";
+      width: 2.5px;
+      height: 8px;
+      background: var(--lidya-red);
+      display: inline-block;
+      border-radius: 1px;
+    }
+
+    .desc-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+      font-size: 0.67rem;
+      color: #334155;
+      line-height: 1.28;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .bullets-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+    }
+    .bullets-card ul {
+      list-style: none;
+    }
+    .bullets-card li {
+      font-size: 0.64rem;
+      color: #334155;
+      line-height: 1.24;
+      margin-bottom: 1mm;
+      position: relative;
+      padding-left: 12px;
+    }
+    .bullets-card li:last-child { margin-bottom: 0; }
+    .bullets-card li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--lidya-emerald);
+      font-weight: 900;
+      font-size: 0.62rem;
+    }
+
+    /* Full-Width Engineering Specs Table */
+    .specs-table-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #ffffff;
+      margin-bottom: 1.8mm;
+    }
+
+    .table-head-strip {
+      background: var(--lidya-navy);
+      color: #ffffff;
+      font-size: 0.60rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 2.5px 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    table.specs-table-dikey {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.64rem;
+    }
+
+    table.specs-table-dikey td {
+      padding: 2px 6px;
+      border-bottom: 1px solid #f1f5f9;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    table.specs-table-dikey tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    table.specs-table-dikey td.k-col {
+      font-weight: 700;
+      color: #475569;
+      width: 32%;
+      background: #f1f5f9;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    table.specs-table-dikey td.v-col {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* 4-Pillar Distributor Guarantee Ribbon */
+    .guarantee-bar-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8mm;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 4px;
+      padding: 1.5mm 2.2mm;
+      margin-bottom: 1.5mm;
+    }
+    .g-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .g-title {
+      font-size: 0.58rem;
+      font-weight: 800;
+      color: #991b1b;
+      line-height: 1.15;
+    }
+    .g-desc {
+      font-size: 0.52rem;
+      color: #7f1d1d;
+      line-height: 1.18;
+    }
+
+    /* Footer */
+    .sheet-footer-line {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 1.5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.57rem;
+      color: #64748b;
+      line-height: 1.25;
+    }
+    .sheet-footer-line strong {
+      color: #0f172a;
+    }
+    .stamp-dist {
+      font-weight: 800;
+      color: var(--lidya-red);
+      font-size: 0.61rem;
+      text-transform: uppercase;
+    }
+
+    /* Summary / Closing Page */
+    .summary-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 10mm 14mm;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      min-height: 285mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ========================================================
+       PRINT & PDF PERFECTION: DIKEY (PORTRAIT) 1 MACHINE = 1 FULL PAGE
+       ZERO BLANK PAGES, EXACT 296mm FIT, NO OVERFLOW
+       ======================================================== */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      html, body {
+        width: 210mm !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .top-bar {
+        display: none !important;
+      }
+
+      .catalog-wrapper {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: block !important;
+      }
+
+      /* Cover Page: Exactly 1 A4 Page */
+      .cover-page {
+        page-break-before: avoid !important;
+        break-before: avoid !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm 6mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      /* Product Sheet: Exactly 1 A4 Page */
+      .product-page-sheet {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 4mm 9mm 3.5mm 9mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      .hero-image-frame {
+        height: 56mm !important;
+        max-height: 56mm !important;
+        margin-bottom: 1.5mm !important;
+        padding: 4px 8px !important;
+      }
+      .hero-image-frame img {
+        max-height: 50mm !important;
+      }
+
+      .product-title-section {
+        margin-top: 1mm !important;
+        margin-bottom: 1.5mm !important;
+      }
+      .machine-title {
+        font-size: 1.15rem !important;
+        line-height: 1.15 !important;
+      }
+      .machine-slogan {
+        font-size: 0.68rem !important;
+        margin-top: 1px !important;
+      }
+
+      .overview-ribbon {
+        margin-bottom: 1.5mm !important;
+        gap: 2.2mm !important;
+      }
+      .desc-card {
+        padding: 1.5mm 2.2mm !important;
+        font-size: 0.63rem !important;
+        line-height: 1.24 !important;
+        max-height: 38mm !important;
+        overflow: hidden !important;
+      }
+      .bullets-card {
+        padding: 1.5mm 2.2mm !important;
+      }
+      .bullets-card li {
+        font-size: 0.61rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.7mm !important;
+      }
+
+      .specs-table-card {
+        margin-bottom: 1.5mm !important;
+      }
+      .table-head-strip {
+        padding: 2px 6px !important;
+        font-size: 0.56rem !important;
+      }
+      table.specs-table-dikey td {
+        padding: 1.7px 5px !important;
+        font-size: 0.61rem !important;
+        line-height: 1.16 !important;
+      }
+
+      .guarantee-bar-strip {
+        margin-bottom: 1.2mm !important;
+        padding: 1.2mm 2mm !important;
+      }
+      .g-title {
+        font-size: 0.54rem !important;
+      }
+      .g-desc {
+        font-size: 0.48rem !important;
+        line-height: 1.14 !important;
+      }
+
+      .sheet-footer-line {
+        padding-top: 1.2mm !important;
+        font-size: 0.54rem !important;
+      }
+
+      /* Summary Page: Exactly 1 A4 Page */
+      .summary-page {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls Bar (No Print) -->
+  <div class="top-bar">
+    <div class="logo-wrap">
+      <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+      <span>Duplo Resmi Ürün Kataloğu</span>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="window.print()">
+        🖨️ PDF Olarak İndir / Yazdır (A4)
+      </button>
+      <a href="index.html" class="btn btn-outline">🏠 Ana Portal</a>
+    </div>
+  </div>
+
+  <div class="catalog-wrapper">
+    
+    <!-- COVER & TOC PAGE (EXACTLY 1 A4 PAGE) -->
+    <div class="cover-page">
+      <div class="sheet-header-line" style="border-bottom: 2.5px solid #d71920; padding-bottom: 2.5mm; margin-bottom: 3.5mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo" style="height:44px; width:auto; object-fit:contain;">
+          <div class="header-company-text" style="padding-left:10px;">
+            <div style="font-size:1.0rem; font-weight:800; color:var(--lidya-navy); letter-spacing:0.3px;">LİDYA GRUP <span style="color:var(--lidya-red);">BİLİŞİM SİSTEMLERİ</span></div>
+            <div style="font-size:0.62rem; font-weight:600; color:#64748b;">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:28px; max-width:125px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden; display:flex; flex-direction:column; justify-content:center;">
+        <div style="display:inline-block; font-size:0.65rem; font-weight:800; color:#047857; background:#d1fae5; border:1px solid #6ee7b7; padding:2px 8px; border-radius:3px; margin-bottom:6px; align-self:flex-start;">
+          RESMİ DİSTRİBÜTÖR ÜRÜN VE ÇÖZÜM KATALOĞU (2026)
+        </div>
+        <h1 style="font-size:1.6rem; font-weight:800; color:var(--lidya-navy); line-height:1.2; margin-bottom:0.5rem; letter-spacing:-0.3px;">
+          DUPLO BASKI SONRASI & SONLANDIRMA SİSTEMLERİ ÜRÜN BROŞÜRÜ
+        </h1>
+        <div class="subtitle-meta">Lidya Grup Resmi Distribütörlüğü Güvencesiyle Duplo Endüstriyel Sonlandırma Çözümleri</div><div class="subtitle-meta">Web: <a href="https://www.lidyagrup.com.tr/marka/duplo/?all=1" target="_blank" style="color:var(--lidya-red);">www.lidyagrup.com.tr/marka/duplo/?all=1</a> | Servis & Bilgi Hattı: 0542 352 72 99 | E-posta: yasin.albostanli@lidyagrup.com.tr</div><div class="subtitle-meta">Genel Merkez: Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İstanbul</div>
+        <p style="color:#334155; font-size:0.75rem; line-height:1.4; margin-bottom:0.5rem;">Duplo, matbaa ve dijital baskı merkezlerinin baskı sonrası tüm ihtiyaçlarını karşılayan 6 ana ürün grubunda toplam 21 ileri teknoloji modele sahiptir:</p>
+        
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:6px 10px; margin:0.6rem 0; overflow:hidden;">
+        <div style="font-size:0.62rem; font-weight:800; color:var(--lidya-navy); text-transform:uppercase; margin-bottom:4px; letter-spacing:0.5px;">📋 DUPLO MODEL GAMI & ÜRÜN İNDEKSİ</div>
+        <pre style="font-family:'JetBrains Mono', monospace; font-size:0.52rem; line-height:1.2; color:#1e293b; background:transparent; border:none; padding:0; margin:0; overflow:hidden;"><code>DUPLO ÜRÜN GRUPLARI
+├── 1. LAK VE YALDIZ SİSTEMLERİ (Spot UV & Dijital Süsleme)
+│   ├── Duplo DuSense DDC-810 (B3 Formatı Dijital Spot UV Lak & 3D Kabartma)
+│   └── Duplo DuSense DDC-8000 (B2 Formatı Dijital Spot UV Lak & Soğuk Folyo Yaldız)
+│
+├── 2. ÇOK İŞLEVLİ KESİM, KIRIM & PİLYAJ SONLANDIRMA (Slitter / Cutter / Creaser)
+│   ├── Duplo DC-618 (Kompakt Çok İşlevli Sonlandırma - 50 tabaka/dk)
+│   ├── Duplo DC-648 (Yüksek Hızlı Ticari Çok İşlevli Sonlandırma)
+│   ├── Duplo DC-746 (Üst Düzey Ağır Hizmet Sonlandırma & Modüler Kasetler)
+│   ├── Duplo DC-20K B2 Cutter Creaser (B2 Ebadında Otomatik Kesim & Pilyaj)
+│   └── Duplo DC-F100 (In-line Entegre Katlama Ünitesi)
+│
+├── 3. OTOMATİK KİTAPÇIK YAPMA, TEL DİKİŞ & HARMANLAMA SİSTEMLERİ
+│   ├── Duplo DBM-150 (Dünyanın En Kompakt Tam Otomatik Kitapçık Sistemi)
+│   ├── Duplo DBM-350 (Orta ve Yüksek Hacimli Otomatik Kitapçık Yapma)
+│   ├── Duplo DBM-700 Booklet System (Ağır Sanayi Tipi Kitapçık Hattı - 5.200/saat)
+│   └── Duplo iSaddle Range (Eyer Tipi Saddle Stitching & Düz Yataklı A4 Yatay Kitapçık)
+│
+├── 4. DİJİTAL KESİM MASALARI & KALIP KESİM SİSTEMLERİ
+│   ├── Duplo PFi Blade B2+ (B2 Formatı Kalıpsız Dijital Kesim Masası)
+│   ├── Duplo PFi Blade B3+ (B3 Formatı Kompakt Dijital Bıçaklı Kesim Masası)
+│   ├── Duplo PFi DiCut 310 (Döner Manyetik Kalıplı Yüksek Hızlı Kesim - 4.000/saat)
+│   └── Duplo DSM-1000 B2 Die Cutter (B2 Formatı Çelik Kurallı Kalıp Kesim Sistemi)
+│
+├── 5. PROFESYONEL KAĞIT KATLAMA MAKİNELERİ (Folder Range)
+│   ├── Duplo DF-850 (Kompakt Masaüstü Sürtünmeli Katlama - 241 sayfa/dk)
+│   ├── Duplo DF-870 (Otomatik Ayarlı Masaüstü Katlama - 241 sayfa/dk)
+│   ├── Duplo DF-990 (Yüksek Hızlı Profesyonel Masaüstü Katlama - 260 sayfa/dk)
+│   ├── Duplo DF-999 (Dokunmatik Ekranlı & Ultrasonik Sensörlü Katlama)
+│   └── Duplo DF-1300L (Uzun A3 Formatında Vakumlu Hava Emişli Katlama)
+│
+└── 6. AMERİKAN CİLT KAPAK TAKMA SİSTEMLERİ
+    └── Duplo PFi BIND 2100 PUR (Patentli Orbital PUR Kapalı Nozüllü Ciltleme)</code></pre>
+      </div>
+
+      </div>
+
+      <!-- Distributor Credentials Card -->
+      <div class="guarantee-bar-strip" style="margin-top:auto; margin-bottom:2.5mm;">
+        <div class="g-item">
+          <div class="g-title">🏢 Resmi Distribütör</div>
+          <div class="g-desc">Lidya Grup güvencesiyle 100% orijinal donanım & parça.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">🛠️ Sertifikalı Hizmet</div>
+          <div class="g-desc">Doğrudan üretici eğitimli uzman mühendis kadrosu.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 Kesintisiz İletişim</div>
+          <div class="g-desc">0542 352 72 99 & yasin.albostanli@lidyagrup.com.tr</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Finansman Kolaylığı</div>
+          <div class="g-desc">Leasing, proje finansmanı ve avantajlı taksit modelleri.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • A4 KATALOG BASKISI</div>
+      </div>
+    </div>
+
+    <!-- PRODUCT PAGE: DuSense DDC-810 Dijital Spot UV Lak Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">DuSense DDC-810 Dijital Spot UV Lak Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Baskılarınıza Dokunma Hissi Katın: 3D Kabartma ve Kristal Berraklığında Spot Vernik"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dusense-ddc-810.jpg" alt="Duplo DuSense DDC-810">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DuSense DDC-810, kalıp, serigrafi ipeği veya klişe masrafı olmadan dijital ve ofset baskılı tabakaların üzerine doğrudan 600 dpi inkjet kafalarla değişken kalınlıkta parlak spot lak uygular. 1 adetten binlerce adede kadar firesiz ve anında kuruyan baskı süsleme çözümü sunar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Lak Kalınlığı</td><td class="v-col">20 ila 80 mikron arasında tek geçişte kademeli kabartma ve doku efektleri.</td></tr><tr><td class="k-col">CCD Kamera Pozalama</td><td class="v-col">Baskı esnasında oluşan kağıt çekme/esneme hatalarını mikron hassasiyetinde algılayıp lakı tam yerine oturtur.</td></tr><tr><td class="k-col">Format</td><td class="v-col">Maksimum 364 x 740 mm tabaka ebadı (B3+).</td></tr><tr><td class="k-col">Hız</td><td class="v-col">Saatte 1.080 B3 tabakaya varan üretim hızı.</td></tr><tr><td class="k-col">Uygulamalar</td><td class="v-col">Lüks ambalaj, kitap kapakları, kartvizitler, davetiyeler, şarap etiketleri.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: DuSense DDC-8000 B2 Formatı Dijital Spot UV Lak & Folyo Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">DuSense DDC-8000 B2 Formatı Dijital Spot UV Lak & Folyo Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"B2 Ebadında Üst Seviye Dijital Süsleme: 3D Kabartma Lak ve Soğuk Folyo Yaldız"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_ddc-8000.png" alt="Duplo DDC-8000">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DDC-8000, ticari ambalaj ve matbaa üreticileri için B2 ebadında geliştirilmiş amiral gemisi süsleme sistemidir. Çift barlı inkjet kafa mimarisi ve entegre soğuk folyo yaldız modülü ile tek geçişte hem kabartmalı lak hem de altın, gümüş ve holografik metalik folyo efektleri uygular. # BÖLÜM 2: ÇOK İŞLEVLİ KESİM, KIRIM & PİLYAJ SONLANDIRMA (SLITTER / CUTTER / CREASER)</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Maksimum Tabaka Boyutu</td><td class="v-col">585 x 1068 mm (B2+).</td></tr><tr><td class="k-col">Malzeme Gramajı</td><td class="v-col">160 ila 600 g/m² kalın karton ve lamine tabakalar.</td></tr><tr><td class="k-col">Otomatik Yükseklik & Kalınlık Dedektörü</td><td class="v-col">Farklı yüzey pürüzlülüklerine anında adapte olan akıllı kafa koruması.</td></tr><tr><td class="k-col">Kullanım Alanları</td><td class="v-col">Kozmetik kutuları, çikolata kutuları, lüks yayıncılık, sert kapak tasarımları.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DC-618 Çok İşlevli Sonlandırma Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DC-618 Çok İşlevli Sonlandırma Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Kompakt Alanda Tek Geçişte 6 Boy Kesim, 30 Kırım ve Çatlamasız Katlama"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dc-618.png" alt="Duplo DC-618">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DC-618, dijital baskı merkezlerinin en popüler çok işlevli sonlandırıcısıdır. Giyotin ve manuel pilyaj makinelerine duyulan ihtiyacı ortadan kaldırarak tek tabakadan kartvizit, menü ve broşürleri otomatik olarak çıkarır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 50 tabakaya kadar üretim kapasitesi.</td></tr><tr><td class="k-col">İşlem Yeteneği</td><td class="v-col">6 boy dilimleme, 30 en kesim, 20 derin pilyaj.</td></tr><tr><td class="k-col">Barkod Okuyucu</td><td class="v-col">Baskı üstündeki barkodu okuyarak bıçakları sıfır bekleme süresiyle otomatik ayarlar.</td></tr><tr><td class="k-col">Maksimum Kağıt Ebadı</td><td class="v-col">370 x 750 mm (1200 mm uzun tabaka opsiyonu).</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DC-648 Yüksek Hızlı Ticari Çok İşlevli Sonlandırıcı -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DC-648 Yüksek Hızlı Ticari Çok İşlevli Sonlandırıcı</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Genişletilmiş Modüler Seçenekler, Döner Kesim ve Kesintisiz Verimlilik"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dc-648.png" alt="Duplo DC-648">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DC-648; yüksek tirajlı ticari dijital matbaalar için tasarlanmış, döner perforasyon, mikro-perforasyon ve bölümlü kırım kasetleri ile donatılabilen gelişmiş sonlandırma çözümüdür.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 40 tabaka (SRA3 üzerinde çoklu kartvizit/menü).</td></tr><tr><td class="k-col">Maksimum Tabaka Ebadı</td><td class="v-col">370 x 1000 mm banner formatı.</td></tr><tr><td class="k-col">Gramaj</td><td class="v-col">110 - 400 gsm arası ağır kuşe ve özel kartonlar.</td></tr><tr><td class="k-col">Atık Ayrıştırma</td><td class="v-col">Çıkan artık kenar şeritlerini otomatik olarak dahili çöp haznesine tahliye eder.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DC-746 Üst Seviye Ağır Hizmet Sonlandırma Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DC-746 Üst Seviye Ağır Hizmet Sonlandırma Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"JDF İş Akışı Uyumlu, Maksimum Otomasyonlu Dijital Sonlandırma Merkezi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dc-746.png" alt="Duplo DC-746">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DC-746, Duplo'nun slitter/cutter/creaser ailesindeki en güçlü endüstriyel modelidir. HP Indigo, Xerox ve Ricoh gibi yüksek hacimli preslerle tam entegre çalışabilir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 50 tabaka (yüksek hassasiyet modunda).</td></tr><tr><td class="k-col">Modüler Kaset Mimarisi</td><td class="v-col">Kartvizit kesici, kupon yırtma perforatörü, katlama kasedi saniyeler içinde takılıp çıkarılabilir.</td></tr><tr><td class="k-col">Otomatik Kompansasyon</td><td class="v-col">CCD kamera ile görüntü kaymalarını x ve y ekseninde anında düzeltir.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DC-20K B2 Cutter Creaser System -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DC-20K B2 Cutter Creaser System</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"B2 Tabakaları Doğrudan Bitmiş Ürüne Dönüştüren Ağır Format Çözüm"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dc-20k-b2.png" alt="Duplo DC-20K B2">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DC-20K, 750 x 530 mm boyutundaki B2 ofset ve dijital tabakaları giyotine sokmadan önce pilyajlar, boyuna dilimler ve DC sonlandırıcıya besleyerek tek geçişte bitmiş ürüne ulaştırır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Besleme Kapasitesi</td><td class="v-col">150 mm istif yüksekliği.</td></tr><tr><td class="k-col">Entegrasyon</td><td class="v-col">DC-746 veya DC-648 ile in-line çalışarak B2 tabakaları küçük parçalara kusursuzca böler.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr><tr><td class="k-col">Finansman Modeli</td><td class="v-col">Lidya Finansman (Leasing, Kiralama, Taksitli Alım)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DC-F100 In-line Katlama Ünitesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DC-F100 In-line Katlama Ünitesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Pilyajlanmış Tabakaları Duraksamadan Katlayan Akıllı Modül"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dc-f100.png" alt="Duplo DC-F100">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DC-F100, DC serisi sonlandırıcılara doğrudan bağlanır. Kesilmiş ve derin pilyaj izi açılmış tabakaları tek geçişte mektup, zikzak (akordiyon) veya tek kırım ile katlayarak teslim tablasına aktarır. # BÖLÜM 3: OTOMATİK KİTAPÇIK YAPMA, TEL DİKİŞ & HARMANLAMA SİSTEMLERİ</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr><tr><td class="k-col">Finansman Modeli</td><td class="v-col">Lidya Finansman (Leasing, Kiralama, Taksitli Alım)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DBM-150 Kompakt Kitapçık Yapma Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DBM-150 Kompakt Kitapçık Yapma Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Dünyanın En Küçük Tam Otomatik Kitapçık Yapma ve Ön Kesim Ünitesi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dbm-150.jpg" alt="Duplo DBM-150">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DBM-150, düşük ve orta hacimli işletmeler, okullar, dernekler ve ofisler için mükemmel bir tak-çalıştır kitapçık yapma çözümüdür.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Kapasite</td><td class="v-col">Saatte 2.400 kitapçık.</td></tr><tr><td class="k-col">Sayfa Kalınlığı</td><td class="v-col">25 tabakaya kadar (100 sayfa kitapçık).</td></tr><tr><td class="k-col">Boyutlar</td><td class="v-col">A3, A4, A5 ve özel boyutlu kitapçıklar.</td></tr><tr><td class="k-col">Otomatik Ayar</td><td class="v-col">Dokunmatik panelden seçilen ebat için dikiş kafaları ve katlama merdaneleri otomatik pozisyon alır.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DBM-350 Orta & Yüksek Hacimli Otomatik Kitapçık Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DBM-350 Orta & Yüksek Hacimli Otomatik Kitapçık Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Yoğun Dijital Baskı Merkezleri İçin Ağır Hizmet Tipi Tel Dikiş ve Kesim"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dbm-350.jpg" alt="Duplo DBM-350">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DBM-350, dijital tabakalardan gelen değişken verili işleri hızla zımbalayan ve ön traşlamasını yaparak pürüzsüz kenarlı kitapçıklar teslim eden sağlam bir üretim hattıdır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Kapasite</td><td class="v-col">Saatte 3.000 kitapçık.</td></tr><tr><td class="k-col">Dikiş Kalınlığı</td><td class="v-col">30 tabakaya kadar (120 sayfa).</td></tr><tr><td class="k-col">Dayanıklı Dikiş Kafaları</td><td class="v-col">Ağır gramajlı kuşe kapakları dahi zahmetsizce delip geçen çelik dikiş mekanizması.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DBM-700 Booklet Making System -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DBM-700 Booklet Making System</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Saatte 5.200 Kitapçık, 50 Tabaka (200 Sayfa) Kalın Dikiş Gücü ve Kare Sırt"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dbm-700.png" alt="Duplo DBM-700">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DBM-700, Duplo'nun amiral gemisi kitapçık yapma hattıdır. Dergiler, yıllıklar, ürün katalogları ve kalın kullanım kılavuzları için endüstri lideri performans sunar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Maksimum Üretim</td><td class="v-col">Saatte 5.200 kitapçık.</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 tabaka (200 sayfa dikiş + katlama).</td></tr><tr><td class="k-col">Kare Sırt Aparatı (Square Spine)</td><td class="v-col">Tel dikişli kitapçıklara Amerikan cilt sırtı görünümü kazandırarak sırt üzerine başlık basılmasına imkan verir.</td></tr><tr><td class="k-col">Maksimum Kağıt Formatı</td><td class="v-col">356 x 650 mm tabaka besleme desteği.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo iSaddle Range (Eyer Tipi Dikiş Sistemi) -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo iSaddle Range (Eyer Tipi Dikiş Sistemi)</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Düz Yataklı A4 Yatay Kitapçık Desteği ve Geleneksel Eyer Tipi Dikiş Hassasiyeti"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_isaddle-range.jpg" alt="Duplo iSaddle Range">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>iSaddle, geleneksel eyer tipi (saddle stitcher) mekaniğini modern dijital otomasyon ile birleştiren benzersiz bir sistemdir. Tabakaları sırtından katlayıp eyer üzerinde tel dikiş atarak kalın kuşe kataloglarda sıfır kavis ve mükemmel düzlük sağlar. # BÖLÜM 4: DİJİTAL KESİM MASALARI & KALIP KESİM SİSTEMLERİ</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">A4 Yatay (Landscape) Kitapçık</td><td class="v-col">Mimari kataloglar ve fotoğraf albümleri için popüler olan A4 yatay formatını tam hızda işler.</td></tr><tr><td class="k-col">Harmanlama Kuleleri Entegrasyonu</td><td class="v-col">DSC-10/60i vakumlu harmanlama kuleleri ile ofset ve dijital tabakaları birlikte besleyebilir.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr><tr><td class="k-col">Finansman Modeli</td><td class="v-col">Lidya Finansman (Leasing, Kiralama, Taksitli Alım)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo PFi Blade B2+ Dijital Düz Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo PFi Blade B2+ Dijital Düz Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"B2 Formatında Kalıpsız, Bıçak Masrafsız Otomatik Dijital Kesim ve Pilyaj"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_pfi-blade-b2.png" alt="Duplo PFi Blade B2+">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>PFi Blade B2+, pahalı kalıp maliyetleri olmadan özel kutular, ambalaj prototipleri, etiketler ve dekota/foreks paneller üretmek isteyen işletmeler için tasarlanmış çok takımlı dijital sonlandırma masasıdır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Çalışma Alanı</td><td class="v-col">800 x 600 mm (B2+ ebadı).</td></tr><tr><td class="k-col">Takım Başlığı</td><td class="v-col">Kesim bıçağı, teğetsel bıçak, pilyaj tekerleği ve çizim kalemi.</td></tr><tr><td class="k-col">CCD Kamera</td><td class="v-col">Baskı kayıt işaretlerini otomatik okuyarak kesim çizgisini baskıyla %100 örtüştürür.</td></tr><tr><td class="k-col">İşlenebilir Malzemeler</td><td class="v-col">Oluklu mukavva, kuşe karton, köpük, PVC, lamine levhalar, kendinden yapışkanlı folyolar (1.5 mm kalınlığa kadar).</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo PFi Blade B3+ Dijital Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo PFi Blade B3+ Dijital Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Kompakt Boyutta Hızlı Prototipleme, Kısa Tiraj Ambalaj ve Etiket Üretimi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_pfi-blade-b3.png" alt="Duplo PFi Blade B3+">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>PFi Blade B3+, küçük ve orta ölçekli matbaalar için B3 formatında (600 x 400 mm) ekonomik, hassas ve tam otomatik vakumlu tabla beslemeli kesim masasıdır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Besleme Kapasitesi</td><td class="v-col">100 mm yüksekliğinde otomatik tabaka yükleme.</td></tr><tr><td class="k-col">Kesim Hızı</td><td class="v-col">1200 mm/saniye maksimum kafa hızı.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr><tr><td class="k-col">Finansman Modeli</td><td class="v-col">Lidya Finansman (Leasing, Kiralama, Taksitli Alım)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo PFi DiCut 310 Döner Manyetik Kalıplı Kesim Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo PFi DiCut 310 Döner Manyetik Kalıplı Kesim Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Saatte 4.000 Tabaka Hızında Döner Kalıp Kesim, Etiket ve Kart Üretimi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_pfi-dicut-310.png" alt="Duplo PFi DiCut 310">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>PFi DiCut 310, esnek manyetik kalıplar kullanarak yüksek hızda şekilli kartvizit, yuvarlak köşeli kartlar, etiketler ve açılır pencereli ambalajlar üreten kompakt döner kesicidir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Saatte 4.000 tabaka.</td></tr><tr><td class="k-col">Format</td><td class="v-col">Maksimum 330 x 500 mm.</td></tr><tr><td class="k-col">Özellik</td><td class="v-col">Kesilen parçaları artık çerçeveden ayıran entegre atık ayıklama ünitesi.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DSM-1000 B2 Die Cutter (Kalıp Kesim Sistemi) -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DSM-1000 B2 Die Cutter (Kalıp Kesim Sistemi)</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"B2 Formatında Yüksek Hassasiyetli Çelik Kurallı Kalıp Kesim ve Kabartma"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_dsm-1000-b2.png" alt="Duplo DSM-1000 B2">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>DSM-1000 B2 Die Cutter; cepli klasörler, lüks ambalaj kutuları ve perakende teşhir ürünleri için geleneksel çelik kalıplarla çalışan endüstriyel kalıp kesim ve gofre kabartma sistemidir. # BÖLÜM 5: PROFESYONEL KAĞIT KATLAMA MAKİNELERİ (FOLDER RANGE)</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Maksimum Tabaka</td><td class="v-col">530 x 750 mm (B2).</td></tr><tr><td class="k-col">Hız</td><td class="v-col">Saatte 2.500 tabaka.</td></tr><tr><td class="k-col">Otomatik İstif</td><td class="v-col">Yüksek kapasiteli paletli besleme ve çıkış tablası.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DF-850 Masaüstü Sürtünmeli Katlama Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DF-850 Masaüstü Sürtünmeli Katlama Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Kullanımı Kolay, Kompakt ve Dakikada 241 Sayfa Katlama Hızı"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_df-850.jpg" alt="Duplo DF-850">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Duplo DF-850 Masaüstü Sürtünmeli Katlama Makinesi, yüksek hızlı endüstriyel üretim hassasiyeti ve düşük işletme maliyeti sunan profesyonel bir üretim sistemidir. Vardiyalı çalışma temposuna uygun rijit şaseye ve en son otomasyon teknolojilerine sahiptir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 241 sayfa (A4 tek kırım).</td></tr><tr><td class="k-col">Kağıt Ebadı</td><td class="v-col">A3'ten A6'ya kadar.</td></tr><tr><td class="k-col">Katlama Çeşitleri</td><td class="v-col">Tek kırım, mektup kırım, akordeon, çift kırım, kapı kırım ve özel kırım.</td></tr><tr><td class="k-col">Özellik</td><td class="v-col">Sessiz çalışma ortamı, fatura ve kurumsal bülten katlamada ideal.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DF-870 Otomatik Ayarlı Katlama Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DF-870 Otomatik Ayarlı Katlama Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Tek Tuşla Otomatik Çanta Ayarı ve Hızlı Ebat Değişimi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_df-870.jpg" alt="Duplo DF-870">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Duplo DF-870 Otomatik Ayarlı Katlama Makinesi, yüksek hızlı endüstriyel üretim hassasiyeti ve düşük işletme maliyeti sunan profesyonel bir üretim sistemidir. Vardiyalı çalışma temposuna uygun rijit şaseye ve en son otomasyon teknolojilerine sahiptir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 241 sayfa.</td></tr><tr><td class="k-col">Otomasyon</td><td class="v-col">Seçilen kağıt boyutu ve katlama tipine göre katlama plakalarını motorlu sistemle otomatik ayarlar.</td></tr><tr><td class="k-col">Hafıza</td><td class="v-col">Sık kullanılan özel katlama tipleri için kullanıcı hafızası.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DF-990 Profesyonel Masaüstü Katlama Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DF-990 Profesyonel Masaüstü Katlama Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Dakikada 260 Tabaka Rekor Hız ve Çift Kağıt Besleme Dedektörü"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_df-990.jpg" alt="Duplo DF-990">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Duplo DF-990 Profesyonel Masaüstü Katlama Makinesi, yüksek hızlı endüstriyel üretim hassasiyeti ve düşük işletme maliyeti sunan profesyonel bir üretim sistemidir. Vardiyalı çalışma temposuna uygun rijit şaseye ve en son otomasyon teknolojilerine sahiptir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hız</td><td class="v-col">Dakikada 260 tabaka ile sınıfının en hızlısı.</td></tr><tr><td class="k-col">Çift Kağıt Sensörü</td><td class="v-col">Statik elektrikli dijital kağıtlarda çift beslemeyi algılayıp sistemi durdurur.</td></tr><tr><td class="k-col">Ses İzolasyonu</td><td class="v-col">Özel kapak yapısı sayesinde açık ofislerde dahi gürültüsüz çalışır.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DF-999 Dokunmatik Ekranlı Katlama Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DF-999 Dokunmatik Ekranlı Katlama Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Renkli Dokunmatik Ekran, Ultrasonik Çift Tabaka Algılama ve Akıllı Katlama"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_df-999.jpg" alt="Duplo DF-999">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>Duplo DF-999 Dokunmatik Ekranlı Katlama Makinesi, yüksek hızlı endüstriyel üretim hassasiyeti ve düşük işletme maliyeti sunan profesyonel bir üretim sistemidir. Vardiyalı çalışma temposuna uygun rijit şaseye ve en son otomasyon teknolojilerine sahiptir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Dokunmatik Ekran</td><td class="v-col">Kullanıcı dostu grafik renkli LCD arayüz.</td></tr><tr><td class="k-col">Ultrasonik Sensör</td><td class="v-col">Farklı gramaj ve renkteki kağıtlarda şaşmayan ultrasonik kalınlık kontrolü.</td></tr><tr><td class="k-col">Kapasite</td><td class="v-col">500 tabakalık derin besleme tepsisi.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo DF-1300L Uzun Tabaka Hava Emişli Katlama Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo DF-1300L Uzun Tabaka Hava Emişli Katlama Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"648 mm Uzun Tabaka Desteği ve Kuşe Kağıtlar İçin Çiziksiz Vakumlu Besleme"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_df-1300l.png" alt="Duplo DF-1300L">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p># BÖLÜM 6: AMERİKAN CİLT KAPAK TAKMA SİSTEMLERİ</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Hava Emişli (Vakumlu) Besleme</td><td class="v-col">Sürtünmeli tekerleklerin kuşe kağıtlarda bıraktığı toner çiziklerini tamamen engeller.</td></tr><tr><td class="k-col">Uzun Tabaka Desteği</td><td class="v-col">311 x 648 mm ebadına kadar uzun 6 sayfalık (6-panel) A4 akordiyon broşürleri tek seferde katlar.</td></tr><tr><td class="k-col">Hız</td><td class="v-col">Dakikada 310 tabakaya kadar yüksek debi.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr><tr><td class="k-col">Teknik Destek Hattı</td><td class="v-col">0542 352 72 99 (7/24 Kesintisiz Çağrı Merkezi)</td></tr><tr><td class="k-col">Sarf & Yedek Parça</td><td class="v-col">Lidya Grup Yerel Depolarından 24 Saatte Hızlı Sevk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: Duplo PFi BIND 2100 PUR Otomatik Amerikan Ciltleme Makinesi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">Duplo PFi BIND 2100 PUR Otomatik Amerikan Ciltleme Makinesi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Patentli Orbital PUR Sistemi İle Sıfır Temizlik ve Kopmaz Cilt Gücü"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/duplo_pfi-bind-2100-pur.png" alt="Duplo PFi BIND 2100 PUR">
+        <div class="stamp-badge">DUPLO ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>PFi BIND 2100 PUR; zorlu dijital tonerli, laklı veya sentetik kağıtları ömür boyu kopmayacak şekilde yapıştıran dünyanın en kullanıcı dostu kompakt PUR ciltleme makinesidir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Patentli Orbital PUR Nozül Sistemi</td><td class="v-col">Açık tutkal haznesi yerine kapalı tüp sistemi kullanır. Her gün saatlerce temizlik yapma zorunluluğunu ortadan kaldırır.</td></tr><tr><td class="k-col">Hız</td><td class="v-col">Saatte 290 kitaba varan üretim kapasitesi.</td></tr><tr><td class="k-col">Kitap Kalınlığı</td><td class="v-col">1 mm'den 40 mm'ye kadar (10 sayfadan 800 sayfaya kadar).</td></tr><tr><td class="k-col">Otomatik Kapak Takma</td><td class="v-col">Kapak beslemesini otomatik yapar, sırt pilyajlarını kitap kalınlığına göre anında kendisi ayarlar.</td></tr><tr><td class="k-col">Uygulamalar</td><td class="v-col">Fotoğraf kitapları, yıllıklar, üniversite tezleri, kurumsal raporlar, lüks edebi yayınlar.</td></tr><tr><td class="k-col">Distribütör Güvencesi</td><td class="v-col">Lidya Grup Bilişim Sistemleri San. ve Tic. A.Ş.</td></tr><tr><td class="k-col">Garanti Kapsamı</td><td class="v-col">1 Yıl Resmi Fabrika Garantisi & Parça Güvencesi</td></tr><tr><td class="k-col">Kurulum & Eğitim</td><td class="v-col">Sertifikalı Uzman Mühendislerce Ücretsiz Anahtar Teslim</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- CORPORATE SUMMARY & WARRANTY CLOSING PAGE -->
+    <div class="summary-page">
+      <div class="sheet-header-line" style="border-bottom:2px solid #d71920; padding-bottom:2mm; margin-bottom:3mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/duplo.svg" alt="Duplo Logo" style="height:26px; max-width:115px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden;">
+        <h2 style="font-size:1.25rem; font-weight:800; color:var(--lidya-navy); margin-bottom:0.8rem; border-left:4px solid var(--lidya-red); padding-left:8px;">
+          🏢 Lidya Grup Satış Sonrası ve Teknik Hizmet Güvencesi
+        </h2>
+        <div style="font-size:0.75rem; line-height:1.45; color:#334155;">
+          <ul style="list-style:disc;margin-left:1.2rem;margin-bottom:0.8rem;"><li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Türkiye Distribütörü:</strong> Lidya Grup teknik ekibi tarafından kurulum, operatör eğitimi ve kalibrasyon.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Yedek Parça ve Sarf Deposu:</strong> Orijinal PUR tutkallar, lak vernikleri, kesim bıçakları ve yedek kasetler Türkiye stoklarından temin edilir.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>İletişim:</strong> 0542 352 72 99 | yasin.albostanli@lidyagrup.com.tr</li></ul>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line" style="margin-top:auto;">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-GARANTİ</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

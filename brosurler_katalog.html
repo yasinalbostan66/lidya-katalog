@@ -1,0 +1,3602 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lidya Grup | Dijital Baskı ve Sonlandırma Makineleri Ürün Kataloğu &amp; Broşürleri</title>
+<style>
+    :root {
+      --primary: #0b2545;
+      --primary-dark: #051427;
+      --accent: #0077b6;
+      --accent-light: #00b4d8;
+      --gold: #d97706;
+      --gold-light: #f59e0b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    .brand-logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .lidya-official-logo {
+      height: 60px;
+      width: auto;
+      border-radius: 4px;
+      display: block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .lidya-official-logo:hover {
+      transform: scale(1.04);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+    }
+
+    .brand-info-text {
+      border-left: 2px solid rgba(255, 255, 255, 0.2);
+      padding-left: 1.25rem;
+    }
+
+    .brand-info-text h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: white;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .brand-info-text p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: white;
+    }
+    .btn-primary:hover {
+      background-color: var(--accent-light);
+      color: var(--primary-dark);
+    }
+
+    .btn-gold {
+      background-color: var(--gold-light);
+      color: var(--primary-dark);
+    }
+    .btn-gold:hover {
+      background-color: #fbbf24;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: white;
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* Search & Filter Bar */
+    .controls-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.65rem 1rem 0.65rem 2.6rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .search-box input::placeholder {
+      color: #94a3b8;
+    }
+
+    .search-box input:focus {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: var(--accent-light);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      pointer-events: none;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+    }
+
+    .tab-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+    }
+
+    .tab-btn.active {
+      background: var(--accent-light);
+      color: var(--primary-dark);
+      box-shadow: 0 2px 8px rgba(0, 180, 216, 0.4);
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1280px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Info Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      color: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-text h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text p {
+      color: #cbd5e1;
+      max-width: 750px;
+      font-size: 0.95rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      border-left: 2px solid rgba(255, 255, 255, 0.15);
+      padding-left: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--accent-light);
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Category Section Headers */
+    .category-header {
+      margin: 2.5rem 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    .category-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .category-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Product Cards Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+      border-color: #cbd5e1;
+    }
+
+    .card-top {
+      margin-bottom: 1rem;
+    }
+
+    .card-media {
+      width: 100%;
+      height: 220px;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .card-media img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .card-media img {
+      transform: scale(1.04);
+    }
+
+    .brand-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-xerox { background: #fee2e2; color: #b91c1c; }
+    .tag-efi { background: #fef3c7; color: #b45309; }
+    .tag-keundo { background: #e0e7ff; color: #4338ca; }
+    .tag-flora { background: #dcfce7; color: #15803d; }
+    .tag-duplo { background: #f3e8ff; color: #7e22ce; }
+    .tag-epson { background: #e0f2fe; color: #0284c7; }
+    .tag-sutec { background: #ffedd5; color: #c2410c; }
+    .tag-jwei { background: #d1fae5; color: #047857; }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+
+    .card-subtitle {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    /* Specs Highlights Pills */
+    .specs-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .spec-pill {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .spec-pill strong {
+      color: var(--primary);
+    }
+
+    /* Key Features List */
+    .features-list {
+      list-style: none;
+      margin-bottom: 1.25rem;
+    }
+
+    .features-list li {
+      font-size: 0.86rem;
+      color: #475569;
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.25rem;
+      line-height: 1.45;
+    }
+
+    .features-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    /* Mini Spec Table */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.25rem;
+      font-size: 0.8rem;
+    }
+
+    .spec-table tr {
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .spec-table td {
+      padding: 0.45rem 0.2rem;
+    }
+
+    .spec-table td:first-child {
+      font-weight: 600;
+      color: #475569;
+      width: 40%;
+    }
+
+    .spec-table td:last-child {
+      color: #0f172a;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* Application Tags */
+    .app-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .app-tag {
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Comparison Table Section */
+    .comparison-section {
+      margin-top: 4rem;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .comparison-section h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .comparison-section p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .guide-table th {
+      background: #f1f5f9;
+      color: var(--primary);
+      text-align: left;
+      padding: 0.85rem 1rem;
+      font-weight: 700;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .guide-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #334155;
+    }
+
+    .guide-table tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-dark);
+      color: white;
+      padding: 3rem 1.5rem 2rem;
+      margin-top: 4rem;
+      border-top: 4px solid var(--accent);
+    }
+
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-col h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--accent-light);
+    }
+
+    .footer-col p, .footer-col li {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    /* PRINT STYLES FOR HIGH-RESOLUTION PDF OUTPUT */
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+
+      header, .hero-banner, .search-box, .nav-tabs, .header-actions, footer, .no-print {
+        display: none !important;
+      }
+
+      main {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .print-cover {
+        display: block !important;
+        page-break-after: always;
+        text-align: center;
+        padding: 120px 20px 0;
+      }
+
+      .print-cover h1 {
+        font-size: 32pt;
+        color: #0b2545;
+        margin-bottom: 15px;
+      }
+
+      .print-cover h2 {
+        font-size: 18pt;
+        color: #0077b6;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+
+      .print-cover p {
+        font-size: 12pt;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      .category-header {
+        page-break-before: always;
+        margin-top: 20px;
+      }
+
+      .products-grid {
+        display: block !important;
+      }
+
+      .product-card {
+        page-break-inside: avoid;
+        margin-bottom: 25px !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+      }
+
+      .comparison-section {
+        page-break-before: always;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+
+    .print-cover {
+      display: none;
+    }
+  
+    .product-card {
+      cursor: pointer;
+      position: relative;
+    }
+    .product-card:hover {
+      border-color: #d71920 !important;
+      box-shadow: 0 10px 25px rgba(215, 25, 32, 0.12), 0 2px 8px rgba(0,0,0,0.06) !important;
+    }
+    .card-a4-bar {
+      margin-top: 0.9rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .a4-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #0f172a;
+      color: #ffffff !important;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .product-card:hover .a4-link-btn {
+      background: var(--accent);
+      transform: scale(1.03);
+    }
+    .card-badge-a4 {
+      font-size: 0.7rem;
+      color: #64748b;
+      font-weight: 600;
+    }
+</style>
+</head>
+<body>
+<!-- PRINT ONLY COVER PAGE -->
+<div class="print-cover">
+<div style="margin-bottom: 25px;">
+<!-- Lidya Grup Official Logo -->
+<img alt="Lidya Grup Logo" src="lidya_grup_logo.png" style="height: 160px; width: auto; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);"/>
+</div>
+<div style="font-size: 16px; color: #d71920; font-weight: 800; text-transform: uppercase; letter-spacing: 2.5px; margin-top: 15px;">Resmi Dijital Baskı &amp; Sonlandırma Sistemleri Kataloğu</div>
+<hr style="width: 140px; height: 4px; background: #d71920; border: none; margin: 25px auto;"/>
+<h1>DİJİTAL BASKI MAKİNELERİ VE SİSTEMLERİ ÜRÜN BROŞÜRÜ</h1>
+<h2>Xerox • EFI • Keundo • Flora • Duplo • Epson • Sutec</h2>
+<div style="margin-top: 50px; padding: 25px 35px; border: 1px solid #cbd5e1; border-radius: 12px; display: inline-block; text-align: left; background: #f8fafc;">
+<p><strong>Genel Merkez:</strong> Şerifali Mahallesi, Şehit Sokak No: 6 Ümraniye / İSTANBUL</p>
+<p><strong>Çağrı Merkezi:</strong> 0542 352 72 99</p>
+<p><strong>E-Posta:</strong> yasin.albostanli@lidyagrup.com.tr</p>
+<p><strong>Web:</strong> https://www.lidyagrup.com.tr</p>
+</div>
+</div>
+<!-- Header -->
+<header>
+<div class="header-container">
+<div class="header-top">
+<div class="brand-logo-title">
+<!-- Lidya Grup Official Logo -->
+<a href="https://www.lidyagrup.com.tr" style="text-decoration: none; display: flex; align-items: center;" target="_blank" title="Lidya Grup Resmi Web Sitesi">
+<img alt="Lidya Grup Logo" class="lidya-official-logo" src="lidya_grup_logo.png"/>
+</a>
+<div class="brand-info-text">
+<h1>LİDYA GRUP <span style="color: var(--accent-light);">ÜRÜN BROŞÜRLERİ</span></h1>
+<p>Türkiye'nin Lider Dijital Baskı ve Sonlandırma Sistemleri Distribütörü</p>
+</div>
+</div>
+<div class="header-actions">
+<button class="btn btn-gold" onclick="window.print()">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2m-4 0H8v4h8v-4z"></path></svg>
+            PDF Olarak Yazdır / Kaydet
+          </button>
+<a class="btn btn-outline" href="https://www.lidyagrup.com.tr" target="_blank">
+            lidyagrup.com.tr ↗
+          </a>
+</div>
+</div>
+<div class="controls-row">
+<div class="search-box">
+<span class="search-icon">🔍</span>
+<input id="machineSearch" onkeyup="filterMachines()" placeholder="Model, teknoloji veya marka ara (Örn: Versant, Flatbed, DuSense, DTF, 120 sayfa)..." type="text"/>
+</div>
+<div class="nav-tabs">
+<button class="tab-btn active" onclick="filterCategory('all', this)">Tümü (Tüm Portföy)</button>
+<button class="tab-btn" data-cat-btn="xerox" onclick="filterCategory('xerox', this)">Xerox</button>
+<button class="tab-btn" data-cat-btn="efi" onclick="filterCategory('efi', this)">EFI</button>
+<button class="tab-btn" data-cat-btn="keundo" onclick="filterCategory('keundo', this)">Keundo</button>
+<button class="tab-btn" data-cat-btn="flora" onclick="filterCategory('flora', this)">Flora</button>
+<button class="tab-btn" data-cat-btn="duplo" onclick="filterCategory('duplo', this)">Duplo</button>
+<button class="tab-btn" data-cat-btn="epson" onclick="filterCategory('epson', this)">Epson</button>
+<button class="tab-btn" data-cat-btn="sutec" onclick="filterCategory('sutec', this)">Sutec</button>
+<button class="tab-btn" data-cat-btn="jwei" onclick="filterCategory('jwei', this)">JWEI</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Hero Banner -->
+<div class="hero-banner no-print">
+<div class="hero-text">
+<h2>Dünya Markaları Lidya Grup Güvencesiyle Yanınızda</h2>
+<p>Lidya Grup ürünler sayfasında yer alan en güncel dijital üretim presleri, endüstriyel flatbed ve hibrit UV sistemleri, oluklu mukavva ambalaj makineleri, baskı sonrası otomatik kırım/lak üniteleri ve tekstil çözümlerinin detaylı teknik broşürlerini aşağıda inceleyebilirsiniz.</p>
+</div>
+<div class="hero-stats">
+<div class="stat-item">
+<div class="stat-num">7+</div>
+<div class="stat-label">Global Marka</div>
+</div>
+<div class="stat-item">
+<div class="stat-num">30+</div>
+<div class="stat-label">Uzman Model</div>
+</div>
+<div class="stat-item">
+<div class="stat-num">7/24</div>
+<div class="stat-label">Teknik Servis</div>
+</div>
+</div>
+</div>
+<!-- Authorized Brand Partners Ribbon -->
+<div class="partners-ribbon no-print" style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.15rem 1.75rem; margin-bottom: 2.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+<div style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;">
+<span style="color: var(--accent);">★</span> Lidya Grup Yetkili Distribütörlükleri:
+      </div>
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+<button onclick="filterCategory('xerox')" style="cursor: pointer; background: #fee2e2; border: 1px solid #f87171; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #b91c1c;">XEROX</button>
+<button onclick="filterCategory('efi')" style="cursor: pointer; background: #fef3c7; border: 1px solid #fbbf24; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #b45309;">EFI</button>
+<button onclick="filterCategory('keundo')" style="cursor: pointer; background: #e0e7ff; border: 1px solid #818cf8; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #4338ca;">KEUNDO (17)</button>
+<button onclick="filterCategory('flora')" style="cursor: pointer; background: #dcfce7; border: 1px solid #4ade80; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #15803d;">FLORA (7)</button>
+<button onclick="filterCategory('duplo')" style="cursor: pointer; background: #f3e8ff; border: 1px solid #c084fc; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #7e22ce;">DUPLO (21)</button>
+<button onclick="filterCategory('epson')" style="cursor: pointer; background: #e0f2fe; border: 1px solid #38bdf8; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #0284c7;">EPSON</button>
+<button onclick="filterCategory('sutec')" style="cursor: pointer; background: #ffedd5; border: 1px solid #fb923c; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #c2410c;">SUTEC</button>
+<button onclick="filterCategory('jwei')" style="cursor: pointer; background: #d1fae5; border: 1px solid #34d399; padding: 4px 12px; border-radius: 6px; font-size: 0.95rem; font-weight: 800; color: #047857; box-shadow: 0 0 0 2px rgba(16,185,129,0.3);">JWEI (15)</button>
+</div>
+</div>
+<!-- SECTION 1: XEROX -->
+<div class="category-block" data-category="xerox" id="xerox">
+<div class="category-header">
+<div class="category-title">
+<span>Xerox Dijital Üretim &amp; Ofis Baskı Sistemleri</span>
+</div>
+<span class="category-badge">Tabaka Dijital Pres</span>
+</div>
+<div class="products-grid">
+
+      <!-- Xerox Iridesse Production Press -->
+      <div class="product-card" data-keywords="xerox iridesse 6 renk altin gumus metalik flx beyaz vernik pembe 120 sayfa banner" onclick="openA4Brochure('xerox-iridesse-production-press', event)" title="Xerox Iridesse™ Production Press - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox Production</span>
+          <div class="card-media">
+            <img src="images/xerox_iridesse.avif" alt="Xerox Iridesse™ Production Press">
+          </div>
+          <h3 class="card-title">Xerox Iridesse™ Production Press</h3>
+          <p class="card-subtitle">Tek Geçişte 6 Renk Color FLX Teknolojisi ve Metalik Parlaklık</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>120 sayfa/dk</strong> Hız</span>
+            <span class="spec-pill">🎨 <strong>6 Renk</strong> Color FLX</span>
+            <span class="spec-pill">📐 <strong>330x1200 mm</strong> XLS</span>
+            <span class="spec-pill">📄 <strong>52-400 gsm</strong> Sabit</span>
+          </div>
+          <ul class="features-list">
+            <li>CMYK katmanının altına veya üstüne tek geçişte Altın, Gümüş, Beyaz, Şeffaf ve Floresan Pembe uygulayabilme.</li>
+            <li>52 ila 400 g/m² arasındaki tüm kağıtlarda ve otomatik çift taraflı modda 120 ppm tam hızda kesintisiz üretim.</li>
+            <li>Full Width Array (FWA) spektrofotometre ile dakikalar içinde otomatik kalibrasyon ve profil oluşturma.</li>
+            <li>Ultra HD 2400 x 2400 dpi VCSEL ROS baskı ve 1200 x 1200 x 10-bit RIP renderleme hassasiyeti.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>120 sayfa/dk (A4), 60 sayfa/dk (A3/SRA3)</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi Ultra HD / 10-bit RIP</td></tr>
+            <tr><td>Özel Renkler</td><td>Gold, Silver, White, Clear, Fluorescent Pink</td></tr>
+            <tr><td>Medya Gramajı</td><td>52 - 400 g/m² (Otomatik Çift Taraflı)</td></tr>
+            <tr><td>Maks. Ebat</td><td>330 x 1200 mm XLS Ekstra Uzun Tabaka</td></tr>
+            <tr><td>Aylık Hacim</td><td>475.000 sayfa / ay (Tepe: 2.25M)</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Lüks Ambalaj</span>
+          <span class="app-tag">Metalik Davetiye</span>
+          <span class="app-tag">Prestij Katalog</span>
+          <span class="app-tag">Kitap Kapağı</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-iridesse-production-press" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox iGen 5 Press -->
+      <div class="product-card" data-keywords="xerox igen 5 press endustriyel renkli 150 sayfa 5 renk turuncu yesil mavi beyaz floresan 1 milyon" onclick="openA4Brochure('xerox-igen-5-press', event)" title="Xerox iGen® 5 Press - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox Production</span>
+          <div class="card-media">
+            <img src="images/xerox_igen5.avif" alt="Xerox iGen® 5 Press">
+          </div>
+          <h3 class="card-title">Xerox iGen® 5 Press</h3>
+          <p class="card-subtitle">150 ppm Hız, 5. Renk İstasyonu ve 1 Milyon Sayfa/Ay Endüstriyel Platform</p>
+          <div class="specs-pills">
+            <span class="spec-pill">🚀 <strong>150 sayfa/dk</strong> Hız</span>
+            <span class="spec-pill">🎨 <strong>5. Renk</strong> İstasyonu</span>
+            <span class="spec-pill">📐 <strong>364x889 mm</strong> XLS</span>
+            <span class="spec-pill">🏭 <strong>1M Sayfa/Ay</strong> Hacim</span>
+          </div>
+          <ul class="features-list">
+            <li>150 ppm'e varan yüksek endüstriyel üretim hızı ve 1 milyon sayfa/ay kesintisiz aylık görev döngüsü.</li>
+            <li>5. Renk İstasyonu: Marka renkleri ve özel efektler için Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı.</li>
+            <li>364 x 889 mm ekstra uzun tabaka (XLS) ile lüks ambalaj kutuları ve çok panelli broşür üretimi.</li>
+            <li>FreeFlow Print Server ve HyperRIP paralel işleme mimarisi ile sıfır bekleme süreli üretim.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>150 sayfa / dakika (A4)</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi (Object-based Halftoning)</td></tr>
+            <tr><td>Renk Gamutu</td><td>CMYK + 5. Renk (Turuncu, Yeşil, Mavi, Beyaz, Şeffaf, Fluo Sarı)</td></tr>
+            <tr><td>Medya Gramajı</td><td>60 - 350 g/m² kuşe ve karton</td></tr>
+            <tr><td>Maks. Ebat</td><td>364 x 889 mm XLS Tabaka</td></tr>
+            <tr><td>Kağıt Kapasitesi</td><td>30.000 standart, 80.000 maksimum</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Endüstriyel Ambalaj</span>
+          <span class="app-tag">Yüksek Tiraj Katalog</span>
+          <span class="app-tag">PANTONE Renkleri</span>
+          <span class="app-tag">Doğrudan Pazarlama</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-igen-5-press" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox Versant 4100 Press -->
+      <div class="product-card" data-keywords="xerox versant 4100 press fwa otomasyon 100 sayfa 400 gsm vscel ea toner" onclick="openA4Brochure('xerox-versant-4100-press', event)" title="Xerox Versant® 4100 Press - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox Production</span>
+          <div class="card-media">
+            <img src="images/xerox_versant.png" alt="Xerox Versant® 4100 Press">
+          </div>
+          <h3 class="card-title">Xerox Versant® 4100 Press</h3>
+          <p class="card-subtitle">Akıllı Otomasyon, Ağır Gramaj Gücü ve 100 ppm Kusursuz Renkler</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>100 sayfa/dk</strong> Hız</span>
+            <span class="spec-pill">🎯 <strong>FWA</strong> Otomasyon</span>
+            <span class="spec-pill">📄 <strong>52-400 gsm</strong> Sabit</span>
+            <span class="spec-pill">🔍 <strong>2400 dpi</strong> Ultra HD</span>
+          </div>
+          <ul class="features-list">
+            <li>52 ila 400 g/m² arasındaki kuşe ve dokulu kağıtlarda hız düşürmeden 100 ppm kesintisiz üretim.</li>
+            <li>Full Width Array (FWA) ile otomatik ön-arka çakışma, spektrofotometrik renk profili ve homojenlik kontrolü.</li>
+            <li>330 x 1200 mm banner desteği ve 7.000 yapraklık XLS vakumlu besleyici seçeneği.</li>
+            <li>Düşük eriyikli EA Kuru Mürekkep ile ofset parlaklığı ve mat yüzey kontrolü.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>100 sayfa/dk (A4), 52 sayfa/dk (A3)</td></tr>
+            <tr><td>Gramaj Aralığı</td><td>52 - 400 g/m² (Otomatik Çift Taraflı 400 gsm)</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi VCSEL ROS / 10-bit</td></tr>
+            <tr><td>Maks. Ebat</td><td>330 x 1200 mm XLS Banner Desteği</td></tr>
+            <tr><td>Otomasyon</td><td>Full Width Array (FWA) Spektrofotometre</td></tr>
+            <tr><td>Önerilen Hacim</td><td>350.000 sayfa/ay (Tepe: 1.8M)</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Ticari Matbaa</span>
+          <span class="app-tag">Broşür & El İlanı</span>
+          <span class="app-tag">Kuşe & Dokulu Kağıt</span>
+          <span class="app-tag">Kişiselleştirilmiş Baskı</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-versant-4100-press" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox Proficio PX500 -->
+      <div class="product-card" data-keywords="xerox proficio px500 100 sayfa predictprint ai 5 renk floresan clear 400 gsm 1300 mm" onclick="openA4Brochure('xerox-px500', event)" title="Xerox Proficio™ PX500 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox Production</span>
+          <div class="card-media">
+            <img src="images/xerox_px500.webp" alt="Xerox Proficio™ PX500">
+          </div>
+          <h3 class="card-title">Xerox Proficio™ PX500</h3>
+          <p class="card-subtitle">100 ppm Hız, 5. Renk İstasyonu ve Gelişmiş PredictPrint Otomasyonu</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>100 sayfa/dk</strong> Hız</span>
+            <span class="spec-pill">🎨 <strong>5. Renk</strong> İstasyonu</span>
+            <span class="spec-pill">🤖 <strong>PredictPrint</strong> AI</span>
+            <span class="spec-pill">📐 <strong>330x1300 mm</strong> XLS</span>
+          </div>
+          <ul class="features-list">
+            <li>Tüm onaylı medya türlerinde (52-400 gsm) hız kaybı yaşamadan 100 ppm kesintisiz üretim gücü.</li>
+            <li>5. Renk İstasyonu: Floresan Pembe, Clear şeffaf vernik ve Low Gloss Clear özel efektleri.</li>
+            <li>PredictPrint Media Manager yapay zekası ile barkod okutarak saniyeler içinde mükemmel makine ayarı.</li>
+            <li>Full Width Array ve Quality Control Module ile kapalı devre gerçek zamanlı renk doğruluğu.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>100 sayfa / dakika (Tüm gramajlarda sabit)</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi LED Imaging / 10-bit RIP</td></tr>
+            <tr><td>5. Renk Desteği</td><td>Floresan Pembe, Clear Vernik, Low Gloss</td></tr>
+            <tr><td>Gramaj Aralığı</td><td>52 - 400 gsm (Otomatik Çift Taraflı 400 gsm)</td></tr>
+            <tr><td>Maks. Afiş Ebadı</td><td>330 x 1300 mm ekstra uzun banner</td></tr>
+            <tr><td>Kağıt Kapasitesi</td><td>5.900 yaprak standart, 9.900 azami</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">5. Renk Özel Efekt</span>
+          <span class="app-tag">Ticari Dijital Pres</span>
+          <span class="app-tag">Uzun Afiş & Banner</span>
+          <span class="app-tag">Sentetik Medya</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-px500" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox Proficio PX300 -->
+      <div class="product-card" data-keywords="xerox proficio px300 85 sayfa tarayici 200 ipm 5 renk floresan clear siqa kompakt" onclick="openA4Brochure('xerox-px300', event)" title="Xerox Proficio™ PX300 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox Production</span>
+          <div class="card-media">
+            <img src="images/xerox_px300.webp" alt="Xerox Proficio™ PX300">
+          </div>
+          <h3 class="card-title">Xerox Proficio™ PX300</h3>
+          <p class="card-subtitle">85 ppm Hız, 5. Renk Desteği, Dahili 200 ipm Tarayıcı ve Kompakt Üretim</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>85 sayfa/dk</strong> Hız</span>
+            <span class="spec-pill">📄 <strong>200 ipm</strong> Tarayıcı</span>
+            <span class="spec-pill">🎨 <strong>5. Renk</strong> Desteği</span>
+            <span class="spec-pill">📐 <strong>330x1300 mm</strong> XLS</span>
+          </div>
+          <ul class="features-list">
+            <li>85 ppm üretim hızı ve 750.000 sayfa/ay görev döngüsü ile yüksek kompakt verimlilik.</li>
+            <li>Entegre 200 ipm tek geçişli çift taraflı yüksek hızlı renkli tarayıcı ve fotokopi merkezi.</li>
+            <li>İsteğe bağlı 5. Renk İstasyonu: Floresan Pembe, Clear ve Low Gloss Clear vernik efektleri.</li>
+            <li>52 - 400 gsm kağıt desteği, otomatik çift taraflı 350 gsm ve 330 x 1300 mm banner.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>85 sayfa / dakika (A4)</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi LED Imaging / 10-bit RIP</td></tr>
+            <tr><td>Tarayıcı Hızı</td><td>200 ipm tek geçişli çift taraflı renkli tarama</td></tr>
+            <tr><td>5. Renk Desteği</td><td>Floresan Pembe, Clear Vernik, Low Gloss</td></tr>
+            <tr><td>Gramaj Aralığı</td><td>52 - 400 gsm (Dubleks 350 gsm)</td></tr>
+            <tr><td>Maks. Tabaka</td><td>330 x 1300 mm ekstra uzun banner</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Kompakt Dijital Pres</span>
+          <span class="app-tag">Dahili Doküman Tarama</span>
+          <span class="app-tag">Kurumsal Raporlar</span>
+          <span class="app-tag">5. Renk Katma Değer</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-px300" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox PrimeLink C9200 Serisi -->
+      <div class="product-card" data-keywords="xerox primelink c9200 c9265 c9275 c9281 renkli cok islevli 270 ipm tarayici afis 1300 mm" onclick="openA4Brochure('xerox-primelink-c9200-serisi', event)" title="Xerox PrimeLink® C9200 Serisi - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox PrimeLink</span>
+          <div class="card-media">
+            <img src="images/xerox_primelink_c9200.avif" alt="Xerox PrimeLink® C9200 Serisi">
+          </div>
+          <h3 class="card-title">Xerox PrimeLink® C9200 Serisi</h3>
+          <p class="card-subtitle">65 - 81 ppm Hız, 330 x 1300 mm Afiş Desteği ve 270 ipm Yüksek Hızlı Tarayıcı</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>65-81 sayfa/dk</strong></span>
+            <span class="spec-pill">📄 <strong>270 ipm</strong> Tarayıcı</span>
+            <span class="spec-pill">📐 <strong>330x1300 mm</strong> Afiş</span>
+            <span class="spec-pill">🎨 <strong>CMYK Plus</strong> Desteği</span>
+          </div>
+          <ul class="features-list">
+            <li>Model seçenekleri: C9265 (65 ppm), C9275 (75 ppm) ve C9281 (81 sayfa/dk renkli ve mono).</li>
+            <li>Tek geçişli çift taraflı 270 ipm ultra hızlı renkli tarayıcı ve güvenli kurumsal doküman yönetimi.</li>
+            <li>330 x 1300 mm (13 x 51 inç) ekstra uzun afiş ve 350 g/m² otomatik çift taraflı baskı.</li>
+            <li>Xerox Adaptive CMYK Plus yükseltme kiti ile Altın, Gümüş, Beyaz, Şeffaf ve Floresan toner kullanımı.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı</td><td>65 / 75 / 81 sayfa/dk (Renkli & S/B)</td></tr>
+            <tr><td>Tarayıcı Hızı</td><td>270 ipm çift taraflı tek geçişli tarama</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi Ultra HD</td></tr>
+            <tr><td>Medya Gramajı</td><td>52 - 400 g/m² (Otomatik Çift Taraflı 350 g/m²)</td></tr>
+            <tr><td>Maks. Afiş Ebadı</td><td>330 x 1300 mm (220 g/m² afiş desteği)</td></tr>
+            <tr><td>Özel Efektler</td><td>Adaptive CMYK Plus Kiti (Altın/Gümüş/Beyaz/Şeffaf)</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Kurumsal Baskı Merkezi</span>
+          <span class="app-tag">Eğitim & Sınav Kitapçıkları</span>
+          <span class="app-tag">Afiş & Banner</span>
+          <span class="app-tag">Renkli Broşür</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-primelink-c9200-serisi" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Xerox PrimeLink B9100 Series -->
+      <div class="product-card" data-keywords="xerox primelink b9100 b9110 b9125 b9136 siyah beyaz mono 136 sayfa kitap fatura 3 milyon" onclick="openA4Brochure('xerox-primelink-b9100-series', event)" title="Xerox PrimeLink® B9100 Series - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+        <div class="card-top">
+          <span class="brand-tag tag-xerox">Xerox PrimeLink</span>
+          <div class="card-media">
+            <img src="images/xerox_primelink_b9100.avif" alt="Xerox PrimeLink® B9100 Series">
+          </div>
+          <h3 class="card-title">Xerox PrimeLink® B9100 Series</h3>
+          <p class="card-subtitle">100 - 136 ppm S/B Hız, 3 Milyon Sayfa Görev Döngüsü ve Endüstriyel Güvenlik</p>
+          <div class="specs-pills">
+            <span class="spec-pill">⚡ <strong>100-136 sayfa/dk</strong></span>
+            <span class="spec-pill">📄 <strong>3M Sayfa/Ay</strong> Hacim</span>
+            <span class="spec-pill">🔍 <strong>2400 dpi</strong> Mikro Netlik</span>
+            <span class="spec-pill">🛡️ <strong>Kurumsal</strong> Güvenlik</span>
+          </div>
+          <ul class="features-list">
+            <li>Model seçenekleri: B9100 (100 ppm), B9110 (110 ppm), B9125 (125 ppm) ve B9136 (136 sayfa/dk).</li>
+            <li>Aylık 3 milyon sayfa görev döngüsü ve 700.000 sayfaya varan önerilen aylık üretim kapasitesi.</li>
+            <li>270 ipm tek geçişli çift taraflı yüksek hızlı renkli/mono tarayıcı ve 250 yapraklık ADF.</li>
+            <li>Plockmatic Pro kitapçık yapıcı, GBC eWire tel ciltleme ve Tape Binder inline ciltleme modülleri.</li>
+          </ul>
+          <table class="spec-table">
+            <tr><td>Baskı Hızı (A4)</td><td>100 / 110 / 125 / 136 sayfa/dakika</td></tr>
+            <tr><td>Baskı Hızı (A3)</td><td>50 / 55 / 62 / 68 sayfa/dakika</td></tr>
+            <tr><td>Çözünürlük</td><td>2400 x 2400 dpi (106 lpi - 200 lpi tram)</td></tr>
+            <tr><td>Tarayıcı Hızı</td><td>270 ipm çift taraflı tek geçişli (600 x 600 dpi)</td></tr>
+            <tr><td>Medya Gramajı</td><td>60 - 350 g/m²</td></tr>
+            <tr><td>Maks. Tabaka</td><td>330 x 660 mm ekstra uzun tabaka</td></tr>
+          </table>
+        </div>
+        <div class="app-tags">
+          <span class="app-tag">Kitap & Yayıncılık</span>
+          <span class="app-tag">Fatura & Ekstre</span>
+          <span class="app-tag">Milli Eğitim & Sınav</span>
+          <span class="app-tag">Yüksek Hacimli Mono</span>
+        </div>
+        <div class="card-a4-bar">
+          <span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+          <a href="a4_brosur.html?model=xerox-primelink-b9100-series" target="_blank" class="a4-link-btn" onclick="event.stopPropagation()">
+            A4 Broşürü Aç ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+</div>
+<!-- SECTION 2: EFI -->
+<div class="category-block" data-category="efi" id="efi">
+<div class="category-header">
+<div class="category-title">
+<span>EFI Endüstriyel Baskı &amp; Oluklu Mukavva Ambalaj</span>
+</div>
+<span class="category-badge">Endüstriyel Süper Geniş &amp; Single-Pass</span>
+</div>
+<div class="products-grid">
+<!-- EFI Nozomi 14000 -->
+<div class="product-card" data-keywords="efi nozomi 14000 led aq tek gecis single pass oluklu mukavva ambalaj kutu koli gida" onclick="openA4Brochure('efi-nozomi-14000-led-aq-serisi', event)" title="EFI™ Nozomi 14000 LED / AQ Serisi - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-efi">EFI Ambalaj</span>
+<div class="card-media">
+<img alt="EFI™ Nozomi 14000 LED / AQ Serisi" src="images/efi_nozomi.webp"/>
+</div>
+<h3 class="card-title">EFI™ Nozomi 14000 LED / AQ Serisi</h3>
+<p class="card-subtitle">Oluklu Mukavva ve Ambalajda Tek Geçişli (Single-Pass) Devrim</p>
+<div class="specs-pills">
+<span class="spec-pill">🚀 <strong>75 m/dk</strong> Hat Hızı</span>
+<span class="spec-pill">📦 <strong>10.000 m²/saat</strong></span>
+<span class="spec-pill">🍎 <strong>AQ Gıda Uyumlu</strong></span>
+<span class="spec-pill">📐 <strong>1.40 - 1.70 m</strong></span>
+</div>
+<ul class="features-list">
+<li>Tek geçişte (Single-pass) tüm renkleri anında basarak saatte binlerce metrekare üretim.</li>
+<li>Kalıpsız dijital ambalaj üretimi ile sıfır klişe masrafı ve anında teslimat.</li>
+<li>Gıdaya uygun kokusuz su bazlı (AQ) veya yüksek parlaklıklı LED UV mürekkep seçeneği.</li>
+<li>Mikro flütten çift dalga olukluya (E, B, C, EB flüt) kadar sorunsuz besleme.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maks. Hat Hızı</td><td>75 lineer metre / dakika</td></tr>
+<tr><td>Baskı Eni</td><td>1.40 m (Nozomi 14000) / 1.70 m (17000)</td></tr>
+<tr><td>Renk Konfigürasyonu</td><td>CMYK + W + Turuncu + Menekşe</td></tr>
+<tr><td>Malzeme Kalınlığı</td><td>0.8 mm - 3.2 mm oluklu mukavva</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">E-Ticaret Kutuları</span>
+<span class="app-tag">POP / POS Standlar</span>
+<span class="app-tag">Gıda Ambalajı</span>
+<span class="app-tag">Raf Tipi Kutu (SRP)</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=efi-nozomi-14000-led-aq-serisi" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- EFI Pro 32r+ -->
+<div class="product-card" data-keywords="efi pro 32r roll to roll rulo led uv tabela afis araç giydirme 3.2m 256 m2" onclick="openA4Brochure('efi-pro-32r-roll-to-roll-uv-led', event)" title="EFI™ Pro 32r+ Roll-to-Roll UV LED - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-efi">EFI Geniş Format</span>
+<div class="card-media">
+<img alt="EFI™ Pro 32r+ Roll-to-Roll UV LED" src="images/efi_pro32r.webp"/>
+</div>
+<h3 class="card-title">EFI™ Pro 32r+ Roll-to-Roll UV LED</h3>
+<p class="card-subtitle">3.2 Metre Rulo Baskıda Üstün LED UV Verimliliği</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>256 m²/saat</strong> Hız</span>
+<span class="spec-pill">📏 <strong>3.20 metre</strong> En</span>
+<span class="spec-pill">💧 <strong>7 pL</strong> UltraDrop</span>
+<span class="spec-pill">✂️ <strong>Dahili Kesici</strong></span>
+</div>
+<ul class="features-list">
+<li>UltraDrop™ 7 pL piezo teknolojisi ile pürüzsüz ten tonları ve mikro keskinlik.</li>
+<li>Dahili sensörlü otomatik çift taraflı (day-night backlit) baskı kabiliyeti.</li>
+<li>Baskı esnasında kenar tıraşlama yapan entegre dilimleme (slitter) bıçakları.</li>
+<li>Soğuk LED UV kürleme ile ısıya duyarlı ince folyolarda sıfır deformasyon.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Genişliği</td><td>3.20 metre (126 inç)</td></tr>
+<tr><td>Üretim Hızı</td><td>256 m²/saat maksimum</td></tr>
+<tr><td>Çözünürlük</td><td>1200 dpi gerçek çözünürlük</td></tr>
+<tr><td>Mürekkep</td><td>CMYK + Çift Beyaz (White Ink)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Vinil Branda</span>
+<span class="app-tag">Backlit Tabela</span>
+<span class="app-tag">Araç Kaplama Folyosu</span>
+<span class="app-tag">Duvar Kağıdı</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=efi-pro-32r-roll-to-roll-uv-led" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- EFI Pro 30h+ -->
+<div class="product-card" data-keywords="efi pro 30h hibrit hybrid flatbed plaka rulo led uv 3.2m 235 m2 beyaz" onclick="openA4Brochure('efi-pro-30h-hibrit-led-uv', event)" title="EFI™ Pro 30h+ Hibrit LED UV - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-efi">EFI Hibrit</span>
+<div class="card-media">
+<img alt="EFI™ Pro 30h+ Hibrit LED UV" src="images/efi_pro30h.webp"/>
+</div>
+<h3 class="card-title">EFI™ Pro 30h+ Hibrit LED UV</h3>
+<p class="card-subtitle">Hem Sert Plaka Hem Esnek Rulo: Tek Gövdede Hibrit Güç</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>235 m²/saat</strong> Hız</span>
+<span class="spec-pill">📏 <strong>3.20 m</strong> Hibrit</span>
+<span class="spec-pill">🧱 <strong>5.08 cm</strong> Kalınlık</span>
+<span class="spec-pill">⚪ <strong>Çift Beyaz</strong> Kanalı</span>
+</div>
+<ul class="features-list">
+<li>Dakikalar içinde sert levha masasından rulo besleme moduna kolay dönüşüm.</li>
+<li>5 cm kalınlığa kadar pleksi, ahşap, alüminyum ve fotobloklara doğrudan baskı.</li>
+<li>Çok katmanlı baskı (Renk-Beyaz-Renk) ile şeffaf malzemelerde kusursuz görünüm.</li>
+<li>Güçlü çok bölgeli vakum tablası ile eğri malzemeleri düzleştirme özelliği.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Genişliği</td><td>3.20 metre</td></tr>
+<tr><td>Maks. Kalınlık</td><td>5.08 cm (2 inç)</td></tr>
+<tr><td>Hız Kapasitesi</td><td>235 m²/saat</td></tr>
+<tr><td>Mürekkep</td><td>EFI ProGraphics LED UV (CMYK+WW)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Foreks &amp; Pleksi</span>
+<span class="app-tag">Ahşap &amp; Cam Tablolar</span>
+<span class="app-tag">Işıklı Reklam Panoları</span>
+<span class="app-tag">Fuar Standları</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=efi-pro-30h-hibrit-led-uv" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 3: KEUNDO -->
+<div class="category-block" data-category="keundo" id="keundo">
+<div class="category-header">
+<div class="category-title">
+<span>Keundo Dijital Baskı Sistemleri</span>
+</div>
+<span class="category-badge">4 Ürün Grubu • 17 Model</span>
+</div>
+<!-- Sub-Group 1: ECO Solvent -->
+<div style="background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-left: 4px solid #4f46e5; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #4338ca; font-size: 1.05rem;">Ürün Grubu 1: ECO Solvent Baskı Sistemleri (1.6m / 1.8m / 3.2m)</strong>
+<p style="margin: 3px 0 0; color: #3730a3; font-size: 0.85rem;">Araç kaplama, folyo tabela, dış mekan branda ve yüksek dayanımlı solvent rulo üretimi</p>
+</div>
+<span style="background: #4338ca; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">4 Model</span>
+</div>
+<div class="products-grid">
+<!-- Keundo K1-16S & K2-18S -->
+<div class="product-card" data-keywords="keundo k1-16s k2-18s eco solvent epson i3200-e1 rulo 1.6m 1.8m tabela arac kaplama folyo branda" onclick="openA4Brochure('keundo-k1-16s-k2-18s', event)" title="Keundo K1-16S &amp; K2-18S - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo ECO Solvent</span>
+<div class="card-media">
+<img alt="Keundo K1-16S / K2-18S" src="images/keundo-k2-18s.jpg"/>
+</div>
+<h3 class="card-title">Keundo K1-16S &amp; K2-18S</h3>
+<p class="card-subtitle">1.6m ve 1.8m Genişlikte Epson i3200-E1 Kafa Gücüyle Profesyonel Üretim</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>1.6m &amp; 1.8m</strong> En</span>
+<span class="spec-pill">🖨️ <strong>Epson i3200-E1</strong></span>
+<span class="spec-pill">⚡ <strong>65 m²/saat</strong> Hız</span>
+<span class="spec-pill">☀️ <strong>3 Yıl Dayanım</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>K1-16S:</strong> Tek Epson kafa ile ekonomik, kararlı ve yüksek kaliteli 1.6 metre rulo baskı.</li>
+<li><strong>K2-18S:</strong> Çift kafa konfigürasyonu ile saatte 65 m²'ye varan yüksek hızlı dış mekan üretimi.</li>
+<li>Ön, orta ve arka kademeli dijital ısıtma tablaları ile mürekkebin yüzeye kusursuz tutunması.</li>
+<li>Güneş ışığı, yağmur ve UV koşullarına karşı ek laminasyonsuz 3 yıla varan renk canlılığı.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Eni</td><td>1600 mm (K1-16S) / 1800 mm (K2-18S)</td></tr>
+<tr><td>Baskı Kafası</td><td>Tek veya Çift Epson i3200-E1 piezo</td></tr>
+<tr><td>Maksimum Çözünürlük</td><td>3200 dpi mikro damlacık</td></tr>
+<tr><td>Isıtıcı Sistemi</td><td>3 bölgeli bağımsız akıllı kurutma</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Araç Kaplama Folyosu</span>
+<span class="app-tag">Işıklı Tabela &amp; Raket</span>
+<span class="app-tag">One Way Vision</span>
+<span class="app-tag">Canvas Tablo</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-k1-16s-k2-18s" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Keundo K4-18S & K4-3204S -->
+<div class="product-card" data-keywords="keundo k4-18s k4-3204s 3204s eco solvent 3.2m 1.8m 4 kafa thk lineer ray billboard bina cephe" onclick="openA4Brochure('keundo-k4-18s-k4-3204s', event)" title="Keundo K4-18S &amp; K4-3204S - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo ECO Solvent</span>
+<div class="card-media">
+<img alt="Keundo K4-18S &amp; K4-3204S" src="images/keundo-k4-3204s.png"/>
+</div>
+<h3 class="card-title">Keundo K4-18S &amp; K4-3204S</h3>
+<p class="card-subtitle">4 Kafa Gücü, 8 Renk Desteği ve 3.2 Metre Süper Geniş Endüstriyel Platform</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>3.20 metre</strong> En (3204S)</span>
+<span class="spec-pill">🖨️ <strong>4x Yüksek Hız Kafa</strong></span>
+<span class="spec-pill">🛢️ <strong>3 Litre Dökme Tank</strong></span>
+<span class="spec-pill">🚅 <strong>THK Sessiz Ray</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>K4-18S:</strong> 4 baskı kafası ve 8 renk desteği ile fotoğrafik pürüzsüz geçişler ve seri üretim.</li>
+<li><strong>K4-3204S:</strong> Dikişsiz 3.2 metre dev vinil branda ve bina cephe giydirme afişleri.</li>
+<li>Japon THK yüksek hassasiyetli sessiz lineer ray mimarisi ve ağır sanayi tipi çelik şase.</li>
+<li>3 litrelik dökme mürekkep tankları ile uzun süreli operatörsüz çalışma ve düşük maliyet.</li>
+</ul>
+<table class="spec-table">
+<tr><td>K4-3204S Eni</td><td>3200 mm (3.2 metre)</td></tr>
+<tr><td>K4-18S Eni</td><td>1800 mm (1.8 metre)</td></tr>
+<tr><td>Kafa Sayısı</td><td>4 adet endüstriyel piezo kafa</td></tr>
+<tr><td>Rulo Çekme</td><td>Ağır yük çift motorlu tansiyon ünitesi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Mega Billboard Afişi</span>
+<span class="app-tag">Bina Giydirme Mesh</span>
+<span class="app-tag">Geniş Branda Cephe</span>
+<span class="app-tag">Fotoğrafik Reklam</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-k4-18s-k4-3204s" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 2: Flatbed UV -->
+<div style="background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-left: 4px solid #4f46e5; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #4338ca; font-size: 1.05rem;">Ürün Grubu 2: Flatbed UV Digital Baskı Sistemleri (Cam, Ahşap, Pleksi, Promosyon)</strong>
+<p style="margin: 3px 0 0; color: #3730a3; font-size: 0.85rem;">Masaüstü silindirik şişe baskısından 3.2x2.0m dev endüstriyel levha plakalarına kadar tam çözümler</p>
+</div>
+<span style="background: #4338ca; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">3 Model</span>
+</div>
+<div class="products-grid">
+<!-- Keundo K6090UV -->
+<div class="product-card" data-keywords="keundo k6090uv masaustu kompakt termos sise bardak silindirik 3d kabartma promosyon braille" onclick="openA4Brochure('keundo-k6090uv', event)" title="Keundo K6090UV - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Flatbed UV</span>
+<div class="card-media">
+<img alt="Keundo K6090UV Kompakt Flatbed" src="images/keundo-k6090uv.jpg"/>
+</div>
+<h3 class="card-title">Keundo K6090UV</h3>
+<p class="card-subtitle">600 x 900 mm Alanda 3D Dokulu Kabartma ve 360° Döner Şişe/Termos Aparatı</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>600 x 900 mm</strong></span>
+<span class="spec-pill">🍾 <strong>360° Döner Aparat</strong></span>
+<span class="spec-pill">✨ <strong>3D Kabartma &amp; Lak</strong></span>
+<span class="spec-pill">📏 <strong>150 mm</strong> Medya</span>
+</div>
+<ul class="features-list">
+<li>Özel rotary aparatı ile termos, matara, kupa, şişe ve mumlara 360 derece kesintisiz baskı.</li>
+<li>CMYK + Beyaz + Vernik (Gloss Varnish) ile dokulu kabartma ve Braille görme engelli alfabesi.</li>
+<li>150 mm kalınlığa kadar ahşap kutular, telefon kılıfları, plaketler ve sert zemin objeler.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Alanı</td><td>600 x 900 mm</td></tr>
+<tr><td>Baskı Yüksekliği</td><td>150 mm (15 cm) dikey aralık</td></tr>
+<tr><td>Mürekkep Cinsi</td><td>LED-UV kürlemeli sert/esnek mürekkep</td></tr>
+<tr><td>Efekt Yeteneği</td><td>Lokal parlak vernik &amp; 3D kabartma</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Termos &amp; Bardak</span>
+<span class="app-tag">Kişiye Özel Promosyon</span>
+<span class="app-tag">Telefon Kılıfı</span>
+<span class="app-tag">Ödül &amp; Plaket</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-k6090uv" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Keundo SQ-2513 & SQ-3220 -->
+<div class="product-card" data-keywords="keundo flatbed uv sq-2513 sq-3220 ricoh gen6 2500x1300 3200x2000 hava yastikli vakum cam mdf pleksi" onclick="openA4Brochure('keundo-sq-2513-sq-3220', event)" title="Keundo SQ-2513 &amp; SQ-3220 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Flatbed UV</span>
+<div class="card-media">
+<img alt="Keundo SQ-2513 &amp; SQ-3220 UV Flatbed" src="images/keundo-sq-3220.jpg"/>
+</div>
+<h3 class="card-title">Keundo SQ-2513 &amp; SQ-3220</h3>
+<p class="card-subtitle">2.5x1.3m ve 3.2x2.0m Plaka Alanında 5x Ricoh Gen6 Endüstriyel Hız</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>250x130 / 320x200 cm</strong></span>
+<span class="spec-pill">🖨️ <strong>5x Ricoh Gen6</strong></span>
+<span class="spec-pill">💨 <strong>Hava Yastığı</strong> Tabla</span>
+<span class="spec-pill">🧱 <strong>100 mm</strong> Kalınlık</span>
+</div>
+<ul class="features-list">
+<li><strong>SQ-2513:</strong> Standart 2.5x1.3m plakalar için 2400 dpi hassasiyetinde yüksek verimli flatbed.</li>
+<li><strong>SQ-3220:</strong> 205x305 cm devasa levhaları kesmeden tek seferde basan süper geniş düz yatak.</li>
+<li>Ters üflemeli hava yastığı ile 150 kg'lık cam ve MDF plakaları zahmetsizce kaydırma.</li>
+<li>Bağımsız vakum bölgeleri ve otomatik malzeme kalınlık dedektörü ile sıfır kafa çarpma riski.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Tabla Formatları</td><td>2500 x 1300 mm / 3200 x 2000 mm</td></tr>
+<tr><td>Baskı Kafası</td><td>Ricoh Gen5 / Gen6 endüstriyel piezo</td></tr>
+<tr><td>Çözünürlük</td><td>2400 dpi maksimum netlik</td></tr>
+<tr><td>Medya Kalınlığı</td><td>100 mm'ye kadar rijit malzeme</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Mimari Cam Paneller</span>
+<span class="app-tag">Mobilya &amp; Mutfak Kapak</span>
+<span class="app-tag">Akrilik &amp; Pleksi Display</span>
+<span class="app-tag">Alüminyum Kompozit</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-sq-2513-sq-3220" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 3: Hybrit UV -->
+<div style="background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-left: 4px solid #4f46e5; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #4338ca; font-size: 1.05rem;">Ürün Grubu 3: Hybrit UV Digital Baskı Sistemleri (Konveyörlü Rulo + Plaka)</strong>
+<p style="margin: 3px 0 0; color: #3730a3; font-size: 0.85rem;">Vakumlu konveyör taşıma bandı ile hem esnek rulo hem sert plakaları tek makinede basma gücü</p>
+</div>
+<span style="background: #4338ca; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">4 Model</span>
+</div>
+<div class="products-grid">
+<!-- Keundo SQ-1800H & SQ1806 Plus -->
+<div class="product-card" data-keywords="keundo hybrid uv sq-1800h sq1806 plus hibrit konveyor rulo sert plaka epson ricoh gen6" onclick="openA4Brochure('keundo-sq-1800h-sq1806-plus', event)" title="Keundo SQ-1800H &amp; SQ1806 Plus - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Hybrit UV</span>
+<div class="card-media">
+<img alt="Keundo Hybrid UV SQ-1800H / SQ1806 Plus" src="images/keundo-sq-1806plus.jpg"/>
+</div>
+<h3 class="card-title">Keundo SQ-1800H &amp; SQ1806 Plus</h3>
+<p class="card-subtitle">1.8 Metre Konveyörlü Hibrit UV: Ricoh Gen6 ve 6x Epson Kafa Seçenekleri</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>1800 mm</strong> En</span>
+<span class="spec-pill">🔄 <strong>Rulo &amp; Plaka</strong></span>
+<span class="spec-pill">🖨️ <strong>Ricoh Gen6 / Epson</strong></span>
+<span class="spec-pill">💡 <strong>LED-UV Soğuk</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>SQ-1800H:</strong> 5 adet Ricoh Gen6 kafa ile ağır hizmet tipi endüstriyel rulo ve plaka üretimi.</li>
+<li><strong>SQ1806 Plus:</strong> 6 adet Epson kafa mimarisi ile fotoğrafik renk doygunluğu ve yüksek detay.</li>
+<li>Açılır-kapanır katlanabilir uzatma tablaları ile hem yer tasarrufu hem 50 mm levha desteği.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Eni</td><td>1800 mm konveyör bant</td></tr>
+<tr><td>Kafa Seçenekleri</td><td>5x Ricoh Gen6 veya 6x Epson piezo</td></tr>
+<tr><td>Kürleme</td><td>Su soğutmalı enerji tasarruflu LED UV</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm rijit malzeme</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Işıklı Kumaş Tabela</span>
+<span class="app-tag">Dekota &amp; Foreks Plaka</span>
+<span class="app-tag">Folyo &amp; Vinil Branda</span>
+<span class="app-tag">Ambalaj Numunesi</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-sq-1800h-sq1806-plus" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Keundo SQ2500H & SQ3200H -->
+<div class="product-card" data-keywords="keundo hybrid uv sq2500h sq3200h hibrit 2.5m 3.2m ricoh gen6 genis format konveyor" onclick="openA4Brochure('keundo-sq2500h-sq3200h', event)" title="Keundo SQ2500H &amp; SQ3200H - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Hybrit UV</span>
+<div class="card-media">
+<img alt="Keundo SQ2500H &amp; SQ3200H Hybrit UV" src="images/keundo-sq-3200h.jpg"/>
+</div>
+<h3 class="card-title">Keundo SQ2500H &amp; SQ3200H</h3>
+<p class="card-subtitle">2.5m ve 3.2m Süper Geniş Konveyörlü Hibrit UV ve 5x Ricoh Gen6 Gücü</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>2.5m &amp; 3.2m</strong> En</span>
+<span class="spec-pill">🖨️ <strong>5x Ricoh Gen6</strong></span>
+<span class="spec-pill">🧱 <strong>50 mm</strong> Plaka</span>
+<span class="spec-pill">⚡ <strong>Endüstriyel Debi</strong></span>
+</div>
+<ul class="features-list">
+<li>3.2 metreye varan genişlik ile hem süper geniş rulo vinil/kumaş hem 2x3m sert paneller.</li>
+<li>Ağır hizmet tipi vakumlu konveyör bant sistemi ile malzemeyi kaydırmadan milimetrik taşıma.</li>
+<li>Gelişmiş çift negatif basınç kontrolü ve otomatik kafa çarpışma sensörleri.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Genişlikler</td><td>2500 mm (SQ2500H) / 3200 mm (SQ3200H)</td></tr>
+<tr><td>Kafa Donanımı</td><td>5 adet Ricoh Gen6 endüstriyel kafa</td></tr>
+<tr><td>Renk Dizilimi</td><td>CMYK + Beyaz + Vernik</td></tr>
+<tr><td>Bant Yapısı</td><td>Pnömatik tansiyonlu ağır konveyör</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Süper Geniş Tabela</span>
+<span class="app-tag">Büyük Boy Ahşap Levha</span>
+<span class="app-tag">Fuar Stand Panelleri</span>
+<span class="app-tag">Işıklı Kutu Grafikleri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-sq2500h-sq3200h" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 4: Roll To Roll UV -->
+<div style="background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-left: 4px solid #4f46e5; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #4338ca; font-size: 1.05rem;">Ürün Grubu 4: Roll To Roll UV Digital Baskı Sistemleri (1.6m - 5.0m Rulo LED-UV)</strong>
+<p style="margin: 3px 0 0; color: #3730a3; font-size: 0.85rem;">Anında kuruyan, kokusuz, gergi tavan, ışıklı tekstil ve 5 metre süper geniş rulo LED-UV presleri</p>
+</div>
+<span style="background: #4338ca; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">6 Model</span>
+</div>
+<div class="products-grid">
+<!-- Keundo Q1-16UV / Q2-18UV / Q4-18UV -->
+<div class="product-card" data-keywords="keundo q1-16uv q2-18uv q4-18uv roll to roll led uv 1.6m 1.8m cmyk beyaz vernik cok katmanli" onclick="openA4Brochure('keundo-q1-q2-q4-serisi-led-uv', event)" title="Keundo Q1 / Q2 / Q4 Serisi LED-UV - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Roll To Roll UV</span>
+<div class="card-media">
+<img alt="Keundo Q-Serisi Roll to Roll LED-UV" src="images/keundo-q2-18uv.jpg"/>
+</div>
+<h3 class="card-title">Keundo Q1 / Q2 / Q4 Serisi LED-UV</h3>
+<p class="card-subtitle">1.6m ve 1.8m Eninde Çift/4 Kafa, Beyaz &amp; Vernik Çok Katmanlı Rulo LED-UV</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>1.6m &amp; 1.8m</strong> En</span>
+<span class="spec-pill">💡 <strong>Soğuk LED-UV</strong></span>
+<span class="spec-pill">🎨 <strong>W+CMYK+V</strong></span>
+<span class="spec-pill">⚡ <strong>Anında Kuru</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>Q1-16UV:</strong> 1.6m kompakt rulo LED-UV, CMYK ve beyaz desteğiyle kokusuz üretim.</li>
+<li><strong>Q2-18UV:</strong> 1.8m çift kafa ile eşzamanlı renk + beyaz çift taraflı vitrin filmi baskısı.</li>
+<li><strong>Q4-18UV:</strong> 4 kafa ile yüksek üretim hızı, kabartmalı vernik ve çok katmanlı efektler.</li>
+<li>Isıya duyarlı ince folyo, şeffaf film ve kumaşlarda sıfır çekme ve deformasyon.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Genişlikler</td><td>1600 mm (Q1) / 1800 mm (Q2 &amp; Q4)</td></tr>
+<tr><td>Kafa Adetleri</td><td>1, 2 veya 4 adet Epson kafa</td></tr>
+<tr><td>Kurutma</td><td>Anında sertleşen LED UV lambalar</td></tr>
+<tr><td>Katman Modu</td><td>Renk-Beyaz-Renk (Day &amp; Night)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Gergi Tavan</span>
+<span class="app-tag">Şeffaf Cam Filmleri</span>
+<span class="app-tag">Işıklı Vitrin Afişi</span>
+<span class="app-tag">Kokusuz İç Mekan</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-q1-q2-q4-serisi-led-uv" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Keundo Q4-32UV & M3200 / M5000 -->
+<div class="product-card" data-keywords="keundo q4-32uv m3200 m5000 roll to roll uv 3.2m 5m super genis ricoh gen6 epson cephe giydirme" onclick="openA4Brochure('keundo-q4-32uv-m3200-m5000', event)" title="Keundo Q4-32UV &amp; M3200 / M5000 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-keundo">Keundo Roll To Roll UV</span>
+<div class="card-media">
+<img alt="Keundo M3200 / M5000 / Q4-32UV" src="images/keundo-m5000.jpg"/>
+</div>
+<h3 class="card-title">Keundo Q4-32UV &amp; M3200 / M5000</h3>
+<p class="card-subtitle">3.2m ve 5.0m Süper Geniş Rulo UV Preslerde 5x Ricoh Gen6 Endüstriyel Hız</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>3.2m &amp; 5.0m</strong> En</span>
+<span class="spec-pill">🖨️ <strong>5x Ricoh Gen6</strong></span>
+<span class="spec-pill">🏗️ <strong>Endüstriyel Şase</strong></span>
+<span class="spec-pill">⚡ <strong>24/7 Kesintisiz</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>Q4-32UV:</strong> 3.2m ebadında 4x Epson i3200-U1 kafa ile fotoğrafik ışıklı kumaş ve tabela üretimi.</li>
+<li><strong>M3200 &amp; M5000:</strong> 3.2m ve 5.0m ebadında 5x Ricoh Gen6 kafa ile ağır sanayi tipi rulo UV presleri.</li>
+<li>Dikişsiz 5 metre eninde havalimanı dev panoları ve mega bina giydirme reklamları.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Enler</td><td>3200 mm (M3200 / Q4-32) / 5000 mm (M5000)</td></tr>
+<tr><td>Kafa Seçenekleri</td><td>5x Ricoh Gen6 veya 4x Epson i3200-U1</td></tr>
+<tr><td>Rulo Yükleme</td><td>Pnömatik hava şaftlı ağır tonaj sarıcı</td></tr>
+<tr><td>Çalışma Modu</td><td>24 saat seri endüstriyel üretim</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">5 Metre Mega Vinil</span>
+<span class="app-tag">Bina Cephe Reklamı</span>
+<span class="app-tag">Işıklı Tekstil Kumaş</span>
+<span class="app-tag">Havalimanı Panoları</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=keundo-q4-32uv-m3200-m5000" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 4: FLORA -->
+<div class="category-block" data-category="flora" id="flora">
+<div class="category-header">
+<div class="category-title">
+<span>Flora Dijital Baskı Sistemleri (Bobin &amp; Geniş Format UV)</span>
+</div>
+<span class="category-badge">2 Ürün Grubu • 7 Model</span>
+</div>
+<!-- Sub-Group Banner 1: Bobin -->
+<div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid #16a34a; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #15803d; font-size: 1.05rem;">Ürün Grubu 1: Bobin Sistemleri (Sürekli Beslemeli Endüstriyel Inkjet)</strong>
+<p style="margin: 3px 0 0; color: #166534; font-size: 0.85rem;">Yüksek hacimli kitap basımı, yayıncılık, resmi evrak ve veri odaklı direkt posta üretimi</p>
+</div>
+<span style="background: #15803d; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">3 Model</span>
+</div>
+<div class="products-grid">
+<!-- Flora Phenix 440 / 440C -->
+<div class="product-card" data-keywords="flora phenix 440 440c bobin inkjet kitap basilim yayincilik fatura 100 m dk 673 a4 dk duplex cmyk mono" onclick="openA4Brochure('flora-phenix-440-440c', event)" title="Flora Phenix 440 / 440C - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Bobin Inkjet</span>
+<div class="card-media">
+<img alt="Flora Phenix 440 / 440C Endüstriyel Inkjet Baskı Sistemi" src="images/flora_phenix_440.jpeg"/>
+</div>
+<h3 class="card-title">Flora Phenix 440 / 440C</h3>
+<p class="card-subtitle">100 m/dk Hız ve Çift Taraflı Baskıyla Yüksek Hacimli Endüstriyel Bobin Inkjet</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>100 m/dk</strong> Hız</span>
+<span class="spec-pill">📄 <strong>673 A4/dk</strong> Kapasite</span>
+<span class="spec-pill">🎯 <strong>1200 dpi</strong> Grayscale</span>
+<span class="spec-pill">🔄 <strong>Çift Taraflı</strong> Duplex</span>
+</div>
+<ul class="features-list">
+<li>Dakikada 100 metre (673 A4 sayfa) kesintisiz hız ile yüksek tirajlı yayıncılık ve kitap baskısı.</li>
+<li>Micro piezoelectric grayscale kafa mimarisi ile 1200 dpi çözünürlük ve derin metin keskinliği.</li>
+<li>Su bazlı çevre dostu pigment mürekkep formülü ile ışığa ve neme dayanıklı solmayan sayfalar.</li>
+<li>436 mm baskı eni, 45-157 gsm kağıt desteği ve tek geçişte çift taraflı senkronize baskı.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Model Kodu</td><td>Flora Phenix 440 (Mono) / 440C (Renkli)</td></tr>
+<tr><td>Maksimum Hız</td><td>100 m/dk (673 A4 sayfa/dk)</td></tr>
+<tr><td>Çözünürlük</td><td>1200 x 600 / 1200 x 1200 dpi</td></tr>
+<tr><td>Baskı Eni</td><td>436 mm (Medya Eni: 460 mm)</td></tr>
+<tr><td>Kafa Mimarisi</td><td>Micro Piezoelectric Grayscale</td></tr>
+<tr><td>Kağıt Gramajı</td><td>45 – 157 gsm (Ofset & Kitap Kağıdı)</td></tr>
+<tr><td>Baskı Modu</td><td>Çift Taraflı (Duplex) Senkronize</td></tr>
+<tr><td>Mürekkep Cinsi</td><td>Su bazlı çevre dostu pigment mürekkep</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Kitap Yayıncılığı</span>
+<span class="app-tag">Fatura & Ekstre</span>
+<span class="app-tag">Kılavuz & Doküman</span>
+<span class="app-tag">Doğrudan Postalama</span>
+<span class="app-tag">VDP Değişken Veri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-phenix-440-440c" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Flora Swift 440 -->
+<div class="product-card" data-keywords="flora swift 440 bobin siyah beyaz 120 m dk 808 a4 dk kitap dokuman pigment mono duplex" onclick="openA4Brochure('flora-swift-440', event)" title="Flora Swift 440 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Bobin Inkjet</span>
+<div class="card-media">
+<img alt="Flora Swift 440 Endüstriyel Inkjet Baskı Sistemi" src="images/flora_swift_440.jpeg"/>
+</div>
+<h3 class="card-title">Flora Swift 440</h3>
+<p class="card-subtitle">120 m/dk ve 808 A4/dk Kapasiteyle S/B Kitap & Veri Üretim Canavarı</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>120 m/dk</strong> Hız</span>
+<span class="spec-pill">📚 <strong>808 A4/dk</strong> Çıktı</span>
+<span class="spec-pill">📏 <strong>460 mm</strong> Baskı Eni</span>
+<span class="spec-pill">🖤 <strong>Optimize Mono</strong></span>
+</div>
+<ul class="features-list">
+<li>Dakikada 120 metre ve 808 A4 sayfalık rekor çıktı hızı ile kitap ve sözleşme üretiminde rakipsiz.</li>
+<li>Yoğun siyah-beyaz kitap ve resmi evrak üretimleri için optimize edilmiş yüksek hızlı rulo baskı.</li>
+<li>Micro piezoelectric grayscale kafa mimarisi ile derin siyahlar ve net küçük punto yazılar.</li>
+<li>460 mm baskı eni, 45-157 gsm kağıt desteği ve su bazlı pigment siyah mürekkep.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Model Kodu</td><td>Flora Swift 440 (Mono)</td></tr>
+<tr><td>Maksimum Hız</td><td>120 m/dk (808 A4 sayfa/dk)</td></tr>
+<tr><td>Hassas Mod Hızı</td><td>60 m/dk (1200 x 1200 dpi)</td></tr>
+<tr><td>Baskı Eni</td><td>460 mm (Medya Eni: 460 mm)</td></tr>
+<tr><td>Kafa Mimarisi</td><td>Micro Piezoelectric Grayscale</td></tr>
+<tr><td>Kağıt Gramajı</td><td>45 – 157 gsm (Ofset & Kitap Kağıdı)</td></tr>
+<tr><td>Baskı Modu</td><td>Çift Taraflı (Duplex) Senkronize</td></tr>
+<tr><td>Mürekkep Cinsi</td><td>Su bazlı çevre dostu pigment siyah mürekkep</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Yayıncılık & Kitap</span>
+<span class="app-tag">Milli Eğitim Fasikülleri</span>
+<span class="app-tag">Yasal Evrak & Sözleşme</span>
+<span class="app-tag">Yüksek Hacimli Mono</span>
+<span class="app-tag">VDP Değişken Veri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-swift-440" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Phenix 330 / 330C -->
+<div class="product-card" data-keywords="phenix 330 330c flora bobin inkjet 100 m dk 350 mm rulo micro piezo su bazli pigment" onclick="openA4Brochure('phenix-330-330c', event)" title="Phenix 330 / 330C - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Bobin Inkjet</span>
+<div class="card-media">
+<img alt="Phenix 330 / 330C Endüstriyel Baskı Sistemi" src="images/flora_phenix_330.jpeg"/>
+</div>
+<h3 class="card-title">Phenix 330 / 330C</h3>
+<p class="card-subtitle">Kompakt Alanlarda Endüstriyel Hız, Kalite ve Çok Yönlü Rulo Esnekliği</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>100 m/dk</strong> Hız</span>
+<span class="spec-pill">📐 <strong>350 mm</strong> Rulo Eni</span>
+<span class="spec-pill">🎯 <strong>1200 dpi</strong> Detay</span>
+<span class="spec-pill">💧 <strong>Pigment</strong> Mürekkep</span>
+</div>
+<ul class="features-list">
+<li>Kompakt yerleşimi sayesinde alan tasarrufu sağlarken endüstriyel hızdan ödün vermez.</li>
+<li>Micro piezoelectric grayscale kafa teknolojisi ve su bazlı pigment mürekkepler.</li>
+<li>Çift taraflı CMYK veya mono mod seçenekleri ile yayın ve etiket uygulamalarında esneklik.</li>
+<li>Geniş kağıt yelpazesine uyum sağlayan hassas rulo tansiyon kontrol ünitesi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Hızı</td><td>100 m/dk</td></tr>
+<tr><td>Maks. Rulo Eni</td><td>350 mm</td></tr>
+<tr><td>Çözünürlük</td><td>1200 dpi</td></tr>
+<tr><td>Mürekkep</td><td>Su bazlı pigment mürekkep</td></tr>
+<tr><td>Modlar</td><td>Çift taraflı (Duplex) / Tek taraflı</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Kompakt Bobin</span>
+<span class="app-tag">Kullanım Kılavuzları</span>
+<span class="app-tag">Kısa &amp; Orta Tiraj Kitap</span>
+<span class="app-tag">Broşür &amp; İnsert</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=phenix-330-330c" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group Banner 2: Geniş Format UV -->
+<div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid #16a34a; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #15803d; font-size: 1.05rem;">Ürün Grubu 2: Geniş Format UV Baskı Ürünleri (Flatbed &amp; Hibrit)</strong>
+<p style="margin: 3px 0 0; color: #166534; font-size: 0.85rem;">Devasa cephe reklamları, tabela, endüstriyel levhalar, cam, ahşap ve sert zemin baskıları</p>
+</div>
+<span style="background: #15803d; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">4 Model</span>
+</div>
+<div class="products-grid">
+<!-- Flora XTRA 5000H -->
+<div class="product-card" data-keywords="flora xtra 5000h 5 metre super genis hibrit uv 440 m2 cift rulo coklu rulo konveyör led" onclick="openA4Brochure('flora-xtra-5000h-uv-hibrit', event)" title="Flora XTRA 5000H UV Hibrit - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Geniş Format UV</span>
+<div class="card-media">
+<img alt="Flora XTRA 5000H Süper Geniş UV Hibrit" src="images/flora_xtra5000h.jpg"/>
+</div>
+<h3 class="card-title">Flora XTRA 5000H UV Hibrit</h3>
+<p class="card-subtitle">5 Metrelik Devasa Genişlikte Saatte 440 m² Endüstriyel Güç</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>5.00 metre</strong> En</span>
+<span class="spec-pill">⚡ <strong>440 m²/saat</strong> Hız</span>
+<span class="spec-pill">🖨️ <strong>24 Kafaya Kadar</strong></span>
+<span class="spec-pill">🎯 <strong>Çift/Üçlü Rulo</strong></span>
+</div>
+<ul class="features-list">
+<li>Dikişsiz tek parça 5 metre genişliğinde cephe ve mega billboard afişleri.</li>
+<li>Aynı anda 2 veya 3 farklı rulo malzemeyi yan yana bağımsız olarak basabilme.</li>
+<li>Manyetik lineer motor sürücüsü ile sıfır sürtünme, sessiz ve mikron hassasiyetli hareket.</li>
+<li>51 mm kalınlığa kadar endüstriyel sert plakaları zahmetsizce işleyen ağır konveyör tabla.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Eni</td><td>5000 mm (5.0 metre)</td></tr>
+<tr><td>Maksimum Hız</td><td>440 m²/saat</td></tr>
+<tr><td>Maks. Kalınlık</td><td>51 mm</td></tr>
+<tr><td>Çözünürlük</td><td>2400 dpi</td></tr>
+<tr><td>Kürleme</td><td>Endüstriyel UV LED lambalar</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Havalimanı Reklamları</span>
+<span class="app-tag">Bina Cephe Giydirme</span>
+<span class="app-tag">Mega Billboard</span>
+<span class="app-tag">Işıklı Kumaş &amp; Branda</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-xtra-5000h-uv-hibrit" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Flora XTRA 3300H -->
+<div class="product-card" data-keywords="flora xtra 3300h 3.3m hibrit uv roll rijit konveyor led kurutma reklam tabela" onclick="openA4Brochure('flora-xtra-3300h-uv-hibrit', event)" title="Flora XTRA 3300H UV Hibrit - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Geniş Format UV</span>
+<div class="card-media">
+<img alt="Flora XTRA 3300H UV Hibrit Baskı Makinesi" src="images/flora_xtra3300h.jpg"/>
+</div>
+<h3 class="card-title">Flora XTRA 3300H UV Hibrit</h3>
+<p class="card-subtitle">3.3 Metre Baskı Eninde Hem Roll Hem Rijit Malzemeler İçin Kusursuz Uyum</p>
+<div class="specs-pills">
+<span class="spec-pill">📏 <strong>3.30 metre</strong> En</span>
+<span class="spec-pill">⚡ <strong>136 m²/saat</strong> Hız</span>
+<span class="spec-pill">🔄 <strong>Rulo &amp; Plaka</strong></span>
+<span class="spec-pill">💡 <strong>UV LED</strong> Kürleme</span>
+</div>
+<ul class="features-list">
+<li>Standart 3.2 m rulo malzemeler ile sert reklam levhalarını tek bir makinede birleştirir.</li>
+<li>136 m²/saat üretim hızı ile reklam ve tabela atölyelerinin seri işlerinde yüksek kârlılık.</li>
+<li>Gelişmiş UV LED kürleme sistemi ile anında kuruma ve düşük elektrik tüketimi.</li>
+<li>Otomatik yükseklik algılama, pnömatik pozalama pimleri ve çift negatif basınç koruması.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Genişliği</td><td>3300 mm (3.3 metre)</td></tr>
+<tr><td>Maksimum Hız</td><td>136 m²/saat</td></tr>
+<tr><td>Maks. Kalınlık</td><td>51 mm</td></tr>
+<tr><td>Çözünürlük</td><td>2400 dpi</td></tr>
+<tr><td>Renk Sistemi</td><td>CMYK + White (Beyaz)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Tabela &amp; Fuar Standı</span>
+<span class="app-tag">Rijit Dekota &amp; Pleksi</span>
+<span class="app-tag">Tekstil &amp; Canvas</span>
+<span class="app-tag">Araç Üstü Folyo</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-xtra-3300h-uv-hibrit" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Flora XTRA 3220LED -->
+<div class="product-card" data-keywords="flora xtra 3220led flatbed uv 3.2x2m 219 m2 100mm vakum cam ahsap metal mdf" onclick="openA4Brochure('flora-xtra-3220led-flatbed-uv', event)" title="Flora XTRA 3220LED Flatbed UV - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Geniş Format UV</span>
+<div class="card-media">
+<img alt="Flora XTRA 3220LED Endüstriyel Flatbed UV" src="images/flora_xtra3220led.png"/>
+</div>
+<h3 class="card-title">Flora XTRA 3220LED Flatbed UV</h3>
+<p class="card-subtitle">3.2 x 2.0 Metre Devasa Plaka Baskı Alanı ve 219 m²/saat Üretim Gücü</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>3200 x 2000 mm</strong></span>
+<span class="spec-pill">⚡ <strong>219 m²/saat</strong> Hız</span>
+<span class="spec-pill">🧱 <strong>100 mm</strong> Kalınlık</span>
+<span class="spec-pill">✨ <strong>Beyaz &amp; Vernik</strong></span>
+</div>
+<ul class="features-list">
+<li>Standart 205x305 cm akrilik, pleksi ve MDF plakaları bölmeden tek seferde basar.</li>
+<li>100 mm malzeme kalınlığı desteğiyle kalın ahşap kapılar, metal paneller ve endüstriyel parçalar.</li>
+<li>8 bağımsız vakum bölgesi ve hava üfleme yastığı ile ağır cam plakaları parmakla kaydırma.</li>
+<li>CMYK, Beyaz ve Vernik ile kabartma, 3D dokulu baskılar ve lüks yüzey finisajları.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Alanı</td><td>3200 x 2000 mm</td></tr>
+<tr><td>Maksimum Hız</td><td>219 m²/saat</td></tr>
+<tr><td>Malzeme Kalınlığı</td><td>100 mm (10 cm)</td></tr>
+<tr><td>Çözünürlük</td><td>2400 dpi</td></tr>
+<tr><td>Vakum Sistemi</td><td>8 bağımsız bölge + Hava üfleme</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Endüstriyel Cam &amp; Kapı</span>
+<span class="app-tag">Ahşap &amp; Mobilya</span>
+<span class="app-tag">Metal Levhalar</span>
+<span class="app-tag">Akrilik &amp; Pleksi Display</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-xtra-3220led-flatbed-uv" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Flora Q25 -->
+<div class="product-card" data-keywords="flora q25 flatbed uv 2540 1300 155 m2 4.5 pl vernik beyaz kabartma promosyon ambalaj" onclick="openA4Brochure('flora-q25-profesyonel-flatbed-uv', event)" title="Flora Q25 Profesyonel Flatbed UV - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-flora">Flora Geniş Format UV</span>
+<div class="card-media">
+<img alt="Flora Q25 Profesyonel UV Flatbed" src="images/flora_q25.jpg"/>
+</div>
+<h3 class="card-title">Flora Q25 Profesyonel Flatbed UV</h3>
+<p class="card-subtitle">2.54 x 1.30 Metre Alanda 4.5 pl Ultra Net Damla ve Çok Katmanlı Vernik</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>2540 x 1300 mm</strong></span>
+<span class="spec-pill">⚡ <strong>155 m²/saat</strong> Hız</span>
+<span class="spec-pill">💧 <strong>4.5 pl</strong> Damla</span>
+<span class="spec-pill">🧱 <strong>100 mm</strong> Medya</span>
+</div>
+<ul class="features-list">
+<li>Standart 125 x 250 cm plakalar için optimize edilmiş yüksek hassasiyetli endüstriyel flatbed.</li>
+<li>4.5 pl mikro damla boyutu ile fotoğraf kalitesinde pürüzsüz geçişler ve keskin küçük yazılar.</li>
+<li>6 bölgeli güçlü vakum tablası ile hem küçük promoyon objelerini hem büyük plakaları sabitler.</li>
+<li>Beyaz ve lokal vernik desteği ile 3D kabartma dokular ve dikkat çekici lüks efektler.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Alanı</td><td>2540 x 1300 mm</td></tr>
+<tr><td>Maksimum Hız</td><td>155 m²/saat</td></tr>
+<tr><td>Damla Boyutu</td><td>4.5 picoliter</td></tr>
+<tr><td>Çözünürlük</td><td>705 x 2400 dpi</td></tr>
+<tr><td>Malzeme Kalınlığı</td><td>100 mm</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Hassas Reklam &amp; Tabela</span>
+<span class="app-tag">Promosyon &amp; Hediye</span>
+<span class="app-tag">Ambalaj &amp; Numune</span>
+<span class="app-tag">3D Dokulu Kabartma</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=flora-q25-profesyonel-flatbed-uv" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 5: DUPLO -->
+<div class="category-block" data-category="duplo" id="duplo">
+<div class="category-header">
+<div class="category-title">
+<span>Duplo Baskı Sonrası &amp; Sonlandırma Sistemleri</span>
+</div>
+<span class="category-badge">6 Ürün Grubu • 21 Model</span>
+</div>
+<!-- Sub-Group 1: Lak ve Süsleme -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 1: Lak Makinesi (Dijital Spot UV Lak &amp; 3D Kabartma Folyo)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Kalıpsız dijital dokunsal kabartma, B3 ve B2 formatında parlak lak ve metalik soğuk folyo yaldız</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">2 Model</span>
+</div>
+<div class="products-grid">
+<!-- DuSense DDC-810 -->
+<div class="product-card" data-keywords="duplo dusense ddc-810 spot lak 3d kabartma b3 600 dpi vernik ambalaj davetiye etiket" onclick="openA4Brochure('dusense-ddc-810', event)" title="DuSense DDC-810 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Lak Makinesi</span>
+<div class="card-media">
+<img alt="Duplo DuSense DDC-810" src="images/duplo_dusense-ddc-810.jpg"/>
+</div>
+<h3 class="card-title">DuSense DDC-810</h3>
+<p class="card-subtitle">B3 Formatında 600 dpi Hassasiyetle 3D Dokunsal Kabartma Lak</p>
+<div class="specs-pills">
+<span class="spec-pill">✨ <strong>20 - 80 µm</strong> Lak</span>
+<span class="spec-pill">📐 <strong>364 x 740 mm</strong> B3+</span>
+<span class="spec-pill">⚡ <strong>1.080 tabaka/saat</strong></span>
+<span class="spec-pill">📷 <strong>Çift CCD Kamera</strong></span>
+</div>
+<ul class="features-list">
+<li>Kalıpsız, serigrafi ipeği gerektirmeden doğrudan dijital spot lak ve dokunsal kabartma.</li>
+<li>CCD kameralar kağıt çekmesini tespit ederek mikron düzeyinde birebir baskı üstü hizalama yapar.</li>
+<li>Tek geçişte hem ince saten yüzeyler hem de yüksek kabartmalı lüks efektler oluşturur.</li>
+<li>Kitap kapakları, kartvizitler, kozmetik kutuları ve lüks davetiyeler için idealdir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Ebat</td><td>364 x 740 mm</td></tr>
+<tr><td>Lak Kalınlığı</td><td>20 - 80 mikron değişken kabartma</td></tr>
+<tr><td>Çözünürlük</td><td>600 x 600 dpi inkjet kafa mimarisi</td></tr>
+<tr><td>Kürleme</td><td>Dahili UV lamba sistemi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Lüks Ambalaj</span>
+<span class="app-tag">Kitap &amp; Dergi Kapağı</span>
+<span class="app-tag">Özel Davetiye</span>
+<span class="app-tag">Şarap Etiketi</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=dusense-ddc-810" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- DuSense DDC-8000 -->
+<div class="product-card" data-keywords="duplo dd-c8000 ddc 8000 b2 format spot lak soguk folyo yaldiz 3d kabartma luks kutu ambalaj" onclick="openA4Brochure('dusense-ddc-8000', event)" title="DuSense DDC-8000 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Lak Makinesi</span>
+<div class="card-media">
+<img alt="Duplo DuSense DDC-8000" src="images/duplo_ddc-8000.png"/>
+</div>
+<h3 class="card-title">DuSense DDC-8000</h3>
+<p class="card-subtitle">B2 Formatında Çift Barlı 3D Kabartma Lak ve Entegre Soğuk Folyo Yaldız</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>585 x 1068 mm</strong> B2+</span>
+<span class="spec-pill">🥇 <strong>Soğuk Folyo</strong> Yaldız</span>
+<span class="spec-pill">📄 <strong>600 g/m²</strong> Karton</span>
+<span class="spec-pill">🛡️ <strong>Otomatik Kafa Koruma</strong></span>
+</div>
+<ul class="features-list">
+<li>B2 ebadında büyük tabakalara tek geçişte hem kabartma lak hem metalik folyo yaldız uygular.</li>
+<li>Otomatik kalınlık algılama sensörleri ile farklı yüzeylerde baskı kafasını mükemmel korur.</li>
+<li>Altın, gümüş, holografik folyolar ile katma değeri yüksek ambalaj üretimi sağlar.</li>
+<li>Yoğun ticari matbaalar ve ambalaj üreticileri için yüksek kapasiteli amiral gemisi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Ebat</td><td>585 x 1068 mm (B2+)</td></tr>
+<tr><td>Medya Gramajı</td><td>160 - 600 g/m² karton ve lamine tabaka</td></tr>
+<tr><td>Yaldız Modülü</td><td>Entegre soğuk folyo ünitesi</td></tr>
+<tr><td>Kafa Sistemi</td><td>Endüstriyel çift barlı inkjet mimarisi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">B2 Ambalaj Kutuları</span>
+<span class="app-tag">Altın &amp; Gümüş Yaldız</span>
+<span class="app-tag">Lüks Kozmetik Kutusu</span>
+<span class="app-tag">Sert Kapak Cilt</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=dusense-ddc-8000" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 2: Çok İşlevli Sonlandırma -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 2: Sonlandırma (Slitter / Cutter / Creaser - Kesim, Pilyaj, Kırım)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Tek geçişte boy kesim, en kesim, çatlamasız kırım, perforasyon ve katlama sistemleri</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">5 Model</span>
+</div>
+<div class="products-grid">
+<!-- Duplo DC-618 -->
+<div class="product-card" data-keywords="duplo dc-618 slitter cutter creaser kirim pilyaj kesim 50 tabaka barkod kartvizit menu" onclick="openA4Brochure('duplo-dc-618', event)" title="Duplo DC-618 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Sonlandırma</span>
+<div class="card-media">
+<img alt="Duplo DC-618" src="images/duplo_dc-618.png"/>
+</div>
+<h3 class="card-title">Duplo DC-618</h3>
+<p class="card-subtitle">Kompakt Alanda Tek Geçişte 6 Boy Kesim, 30 Kırım ve Çatlamasız Katlama</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>50 tabaka/dk</strong></span>
+<span class="spec-pill">🏷️ <strong>Barkodla Otomatik</strong></span>
+<span class="spec-pill">✂️ <strong>6 Boy + 30 Kırım</strong></span>
+<span class="spec-pill">📐 <strong>370 x 750 mm</strong></span>
+</div>
+<ul class="features-list">
+<li>Kuşe kağıtlarda katlama esnasında tonerin çatlamasını ve kırılmasını tamamen engeller.</li>
+<li>Barkod okuyucu tabaka üzerindeki iş kodunu tanır ve bıçakları saniyeler içinde otomatik hizalar.</li>
+<li>Tek tabakadan 24 adet kartviziti kesilmiş ve paketlenmiş olarak çıkarır.</li>
+<li>Giyotin, perforatör ve manuel pilyaj makinelerinin tüm iş yükünü tek başına devralır.</li>
+</ul>
+<table class="spec-table">
+<tr><td>İşlem Yeteneği</td><td>6 boy kesim, 30 en kesim, 20 pilyaj</td></tr>
+<tr><td>Hız</td><td>Dakikada 50 tabaka</td></tr>
+<tr><td>Maksimum Ebat</td><td>370 x 750 mm (1200 mm opsiyon)</td></tr>
+<tr><td>Gramaj Aralığı</td><td>110 - 400 g/m²</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Kartvizit Üretimi</span>
+<span class="app-tag">Menü &amp; Broşür</span>
+<span class="app-tag">Perforasyonlu Bilet</span>
+<span class="app-tag">Doğrudan Postalama</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dc-618" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Duplo DC-648 -->
+<div class="product-card" data-keywords="duplo dc-648 slitter cutter creaser doner kesim 1000 mm uzun tabaka doner perforasyon" onclick="openA4Brochure('duplo-dc-648', event)" title="Duplo DC-648 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Sonlandırma</span>
+<div class="card-media">
+<img alt="Duplo DC-648" src="images/duplo_dc-648.png"/>
+</div>
+<h3 class="card-title">Duplo DC-648</h3>
+<p class="card-subtitle">Modüler Döner Kesim, 1000 mm Uzun Tabaka ve Ağır İş Akışı</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>40 SRA3/dk</strong></span>
+<span class="spec-pill">📏 <strong>1000 mm</strong> Banner</span>
+<span class="spec-pill">🔄 <strong>Döner Perforasyon</strong></span>
+<span class="spec-pill">🗑️ <strong>Otomatik Atık Tahliye</strong></span>
+</div>
+<ul class="features-list">
+<li>1000 mm'ye kadar ekstra uzun banner tabakalarını tek geçişte keser, dilimler ve pilyajlar.</li>
+<li>İsteğe bağlı döner perforasyon, mikro-perforasyon ve bölümlü pilyaj kasetleri ile tam esneklik.</li>
+<li>Çıkan kenar atık şeritlerini otomatik olarak dahili çöp haznesine tahliye eder.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Ebat</td><td>370 x 1000 mm</td></tr>
+<tr><td>Gramaj</td><td>110 - 400 gsm</td></tr>
+<tr><td>Besleme Yüksekliği</td><td>120 mm derin tepsi</td></tr>
+<tr><td>Atık Ayrıştırma</td><td>Dahili konveyörlü atık tahliyesi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Uzun Banner Broşür</span>
+<span class="app-tag">Kupon &amp; Çek Defteri</span>
+<span class="app-tag">Cepli Dosyalar</span>
+<span class="app-tag">Ticari Dijital Matbaa</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dc-648" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Duplo DC-746 -->
+<div class="product-card" data-keywords="duplo dc-746 agir hizmet jdf endustriyel sonlandirma ccd kamera moduler kaset" onclick="openA4Brochure('duplo-dc-746', event)" title="Duplo DC-746 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Sonlandırma</span>
+<div class="card-media">
+<img alt="Duplo DC-746" src="images/duplo_dc-746.png"/>
+</div>
+<h3 class="card-title">Duplo DC-746</h3>
+<p class="card-subtitle">JDF Uyumlu, Maksimum Otomasyonlu Ağır Hizmet Tipi Sonlandırma Merkezi</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>50 tabaka/dk</strong></span>
+<span class="spec-pill">🔌 <strong>JDF İş Akışı</strong></span>
+<span class="spec-pill">🧩 <strong>Modüler Kasetler</strong></span>
+<span class="spec-pill">📷 <strong>X/Y Kompansasyon</strong></span>
+</div>
+<ul class="features-list">
+<li>Yüksek hacimli dijital baskı presleriyle (HP Indigo, Xerox) JDF üzerinden kusursuz entegrasyon.</li>
+<li>CCD kamera sistemi baskı kaymalarını hem X hem Y ekseninde gerçek zamanlı dengeler.</li>
+<li>Tak-çıkar modüler kasetler ile kartvizit, kupon perforatörü ve katlama arasında anında geçiş.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Format</td><td>370 x 750 mm (1000 mm ops.)</td></tr>
+<tr><td>Hız</td><td>50 tabaka/dakika</td></tr>
+<tr><td>Gramaj</td><td>110 - 400 gsm</td></tr>
+<tr><td>Otomasyon</td><td>JDF &amp; Barkod entegrasyonu</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Endüstriyel Matbaa</span>
+<span class="app-tag">Değişken Veri Baskısı</span>
+<span class="app-tag">Çok Parçalı Kartlar</span>
+<span class="app-tag">Güvenlikli Kuponlar</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dc-746" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Duplo DC-20K B2 System & DC-F100 -->
+<div class="product-card" data-keywords="duplo dc-20k b2 dc-f100 b2 cutter creaser in-line katlama giyotinsiz cozum" onclick="openA4Brochure('duplo-dc-20k-b2-dc-f100', event)" title="Duplo DC-20K B2 &amp; DC-F100 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Sonlandırma</span>
+<div class="card-media">
+<img alt="Duplo DC-20K B2 Cutter Creaser System" src="images/duplo_dc-20k-b2.png"/>
+</div>
+<h3 class="card-title">Duplo DC-20K B2 &amp; DC-F100</h3>
+<p class="card-subtitle">B2 Ebadında Otomatik Dilimleme/Pilyaj ve In-line Entegre Katlama Çözümleri</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>750 x 530 mm</strong> B2</span>
+<span class="spec-pill">🔄 <strong>Giyotinsiz Hat</strong></span>
+<span class="spec-pill">📦 <strong>DC-F100 Katlama</strong></span>
+<span class="spec-pill">⚡ <strong>Sıfır Darboğaz</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>DC-20K B2:</strong> 750 x 530 mm boyutundaki B2 ofset/dijital tabakaları giyotine girmeden doğrudan işler.</li>
+<li><strong>DC-F100:</strong> DC serisine bağlanarak pilyajı açılmış tabakaları tek geçişte mektup veya akordiyon katlar.</li>
+<li>Büyük format preslerden çıkan tabakaları tek hamlede paketlemeye hazır hale getirir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>DC-20K Formatı</td><td>750 x 530 mm (B2)</td></tr>
+<tr><td>Besleme Kapasitesi</td><td>150 mm yığın yüksekliği</td></tr>
+<tr><td>DC-F100 Modu</td><td>Tek kırım, mektup, z-kırım</td></tr>
+<tr><td>Uyumlu Sistemler</td><td>DC-746, DC-648 serileri</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">B2 Dijital &amp; Ofset</span>
+<span class="app-tag">In-line Katlama</span>
+<span class="app-tag">Giyotin Tasarrufu</span>
+<span class="app-tag">Broşür Üretim Hattı</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dc-20k-b2-dc-f100" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 3: Kırım Katlama & Tel Dikiş -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 3: Kırım Katlama &amp; Tel Dikiş (Kitapçık Yapma Sistemleri)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Harmanlama, tel dikiş, katlama, ön kenar kesim, kare sırt aparatı ve eyer tipi dikiş sistemleri</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">4 Model</span>
+</div>
+<div class="products-grid">
+<!-- DBM-700 Booklet System -->
+<div class="product-card" data-keywords="duplo dbm-700 booklet making system kitapcik tel dikis 5200 kare sirt 50 tabaka 200 sayfa dergi katalog" onclick="openA4Brochure('duplo-dbm-700-booklet-system', event)" title="Duplo DBM-700 Booklet System - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Tel Dikiş &amp; Kitapçık</span>
+<div class="card-media">
+<img alt="Duplo DBM-700 Booklet Making System" src="images/duplo_dbm-700.png"/>
+</div>
+<h3 class="card-title">Duplo DBM-700 Booklet System</h3>
+<p class="card-subtitle">Saatte 5.200 Kitapçık, 50 Tabaka (200 Sayfa) Kalın Dikiş ve Kare Sırt</p>
+<div class="specs-pills">
+<span class="spec-pill">📖 <strong>5.200/saat</strong> Hız</span>
+<span class="spec-pill">📚 <strong>50 Tabaka</strong> Dikiş</span>
+<span class="spec-pill">🟦 <strong>Kare Sırt</strong> Aparatı</span>
+<span class="spec-pill">📐 <strong>356 x 650 mm</strong></span>
+</div>
+<ul class="features-list">
+<li>Duplo'nun en yüksek kapasiteli endüstriyel tel dikiş ve kitapçık yapma hattıdır.</li>
+<li>Kare Sırt (Square Spine) ünitesi ile tel dikişli kitapçığa Amerikan cilt sırtı görünümü kazandırır.</li>
+<li>Ağır gramajlı kuşe kapakları ve 200 sayfaya kadar olan kalın katalogları mükemmel zımbalar.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Hız</td><td>5.200 kitapçık / saat</td></tr>
+<tr><td>Dikiş Kapasitesi</td><td>50 yaprak (200 sayfa)</td></tr>
+<tr><td>Besleme Formatı</td><td>356 x 650 mm tabaka ebadı</td></tr>
+<tr><td>Sırt Formu</td><td>Standart dikiş + Kare sırt (Square spine)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Ürün Katalogları</span>
+<span class="app-tag">Aylık Dergiler</span>
+<span class="app-tag">Faaliyet Raporları</span>
+<span class="app-tag">Okul Yıllıkları</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dbm-700-booklet-system" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- DBM-350 & DBM-150 -->
+<div class="product-card" data-keywords="duplo dbm-350 dbm-150 kompakt otomatik kitapcik tel dikis okul ofis matbaa" onclick="openA4Brochure('duplo-dbm-350-dbm-150', event)" title="Duplo DBM-350 / DBM-150 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Tel Dikiş &amp; Kitapçık</span>
+<div class="card-media">
+<img alt="Duplo DBM-350 / DBM-150" src="images/duplo_dbm-350.jpg"/>
+</div>
+<h3 class="card-title">Duplo DBM-350 / DBM-150</h3>
+<p class="card-subtitle">Kompakt ve Orta Hacimli İşletmeler İçin Tam Otomatik Kitapçık Hatları</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>2.400 - 3.000/saat</strong></span>
+<span class="spec-pill">📄 <strong>25 - 30 Tabaka</strong></span>
+<span class="spec-pill">📐 <strong>A3 / A4 / A5</strong></span>
+<span class="spec-pill">🔌 <strong>Tak-Çalıştır</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>DBM-150:</strong> Dünyanın en kompakt tam otomatik kitapçık sistemi; okullar ve ofisler için ideal.</li>
+<li><strong>DBM-350:</strong> Yoğun dijital matbaalar için saatte 3.000 kitapçık üreten sağlam tel dikiş mekanizması.</li>
+<li>Otomatik ön kenar tıraşlama bıçağı ile jilet gibi düzgün kitapçık kenarları çıkarır.</li>
+</ul>
+<table class="spec-table">
+<tr><td>DBM-350 Hızı</td><td>Saatte 3.000 kitapçık (30 tabaka dikiş)</td></tr>
+<tr><td>DBM-150 Hızı</td><td>Saatte 2.400 kitapçık (25 tabaka dikiş)</td></tr>
+<tr><td>Ayar Süresi</td><td>Dokunmatik ekrandan tam otomatik geçiş</td></tr>
+<tr><td>Dikiş Tipi</td><td>Çift zımba başlığı + Sırt katlama</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Okul &amp; Sınav Kitapçığı</span>
+<span class="app-tag">Kullanım Kılavuzları</span>
+<span class="app-tag">Bülten &amp; Duyurular</span>
+<span class="app-tag">Hızlı Dijital Matbaa</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-dbm-350-dbm-150" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- iSaddle Range -->
+<div class="product-card" data-keywords="duplo isaddle range eyer tipi tel dikis a4 landscape yatay kitapcik harmanlama kulesi" onclick="openA4Brochure('duplo-isaddle-range', event)" title="Duplo iSaddle Range - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Tel Dikiş &amp; Kitapçık</span>
+<div class="card-media">
+<img alt="Duplo iSaddle Range" src="images/duplo_isaddle-range.jpg"/>
+</div>
+<h3 class="card-title">Duplo iSaddle Range</h3>
+<p class="card-subtitle">A4 Yatay (Landscape) Kitapçık ve Geleneksel Eyer Tipi Dikiş Mükemmelliği</p>
+<div class="specs-pills">
+<span class="spec-pill">🖼️ <strong>A4 Yatay</strong> Format</span>
+<span class="spec-pill">🎠 <strong>Eyer Tipi Dikiş</strong></span>
+<span class="spec-pill">🏢 <strong>Harmanlama Kulesi</strong></span>
+<span class="spec-pill">📐 <strong>Düz Yataklı Katlama</strong></span>
+</div>
+<ul class="features-list">
+<li>Mimari sunumlar ve fotoğraf albümleri için popüler olan A4 yatay kitapçıkları tam hızda diker.</li>
+<li>Eyer tipi taşıma sistemi sayesinde tabakalar sırtından katlanıp dikilerek sıfır kabarma sağlar.</li>
+<li>DSC-10/60i vakumlu harmanlama kuleleri ile ofset ve dijital formaları tek hatta birleştirir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Özel Yetenek</td><td>A4 Landscape (Yatay) tam boy kitapçık</td></tr>
+<tr><td>Dikiş Prensibi</td><td>Geleneksel eyer tipi (Saddle stitching)</td></tr>
+<tr><td>Besleyici</td><td>Çoklu vakumlu harmanlama kulesi entegrasyonu</td></tr>
+<tr><td>Gramaj Uyumu</td><td>Kuşe kapak ve ince iç sayfalar ile tam uyum</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">A4 Yatay Albümler</span>
+<span class="app-tag">Mimari Kataloglar</span>
+<span class="app-tag">Lüks Otomotiv Broşürü</span>
+<span class="app-tag">Harmanlamalı Yayınlar</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-isaddle-range" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 4: Dijital Kesim Masaları & Kalıp Kesim -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 4: Dijital Kesim Masaları &amp; Kalıp Kesim (Die Cutters)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Kalıpsız dijital bıçaklı kesim masaları, döner manyetik silindirli kalıp kesim ve B2 çelik kurallı kesiciler</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">4 Model</span>
+</div>
+<div class="products-grid">
+<!-- PFi Blade B2+ & B3+ -->
+<div class="product-card" data-keywords="duplo pfi blade b2 b3 dijital kesim masasi kalipsiz bicaksiz kutu etiket pilyaj ccd kamera" onclick="openA4Brochure('duplo-pfi-blade-b2-b3', event)" title="Duplo PFi Blade B2+ / B3+ - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Kesim Masası</span>
+<div class="card-media">
+<img alt="Duplo PFi Blade B2+ / B3+" src="images/duplo_pfi-blade-b2.png"/>
+</div>
+<h3 class="card-title">Duplo PFi Blade B2+ / B3+</h3>
+<p class="card-subtitle">Kalıpsız, Bıçak Masrafsız Otomatik Dijital Kesim, Pilyaj ve Çizim Masası</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>800 x 600 mm</strong> B2+</span>
+<span class="spec-pill">📦 <strong>Kalıpsız Kutu</strong></span>
+<span class="spec-pill">🏷️ <strong>Yarım Kesim Etiket</strong></span>
+<span class="spec-pill">📷 <strong>CCD Kamera</strong></span>
+</div>
+<ul class="features-list">
+<li>Pahalı bıçak kalıplarına gerek kalmadan bilgisayardaki vektör çizimi (DXF/PLT) okuyarak kesim yapar.</li>
+<li>Kesim bıçağı, teğetsel bıçak, pilyaj tekeri ve çizim kalemi takımları ile tam donanımlıdır.</li>
+<li>Karton kutular, etiketler, köpük, PVC ve mıknatıslı tabakalarda 1.5 mm derinliğe kadar çalışır.</li>
+<li>Otomatik vakumlu tabaka besleyicisi ile operatörsüz seri kutu ve etiket üretimi sağlar.</li>
+</ul>
+<table class="spec-table">
+<tr><td>B2+ Çalışma Alanı</td><td>800 x 600 mm (B3+: 600 x 400 mm)</td></tr>
+<tr><td>Maks. Kesim Hızı</td><td>1.200 mm/saniye</td></tr>
+<tr><td>Kesim Kalınlığı</td><td>1.5 mm'ye kadar (karton, oluklu, pvc)</td></tr>
+<tr><td>Pozalama</td><td>Otomatik kayıt işaretli CCD kamera</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Ambalaj Prototipleme</span>
+<span class="app-tag">Kişiselleştirilmiş Kutu</span>
+<span class="app-tag">Şekilli Etiket &amp; Sticker</span>
+<span class="app-tag">POP Teşhir Ürünleri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-pfi-blade-b2-b3" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- PFi DiCut 310 & DSM-1000 B2 -->
+<div class="product-card" data-keywords="duplo pfi dicut 310 dsm 1000 doner manyetik kalip kesim 4000 tabaka saat sekilli kart cepli dosya" onclick="openA4Brochure('pfi-dicut-310-dsm-1000-b2', event)" title="PFi DiCut 310 &amp; DSM-1000 B2 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Kalıp Kesim</span>
+<div class="card-media">
+<img alt="Duplo PFi DiCut 310 / DSM-1000 B2" src="images/duplo_pfi-dicut-310.png"/>
+</div>
+<h3 class="card-title">PFi DiCut 310 &amp; DSM-1000 B2</h3>
+<p class="card-subtitle">Saatte 4.000 Tabaka Döner Kalıp Kesim ve B2 Çelik Kurallı Kalıp Çözümleri</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>4.000 tabaka/saat</strong></span>
+<span class="spec-pill">🧲 <strong>Manyetik Döner Kalıp</strong></span>
+<span class="spec-pill">📐 <strong>B2 DSM-1000</strong></span>
+<span class="spec-pill">✨ <strong>Gofre Kabartma</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>PFi DiCut 310:</strong> Manyetik esnek kalıplar ile saatte 4.000 tabaka hızında döner kesim ve atık ayıklama.</li>
+<li><strong>DSM-1000 B2:</strong> B2 formatında cepli klasörler, lüks kutular için çelik kalıplı kesim ve gofre kabartma.</li>
+<li>Yüksek adetli şekilli kart, etiket ve ambalaj işlerinde rakipsiz hız ve birim maliyet avantajı.</li>
+</ul>
+<table class="spec-table">
+<tr><td>DiCut 310 Hızı</td><td>4.000 tabaka / saat (330 x 500 mm)</td></tr>
+<tr><td>DSM-1000 Formatı</td><td>530 x 750 mm (B2 Çelik kurallı)</td></tr>
+<tr><td>İşlem Tipi</td><td>Kalıp kesim, yarım kesim, pilyaj, gofre</td></tr>
+<tr><td>Atık Ayırma</td><td>Entegre otomatik atık tahliye ünitesi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Yuvarlak Köşeli Kart</span>
+<span class="app-tag">Pencereli Zarf &amp; Kutu</span>
+<span class="app-tag">Cepli Sunum Dosyası</span>
+<span class="app-tag">Yüksek Tiraj Etiket</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=pfi-dicut-310-dsm-1000-b2" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 5: Kağıt Katlama Makineleri -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 5: Katlama Makinesi (Folder Range)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Masaüstü sessiz ofis katlama makineleri, ultrasonik sensörlü dokunmatik modeller ve uzun tabaka hava emişli üniteler</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">5 Model</span>
+</div>
+<div class="products-grid">
+<!-- DF-1300L Uzun Tabaka Hava Emişli -->
+<div class="product-card" data-keywords="duplo df-1300l uzun tabaka 648 mm hava emisli vakumlu katlama kuse cizilmez 310 tabaka dk" onclick="openA4Brochure('duplo-df-1300l', event)" title="Duplo DF-1300L - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Katlama Makinesi</span>
+<div class="card-media">
+<img alt="Duplo DF-1300L" src="images/duplo_df-1300l.png"/>
+</div>
+<h3 class="card-title">Duplo DF-1300L</h3>
+<p class="card-subtitle">648 mm Uzun Tabaka Desteği ve Kuşe Kağıtlar İçin Çiziksiz Vakumlu Hava Emişi</p>
+<div class="specs-pills">
+<span class="spec-pill">💨 <strong>Hava Emişli</strong> Besleme</span>
+<span class="spec-pill">📏 <strong>648 mm</strong> Uzun Tabaka</span>
+<span class="spec-pill">⚡ <strong>310 tabaka/dk</strong></span>
+<span class="spec-pill">🛡️ <strong>Toner Çizilmez</strong></span>
+</div>
+<ul class="features-list">
+<li>Vakumlu hava emişli besleme kafası, sürtünmeli lastiklerin kuşe kağıtta bıraktığı izleri engeller.</li>
+<li>648 mm'ye varan uzun tabaka desteği ile 6 panelli A4 akordiyon katlamalı broşürleri tek seferde katlar.</li>
+<li>Dakikada 310 tabakaya varan üretim hızı ile yoğun matbaa ve kopyalama merkezlerinin gözdesidir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Ebat</td><td>311 x 648 mm uzun A3</td></tr>
+<tr><td>Maksimum Hız</td><td>310 tabaka / dakika</td></tr>
+<tr><td>Besleme Tipi</td><td>Vakumlu hava emişli (Air suction)</td></tr>
+<tr><td>Katlama Tipleri</td><td>Tek, mektup, zikzak, çift, kapı, akordiyon</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Uzun A4 Broşür</span>
+<span class="app-tag">Kuşe Kağıt Katlama</span>
+<span class="app-tag">Hassas Dijital Baskı</span>
+<span class="app-tag">Katalog İnsertleri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-df-1300l" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- DF-999 / DF-990 & DF-870 / DF-850 -->
+<div class="product-card" data-keywords="duplo df-999 df-990 df-870 df-850 masaustu katlama 260 tabaka ultrasonik dokunmatik sessiz" onclick="openA4Brochure('duplo-df-999-990-870-850', event)" title="Duplo DF-999 / 990 / 870 / 850 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Katlama Makinesi</span>
+<div class="card-media">
+<img alt="Duplo DF-999 / DF-990 / DF-870 / DF-850" src="images/duplo_df-999.jpg"/>
+</div>
+<h3 class="card-title">Duplo DF-999 / 990 / 870 / 850</h3>
+<p class="card-subtitle">Masaüstü Profesyonel Katlama, Renkli Dokunmatik Panel ve Ultrasonik Sensör</p>
+<div class="specs-pills">
+<span class="spec-pill">⚡ <strong>241 - 260 sayfa/dk</strong></span>
+<span class="spec-pill">📱 <strong>Dokunmatik LCD</strong></span>
+<span class="spec-pill">🔊 <strong>Ultrasonik Çift Besleme</strong></span>
+<span class="spec-pill">🔇 <strong>Sessiz Mekanizma</strong></span>
+</div>
+<ul class="features-list">
+<li><strong>DF-999 &amp; DF-990:</strong> 260 tabaka/dk rekor hız, ultrasonik çift sayfa algılama ve sessiz gövde.</li>
+<li><strong>DF-870 &amp; DF-850:</strong> Kompakt masaüstü tasarımı, otomatik motorlu çanta ayarı ve 241 sayfa/dk verim.</li>
+<li>Fatura, sözleşme, bülten ve el ilanı katlamada personel zamanını sıfıra indirir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Hız Aralığı</td><td>241 - 260 tabaka / dakika</td></tr>
+<tr><td>Kağıt Boyutları</td><td>A3, A4, A5, B4, B5 ve özel ebatlar</td></tr>
+<tr><td>Sensör Teknolojisi</td><td>Ultrasonik çift tabaka dedektörü (DF-999)</td></tr>
+<tr><td>Tepsi Kapasitesi</td><td>500 tabaka yükleme tepsisi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Fatura &amp; Ekstre</span>
+<span class="app-tag">Kurumsal Posta</span>
+<span class="app-tag">Masaüstü Ofis</span>
+<span class="app-tag">El İlanı &amp; Broşür</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-df-999-990-870-850" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 6: Amerikan Cilt Kapak Takma -->
+<div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-left: 4px solid #9333ea; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #7e22ce; font-size: 1.05rem;">Ürün Grubu 6: Amerikan Cilt Kapak Takma (PUR Perfect Binder)</strong>
+<p style="margin: 3px 0 0; color: #6b21a8; font-size: 0.85rem;">Zorlu dijital baskılı kuşe ve sentetik malzemeler için patentli Orbital PUR kapalı nozüllü ciltleme sistemi</p>
+</div>
+<span style="background: #7e22ce; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">1 Model</span>
+</div>
+<div class="products-grid">
+<!-- PFi BIND 2100 PUR -->
+<div class="product-card" data-keywords="duplo pfi bind 2100 pur amerikan cilt orbital pur kapali nozul temizliksiz 290 kitap saat kopmaz" onclick="openA4Brochure('duplo-pfi-bind-2100-pur', event)" title="Duplo PFi BIND 2100 PUR - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-duplo">Duplo Amerikan Cilt</span>
+<div class="card-media">
+<img alt="Duplo PFi BIND 2100 PUR" src="images/duplo_pfi-bind-2100-pur.png"/>
+</div>
+<h3 class="card-title">Duplo PFi BIND 2100 PUR</h3>
+<p class="card-subtitle">Patentli Orbital PUR Nozül Sistemi İle Sıfır Temizlik ve Kopmaz Cilt Gücü</p>
+<div class="specs-pills">
+<span class="spec-pill">📚 <strong>290 kitap/saat</strong></span>
+<span class="spec-pill">🛡️ <strong>Orbital PUR</strong> Kapalı</span>
+<span class="spec-pill">📏 <strong>1 - 40 mm</strong> Sırt</span>
+<span class="spec-pill">🧹 <strong>Sıfır Günlük Temizlik</strong></span>
+</div>
+<ul class="features-list">
+<li>Açık tutkal haznesi yerine kapalı tüp sistemi kullanır; günlük saatler süren zahmetli temizliği ortadan kaldırır.</li>
+<li>Ağır tonerli, laklı veya sentetik kuşe kağıtları ömür boyu yaprak dökmeyecek güçte yapıştırır.</li>
+<li>Otomatik kapak besleme ve kitap kalınlığını ölçerek pilyaj ayarını kendisi yapan akıllı sistem.</li>
+<li>Saatte 290 kitaba kadar üretim ile butik ve seri kitap basımlarında kusursuz netice verir.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Maksimum Hız</td><td>290 döngü / saat</td></tr>
+<tr><td>Kitap Kalınlığı</td><td>1 mm'den 40 mm'ye kadar (10 - 800 sayfa)</td></tr>
+<tr><td>Maksimum Blok Ebadı</td><td>320 x 360 mm</td></tr>
+<tr><td>Tutkal Teknolojisi</td><td>Poliüretan Reaktif (PUR) kapalı orbital nozül</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Fotokitap &amp; Yıllık</span>
+<span class="app-tag">Üniversite Tezleri</span>
+<span class="app-tag">Kuşe Roman &amp; Şiir Kitabı</span>
+<span class="app-tag">Kurumsal Raporlar</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=duplo-pfi-bind-2100-pur" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 6: EPSON -->
+<div class="category-block" data-category="epson" id="epson">
+<div class="category-header">
+<div class="category-title">
+<span>Epson Geniş Format &amp; CAD / GIS Sistemleri</span>
+</div>
+<span class="category-badge">Eko-Solvent Signage &amp; CAD Poster</span>
+</div>
+<div class="products-grid">
+<!-- Epson SC-S Serisi -->
+<div class="product-card" data-keywords="epson surecolor sc-s9100 sc-s8100 sc-s7100 eko solvent tabela arac giydirme greenguard 10 renk" onclick="openA4Brochure('epson-surecolor-sc-s9100-sc-s8100', event)" title="Epson SureColor SC-S9100 / SC-S8100 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-epson">Epson Signage</span>
+<div class="card-media">
+<img alt="Epson SureColor SC-S9100 / SC-S8100" src="images/epson_scs8100.webp"/>
+</div>
+<h3 class="card-title">Epson SureColor SC-S9100 / SC-S8100</h3>
+<p class="card-subtitle">Tabela ve Araç Giydirmede Dünya Standardı Renk Doğruluğu</p>
+<div class="specs-pills">
+<span class="spec-pill">🎨 <strong>10 Renk</strong> GS3 Seti</span>
+<span class="spec-pill">🔬 <strong>Micro TFP</strong> Kafa</span>
+<span class="spec-pill">🌱 <strong>GreenGuard Gold</strong></span>
+<span class="spec-pill">🚗 <strong>Araç Kaplama</strong></span>
+</div>
+<ul class="features-list">
+<li>UltraChrome GS3 mürekkep seti: Kırmızı, Turuncu, Açık Siyah ve Metalik/Beyaz seçenekleri.</li>
+<li>Pantone renklerinin %98.2'sine ulaşan sektörün en geniş renk uzayı.</li>
+<li>GreenGuard Gold sertifikası sayesinde hastane ve okullar gibi hassas iç mekanlarda güvenli kullanım.</li>
+<li>Otomatik gergi kontrollü hassas sarma motoru ile rulo boyu sıfır sapma.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Eni</td><td>162.6 cm (64 inç)</td></tr>
+<tr><td>Baskı Kafası</td><td>PrecisionCore Micro TFP piezo kafalar</td></tr>
+<tr><td>Çözünürlük</td><td>1440 x 1440 dpi fotogerçekçi kalite</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Premium Araç Giydirme</span>
+<span class="app-tag">Işıklı Vitrin Afişi</span>
+<span class="app-tag">Fine Art Kanvas Tablo</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=epson-surecolor-sc-s9100-sc-s8100" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Epson SC-T Serisi -->
+<div class="product-card" data-keywords="epson surecolor sc-t3405 sc-t5405 sc-t3100m cad mimari muhendislik gis harita poster teknik cizim" onclick="openA4Brochure('epson-surecolor-sc-t3405-sc-t5405', event)" title="Epson SureColor SC-T3405 / SC-T5405 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-epson">Epson CAD &amp; Poster</span>
+<div class="card-media">
+<img alt="Epson SureColor SC-T3405 / SC-T5405" src="images/epson_surecolor_sample.webp"/>
+</div>
+<h3 class="card-title">Epson SureColor SC-T3405 / SC-T5405</h3>
+<p class="card-subtitle">Mimari CAD, Mühendislik Çizimleri ve Perakende Poster Yazıcısı</p>
+<div class="specs-pills">
+<span class="spec-pill">⏱️ <strong>22 sn / A1 Çizim</strong></span>
+<span class="spec-pill">💧 <strong>Suya Dayanıklı XD2</strong></span>
+<span class="spec-pill">📶 <strong>Wi-Fi &amp; Mobil</strong></span>
+<span class="spec-pill">📄 <strong>24 &amp; 36 inç</strong></span>
+</div>
+<ul class="features-list">
+<li>UltraChrome XD2 pigment mürekkepler ile şantiyede yağmurda akmayan, fosforlu kalemde dağılmayan çizgiler.</li>
+<li>Bir adet A1 teknik çizimi sadece 22 saniyede basan süper yüksek hız.</li>
+<li>Entegre tarayıcılı MFP modelleri ile eski paftaları tek tuşla 600 dpi tarama ve çoğaltma.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Hız</td><td>22 sn / A1 sayfa</td></tr>
+<tr><td>Formatlar</td><td>24 inç (T3405) ve 36 inç (T5405)</td></tr>
+<tr><td>Mürekkep</td><td>Suya dayanıklı 4 renk pigment XD2</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Mimari Projeler</span>
+<span class="app-tag">İnşaat Şantiye Çizimleri</span>
+<span class="app-tag">GIS Haritaları</span>
+<span class="app-tag">Mağaza İçi Afişler</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=epson-surecolor-sc-t3405-sc-t5405" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 7: SUTEC -->
+<div class="category-block" data-category="sutec" id="sutec">
+<div class="category-header">
+<div class="category-title">
+<span>Sutec Dijital Baskı Çözümleri</span>
+</div>
+<span class="category-badge">Lidya Grup Öz Markası</span>
+</div>
+<div class="products-grid">
+<!-- Sutec DTF 3200 -->
+<div class="product-card" data-keywords="sutec dtf 3200 tekstil transfer baski tisort forma pamuk polyester firinli sarma entegre" onclick="openA4Brochure('sutec-dtf-3200-direct-to-film-hatt', event)" title="Sutec DTF 3200 (Direct-to-Film) Hattı - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-sutec">Sutec Tekstil</span>
+<div class="card-media">
+<img alt="Sutec DTF 3200 (Direct-to-Film) Hattı" src="images/sutec_dtf3200.jpg"/>
+</div>
+<h3 class="card-title">Sutec DTF 3200 (Direct-to-Film) Hattı</h3>
+<p class="card-subtitle">Kalıpsız, Ayıklamasız Tüm Kumaşlara Yüksek Dayanımlı Transfer Baskı</p>
+<div class="specs-pills">
+<span class="spec-pill">👕 <strong>Tüm Kumaş Türleri</strong></span>
+<span class="spec-pill">🔥 <strong>Entegre IR Fırın</strong></span>
+<span class="spec-pill">🧼 <strong>60°C Yıkama Direnci</strong></span>
+<span class="spec-pill">🖨️ <strong>Epson i3200 Kafalar</strong></span>
+</div>
+<ul class="features-list">
+<li>Yazıcı, otomatik toz serpme, IR fırınlama ve sarma ünitesi tek kompakt hatta entegre.</li>
+<li>Pamuk, polyester, denim, polar, deri ve naylon kumaşlara sorunsuz transfer.</li>
+<li>Flekso folyolardaki gibi ayıklama zahmeti yok; sadece desen kumaşa yapışır.</li>
+<li>Aktif beyaz boya sirkülasyonu ile tıkanmasız, canlı ve esnek baskı sonucu.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Baskı Eni</td><td>60 cm film genişliği</td></tr>
+<tr><td>Baskı Kafaları</td><td>2 veya 4 adet Epson i3200</td></tr>
+<tr><td>Sistem Bileşenleri</td><td>Yazıcı + Tozlama + IR Fırın + Otomatik Sarıcı</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Tişört &amp; Sweatshirt</span>
+<span class="app-tag">Spor Forması &amp; Mont</span>
+<span class="app-tag">Şapka, Çanta, Ayakkabı</span>
+<span class="app-tag">İş Elbiseleri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=sutec-dtf-3200-direct-to-film-hatt" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- Sutec Flatbed UV -->
+<div class="product-card" data-keywords="sutec flatbed uv promosyon sert zemin ahsap deri metal uygun maliyet yerli servis" onclick="openA4Brochure('sutec-end-striyel-flatbed-uv-serisi', event)" title="Sutec Endüstriyel Flatbed UV Serisi - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-sutec">Sutec Endüstriyel UV</span>
+<div class="card-media">
+<img alt="Sutec Endüstriyel Flatbed UV Serisi" src="images/sutec_flatbed.jpg"/>
+</div>
+<h3 class="card-title">Sutec Endüstriyel Flatbed UV Serisi</h3>
+<p class="card-subtitle">Yüksek Hassasiyetli Gövde ve Rekabetçi Üretim Maliyetleri</p>
+<div class="specs-pills">
+<span class="spec-pill">💎 <strong>Ekonomik Maliyet</strong></span>
+<span class="spec-pill">🛡️ <strong>Lidya Garantisi</strong></span>
+<span class="spec-pill">🎨 <strong>CMYK + W + Vernik</strong></span>
+</div>
+<ul class="features-list">
+<li>Lidya Grup mühendisliğiyle Türkiye pazarının zorlu şartlarına göre konfigüre edilmiş yapı.</li>
+<li>Ahşap, pleksi, deri, metal ve hediyelik eşyalar için dayanıklı ve çizilmez baskılar.</li>
+<li>%100 yerel ve kesintisiz teknik servis, boya ve parça güvencesi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Uygulama</td><td>Promosyon, tabela, mimari dekorasyon</td></tr>
+<tr><td>Teknoloji</td><td>LED UV soğuk kürleme</td></tr>
+<tr><td>Destek</td><td>Lidya Grup 7/24 Teknik Servis</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Promosyonel Eşya</span>
+<span class="app-tag">Plaket &amp; Ödül</span>
+<span class="app-tag">Deri Cüzdan &amp; Ajanda</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=sutec-end-striyel-flatbed-uv-serisi" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 8: JWEI -->
+<div class="category-block" data-category="jwei" id="jwei">
+<div class="category-header">
+<div class="category-title">
+<span>JWEI Dijital Kesim ve Sonlandırma Sistemleri</span>
+</div>
+<span class="category-badge">3 Resmi Seri • 15 Endüstriyel Model</span>
+</div>
+<!-- Sub-Group 1: IG Serisi (LST) -->
+<div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-left: 4px solid #059669; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 1.5rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #047857; font-size: 1.05rem;">Ürün Grubu 1: IG Serisi (LST Akıllı Otomatik Kutu &amp; Etiket Kesim)</strong>
+<p style="margin: 3px 0 0; color: #065f46; font-size: 0.85rem;">Kalıpsız (dieless) üretim, otomatik vakumlu tabaka besleme, CCD kamera + QR kodla anında iş tanıma, operatörsüz (unattended) çalışma</p>
+</div>
+<span style="background: #059669; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">3 Model</span>
+</div>
+<div class="products-grid">
+<!-- 1. JWEI LST03-0604-RM -->
+<div class="product-card" data-keywords="jwei lst03-0604-rm dijital kesim kirim kutu etiket otomatik besleme kalipsiz b3" onclick="openA4Brochure('jwei-lst03-0604-rm', event)" title="JWEI LST03-0604-RM - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI IG Serisi</span>
+<div class="card-media">
+<img alt="JWEI LST03-0604-RM" src="images/jwei-lst03-0604-rm.jpg"/>
+</div>
+<h3 class="card-title">JWEI LST03-0604-RM</h3>
+<p class="card-subtitle">Kompakt Alanda Kalıpsız Kutu, Prototip ve Etiket Üretim Gücü</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>600 x 400 mm</strong> B3</span>
+<span class="spec-pill">⚡ <strong>1500 mm/s</strong> Hız</span>
+<span class="spec-pill">🔄 <strong>Otomatik Besleme</strong></span>
+<span class="spec-pill">🏷️ <strong>Yarım &amp; Tam Kesim</strong></span>
+</div>
+<ul class="features-list">
+<li>Otomatik vakumlu besleyici ile tabakaları desteden tek tek alıp kesim alanına sürer.</li>
+<li>Kalıp maliyeti olmadan etiket, çıkartma, kozmetik ambalajı ve prototip kutu üretir.</li>
+<li>Salınımlı bıçak (EOT), kiss-cut yarım kesim ve kırım tekeri ile çok fonksiyonludur.</li>
+<li>CCD optik kamera baskı kroslarını ve QR kodları okuyarak sıfır kayma sağlar.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>600 x 400 mm</td></tr>
+<tr><td>Maks. Kesim Hızı</td><td>1500 mm/saniye (±0.1 mm)</td></tr>
+<tr><td>Maks. Kalınlık</td><td>10 mm (Karton, mikrodalga, etiket)</td></tr>
+<tr><td>Besleme Tipi</td><td>Otomatik vakumlu asansör (≤100 mm)</td></tr>
+<tr><td>Yazılım</td><td>JWPS (1000+ hazır kutu şablonu) + JWCS</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Kozmetik Ambalajı</span>
+<span class="app-tag">Etiket &amp; Sticker</span>
+<span class="app-tag">Prototip Kutu</span>
+<span class="app-tag">Butik Matbaa</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-lst03-0604-rm" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 2. JWEI LST03Ⅱ-0806-RM -->
+<div class="product-card" data-keywords="jwei lst03ii-0806-rm lst03-0806 b2 otomatik kutu kirim ambalaj etiket unattended" onclick="openA4Brochure('jwei-lst03-0806-rm', event)" title="JWEI LST03Ⅱ-0806-RM - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI IG Serisi</span>
+<div class="card-media">
+<img alt="JWEI LST03Ⅱ-0806-RM" src="images/jwei-lst03-0806-rm.jpg"/>
+</div>
+<h3 class="card-title">JWEI LST03Ⅱ-0806-RM</h3>
+<p class="card-subtitle">B2 Formatında Tam Otomatik, İnsansız (Unattended) Dijital Ambalaj Üretimi</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>800 x 600 mm</strong> B2</span>
+<span class="spec-pill">⚡ <strong>1500 mm/s</strong> Hız</span>
+<span class="spec-pill">⏱️ <strong>15-45 sn</strong>/Tabaka</span>
+<span class="spec-pill">🤖 <strong>Unattended Operatörsüz</strong></span>
+</div>
+<ul class="features-list">
+<li>Otomatik vakumlu besleme, kesim ve toplama süreçlerini birleştirerek insansız çalışır.</li>
+<li>%95'e varan otomatik alma başarısı ile tabakaları istiften besler ve alıcı tablaya dizer.</li>
+<li>QR kod okuma ile farklı ebat ve tasarımdaki işleri kesintisiz art arda işler.</li>
+<li>EOT salınımlı bıçak, kiss-cut, V-cut ve kırım tekeri ile çoklu takım kafası.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>800 x 600 mm (B2 Tabaka)</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1500 mm/s | ±0.1 mm</td></tr>
+<tr><td>İşlem Hızı</td><td>15 – 45 saniye / tabaka</td></tr>
+<tr><td>Takım Sistemi</td><td>Multi-tool: EOT, Kiss-cut, V-cut, Creasing</td></tr>
+<tr><td>Besleme / İstif</td><td>≤100 mm otomatik asansör + otomatik toplama</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">B2 Kutu Üretimi</span>
+<span class="app-tag">Lüks Ambalaj</span>
+<span class="app-tag">Çikolata &amp; Parfüm Kutusu</span>
+<span class="app-tag">POP/POS Stand</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-lst03-0806-rm" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 3. JWEI LST03Ⅱ-0912-RM -->
+<div class="product-card" data-keywords="jwei lst03ii-0912-rm 900x1200 genis ebat kutu ambalaj kirim otomatik besleme" onclick="openA4Brochure('jwei-lst03-0912-rm', event)" title="JWEI LST03Ⅱ-0912-RM - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI IG Serisi</span>
+<div class="card-media">
+<img alt="JWEI LST03Ⅱ-0912-RM" src="images/jwei-lst03-0912-rm.jpg"/>
+</div>
+<h3 class="card-title">JWEI LST03Ⅱ-0912-RM</h3>
+<p class="card-subtitle">900 x 1200 mm Geniş Kesim Alanında Kalıpsız Endüstriyel Kutu İmalatı</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>900 x 1200 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1500 mm/s</strong> Hız</span>
+<span class="spec-pill">📦 <strong>70x100+ Tabaka</strong></span>
+<span class="spec-pill">📐 <strong>10 mm Kalınlık</strong></span>
+</div>
+<ul class="features-list">
+<li>900 x 1200 mm geniş tablası ile 70x100 cm ve daha büyük ofset tabakalarını rahatça işler.</li>
+<li>Büyük boy kargo kolileri, mikrodalga ambalajlar ve stand parçalarını tek seferde keser.</li>
+<li>CCD kamera pozalaması ve 1000'den fazla parametrik kutu şablonu kütüphanesi.</li>
+<li>Otomatik yükleme asansörü ve toplama tablası ile vardiyalı kesintisiz üretim.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>900 x 1200 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1500 mm/s | ±0.1 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>10 mm (Karton, mikrodalga, fotoblok)</td></tr>
+<tr><td>Otomasyon</td><td>Otomatik yükleme + kesim + otomatik boşaltma</td></tr>
+<tr><td>Takımlar</td><td>EOT, Teğetsel bıçak, V-Cut, Kırım tekeri</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Büyük Koli &amp; Kutu</span>
+<span class="app-tag">E-Ticaret Ambalajı</span>
+<span class="app-tag">Display Standı</span>
+<span class="app-tag">Endüstriyel Mukavva</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-lst03-0912-rm" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 2: SC Serisi -->
+<div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid #2563eb; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #1e40af; font-size: 1.05rem;">Ürün Grubu 2: SC Serisi (Çok İşlevli Profesyonel Kesim Masaları - 1800 mm/s)</strong>
+<p style="margin: 3px 0 0; color: #1e3a8a; font-size: 0.85rem;">1800 mm/s hız, ±0.05 mm hassasiyet, 50 mm kalınlık, zonlu güçlü vakum tablası, CCD kamera ve 1kW freze router desteği</p>
+</div>
+<span style="background: #2563eb; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">5 Model</span>
+</div>
+<div class="products-grid">
+<!-- 4. JWEI SC1311 -->
+<div class="product-card" data-keywords="jwei sc1311 dijital kesim masasi freze router salinimli bicak prototip 1300x1100" onclick="openA4Brochure('jwei-sc1311', event)" title="JWEI SC1311 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SC Serisi</span>
+<div class="card-media">
+<img alt="JWEI SC1311" src="images/jwei-sc1311.jpg"/>
+</div>
+<h3 class="card-title">JWEI SC1311</h3>
+<p class="card-subtitle">1300 x 1100 mm Kompakt Alanda 1800 mm/s Yüksek Hassasiyetli Kesim &amp; Freze</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1300 x 1100 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1800 mm/s</strong> Hız</span>
+<span class="spec-pill">🎯 <strong>±0.05 mm</strong></span>
+<span class="spec-pill">⚙️ <strong>1kW Router Freze</strong></span>
+</div>
+<ul class="features-list">
+<li>Kompakt baskı merkezleri ve prototip laboratuvarları için ideal yer tasarruflu tasarım.</li>
+<li>Salınımlı bıçak, teğetsel bıçak, kırım tekeri ve 1kW freze router modülü tek masada.</li>
+<li>Lazer takım sıfırlama sensörü ile bıçak ve freze boyunu otomatik sıfırlar.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1300 x 1100 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1800 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takımlar</td><td>EOT/POT Salınımlı, Teğetsel, Freze, Kırım</td></tr>
+<tr><td>Pozalama</td><td>Endüstriyel CCD Optik Kamera</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Pleksi &amp; Akrilik</span>
+<span class="app-tag">Dekota / Foreks</span>
+<span class="app-tag">Prototip Ambalaj</span>
+<span class="app-tag">Conta &amp; Conta Kauçuğu</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sc1311" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 5. JWEI SC1325 -->
+<div class="product-card" data-keywords="jwei sc1325 tabela reklam kompozit levha kesim masasi freze router 1300x2500" onclick="openA4Brochure('jwei-sc1325', event)" title="JWEI SC1325 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SC Serisi</span>
+<div class="card-media">
+<img alt="JWEI SC1325" src="images/jwei-sc1325.jpg"/>
+</div>
+<h3 class="card-title">JWEI SC1325</h3>
+<p class="card-subtitle">1300 x 2500 mm Standart Levha Formatında Güçlü Endüstriyel Çözüm</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1300 x 2500 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1800 mm/s</strong> Hız</span>
+<span class="spec-pill">🛡️ <strong>Ağır Çelik Şase</strong></span>
+<span class="spec-pill">🪓 <strong>Kompozit &amp; Pleksi</strong></span>
+</div>
+<ul class="features-list">
+<li>Standart 1.25 x 2.50 metre reklam ve tabela levhalarını bölmeden tek seferde işler.</li>
+<li>Titreşimi sıfıra indiren ağır çelik gövdesi ile frezelemede pürüzsüz kenar kalitesi.</li>
+<li>Zonlu matris vakum tablası ile küçük parçaları masaya kuvvetle yapıştırır.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1300 x 2500 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1800 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takımlar</td><td>EOT, POT, V-Cut, Kırım, 1kW/1.8kW Freze</td></tr>
+<tr><td>Vakum Gücü</td><td>Çok bölgeli türbin vakum sistemi</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Işıklı Kutu &amp; Tabela</span>
+<span class="app-tag">Alüminyum Kompozit</span>
+<span class="app-tag">Pleksi Stand</span>
+<span class="app-tag">Dekota Harf</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sc1325" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 6. JWEI SC1618 -->
+<div class="product-card" data-keywords="jwei sc1618 oluklu mukavva stand pop pos petek panel pnomatik bicak 1600x1800" onclick="openA4Brochure('jwei-sc1618', event)" title="JWEI SC1618 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SC Serisi</span>
+<div class="card-media">
+<img alt="JWEI SC1618" src="images/jwei-sc1618.jpg"/>
+</div>
+<h3 class="card-title">JWEI SC1618</h3>
+<p class="card-subtitle">1600 x 1800 mm Genişlikte Ambalaj, Koli ve POP Teşhir Standı Üretim Merkezi</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1600 x 1800 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1800 mm/s</strong> Hız</span>
+<span class="spec-pill">📦 <strong>Ağır Oluklu Mukavva</strong></span>
+<span class="spec-pill">💨 <strong>POT Pnömatik Bıçak</strong></span>
+</div>
+<ul class="features-list">
+<li>1.6 metre tablası ile orta boy koli ve teşhir standı parçalarını fire vermeden keser.</li>
+<li>POT pnömatik salınımlı bıçağı ile 50 mm kalınlığa kadar petek panelleri ve süngerleri rahatça keser.</li>
+<li>Çeşitli profillerdeki kırım tekerleri ile mukavvada çatlama yapmadan katlama hatları çizer.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1600 x 1800 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1800 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm (Petek panel, re-board, fotoblok)</td></tr>
+<tr><td>Kafa Yapısı</td><td>Çift modüllü takım başlığı (POT + Kırım)</td></tr>
+<tr><td>Pozalama</td><td>CCD Kamera (Baskılı mukavvalar için)</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">POP/POS Stand</span>
+<span class="app-tag">Petek Panel Mobilya</span>
+<span class="app-tag">Ağır Mukavva Koli</span>
+<span class="app-tag">Sünger &amp; Seperatör</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sc1618" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 7. JWEI SC1625 -->
+<div class="product-card" data-keywords="jwei sc1625 endustriyel standart levha kesim masasi freze salinimli bicak 1600x2500" onclick="openA4Brochure('jwei-sc1625', event)" title="JWEI SC1625 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SC Serisi</span>
+<div class="card-media">
+<img alt="JWEI SC1625" src="images/jwei-sc1625.jpg"/>
+</div>
+<h3 class="card-title">JWEI SC1625</h3>
+<p class="card-subtitle">1600 x 2500 mm İdeal Ebatta Matbaa, Reklam ve Endüstriyel İmalat Gücü</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1600 x 2500 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1800 mm/s</strong> Hız</span>
+<span class="spec-pill">🏆 <strong>En Çok Satan Model</strong></span>
+<span class="spec-pill">🔧 <strong>Çift Takım + Freze</strong></span>
+</div>
+<ul class="features-list">
+<li>1600 x 2500 mm ebadı ile piyasadaki tüm standart plaka ve rulo baskı formatlarına tam uyumludur.</li>
+<li>Hem dijital baskılı karton ambalajı hem de 20 mm pleksi/kompoziti aynı gün kesebilir.</li>
+<li>Havacılık sınıfı petek vakum tablası ve Japon servo motorlar ile uzun ömürlü kararlılık.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1600 x 2500 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1800 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takım Yelpazesi</td><td>EOT, POT, V-Cut, Kırım Tekeri, 1kW Freze</td></tr>
+<tr><td>Şase &amp; Ağırlık</td><td>3400 x 2300 x 1250 mm / 1100 kg</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Tabela &amp; Reklam</span>
+<span class="app-tag">Mimari Maket</span>
+<span class="app-tag">Kompozit Cephe</span>
+<span class="app-tag">Endüstriyel Conta</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sc1625" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 8. JWEI SC2030 -->
+<div class="product-card" data-keywords="jwei sc2030 buyuk format agir hizmet kesim masasi 2000x3000 freze cift turbin" onclick="openA4Brochure('jwei-sc2030', event)" title="JWEI SC2030 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SC Serisi</span>
+<div class="card-media">
+<img alt="JWEI SC2030" src="images/jwei-sc2030.jpg"/>
+</div>
+<h3 class="card-title">JWEI SC2030</h3>
+<p class="card-subtitle">2000 x 3000 mm Devasa Alanda Ağır Hizmet Tipi Endüstriyel Kesim &amp; Freze</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>2000 x 3000 mm</strong></span>
+<span class="spec-pill">⚡ <strong>1800 mm/s</strong> Hız</span>
+<span class="spec-pill">🌀 <strong>Çift Türbin Vakum</strong></span>
+<span class="spec-pill">🏛️ <strong>2x3m Plaka Boyu</strong></span>
+</div>
+<ul class="features-list">
+<li>Piyasadaki en büyük standart levha boyutu olan 2x3 metre malzemeleri kesintisiz bağlar.</li>
+<li>Ağır portal yapısı 1800 mm/s hızda sıfır esneme ile pürüzsüz kavis ve açılar üretir.</li>
+<li>Çift motorlu yüksek debili endüstriyel vakum sistemi ile küçük parçaları dahi uçurmaz.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>2000 x 3000 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>1800 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Güç &amp; Voltaj</td><td>380V ±10% / 50Hz, 11 kW</td></tr>
+<tr><td>Ebat &amp; Ağırlık</td><td>3900 x 2800 x 1250 mm / 1450 kg</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Dış Mekan Totem</span>
+<span class="app-tag">Büyük Tabela</span>
+<span class="app-tag">Cephe Kaplama</span>
+<span class="app-tag">2x3m Pleksi Plaka</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sc2030" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+<!-- Sub-Group 3: SG Serisi -->
+<div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #d97706; padding: 0.9rem 1.4rem; border-radius: 8px; margin: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong style="color: #92400e; font-size: 1.05rem;">Ürün Grubu 3: SG Serisi (Ultra Yüksek Hızlı Otomatik Yüklemeli CNC Kesim - 2000 mm/s)</strong>
+<p style="margin: 3px 0 0; color: #78350f; font-size: 0.85rem;">2000 mm/s ultra hız, konveyörlü yükleme-boşaltma hatları, AI Cutting Assistant, otomatik takım değiştirici (ATC), MES fabrika entegrasyonu</p>
+</div>
+<span style="background: #d97706; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">7 Model</span>
+</div>
+<div class="products-grid">
+<!-- 9. JWEI SG1311 -->
+<div class="product-card" data-keywords="jwei sg1311 ultra hizli 2000 mm/s konveyorlu otomatik besleme kesim bosaltma cnc 1300x1100" onclick="openA4Brochure('jwei-sg1311', event)" title="JWEI SG1311 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG1311" src="images/jwei-sg1311.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG1311</h3>
+<p class="card-subtitle">1300 x 1100 mm Alanda 2000 mm/s Ultra Hız ve Sürekli Konveyörlü Otomasyon</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1300 x 1100 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Ultra Hız</span>
+<span class="spec-pill">🔄 <strong>Konveyör Bantlı</strong></span>
+<span class="spec-pill">🤖 <strong>AI Destekli</strong></span>
+</div>
+<ul class="features-list">
+<li>2000 mm/s maksimum kesim hızı ile standart kesim masalarına göre %40 daha hızlı üretim.</li>
+<li>Konveyörlü bant tablası malzemeyi otomatik içeri çeker ve kesim bitince dışarı taşır.</li>
+<li>Akıllı AI algoritması köşelerde hız optimizasyonu yaparak malzemeyi korur.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1300 x 1100 mm</td></tr>
+<tr><td>Maks. Hız</td><td>2000 mm/s (±0.05 mm)</td></tr>
+<tr><td>Masa Yapısı</td><td>Konveyörlü Vakum Tablası</td></tr>
+<tr><td>Takım Sistemi</td><td>2 veya 3 Takım Kafası (Modüler)</td></tr>
+<tr><td>MES Desteği</td><td>Akıllı CNC Platformu + Fabrika ERP Bağlantısı</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Seri Etiket Kesimi</span>
+<span class="app-tag">Teknik Tekstil</span>
+<span class="app-tag">Hızlı Conta Kesimi</span>
+<span class="app-tag">Karton Prototip</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg1311" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 10. JWEI SG1612 -->
+<div class="product-card" data-keywords="jwei sg1612 1600x1200 ultra hizli konveyor tekstil rulo branda vinil 2000 mm/s" onclick="openA4Brochure('jwei-sg1612', event)" title="JWEI SG1612 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG1612" src="images/jwei-sg1612.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG1612</h3>
+<p class="card-subtitle">1600 x 1200 mm Genişlikte 2000 mm/s Hız ve Kesintisiz Konveyör Akışı</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1600 x 1200 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">🧵 <strong>1.6m Rulo &amp; Tekstil</strong></span>
+<span class="spec-pill">🎯 <strong>±0.05 mm</strong></span>
+</div>
+<ul class="features-list">
+<li>160 cm enindeki tekstil, bayrak kumaşı ve vinil ruloları aralıksız işler.</li>
+<li>Opsiyonel otomatik rulo besleme ünitesi ile operatörsüz rulo açma ve kesim.</li>
+<li>Ultra hızlı CCD kamera ile baskılı kumaş desenlerini deformasyonsuz okur.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1600 x 1200 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>2000 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takım Seçenekleri</td><td>POT Pnömatik, EOT, Router, Döner Bıçak</td></tr>
+<tr><td>Voltaj</td><td>380V ±10% / 50Hz</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Bayrak &amp; Kumaş</span>
+<span class="app-tag">Deri Kesimi</span>
+<span class="app-tag">Filtre Bezi</span>
+<span class="app-tag">Folyo &amp; Branda</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg1612" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 11. JWEI SG1625 -->
+<div class="product-card" data-keywords="jwei sg1625 tam otomatik yukleme kesim istifleme bosaltma cnc hatti ai cutting 1600x2500" onclick="openA4Brochure('jwei-sg1625-otomatik-hat', event)" title="JWEI SG1625 Otomatik Hat - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG1625" src="images/jwei-sg1625.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG1625 Otomatik Hat</h3>
+<p class="card-subtitle">Otomatik Yükleme, Kesim ve İstifleme Boşaltmalı Endüstriyel Amiral Gemisi</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1600 x 2500 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">🤖 <strong>AI Kesim Asistanı</strong></span>
+<span class="spec-pill">🔄 <strong>3'lü Otomasyon Hattı</strong></span>
+</div>
+<ul class="features-list">
+<li>Robotik vakumlu yükleme tablası → 2000 mm/s konveyörlü kesim masası → otomatik istifleme boşaltma masası.</li>
+<li>AI Cutting Assistant algoritması bıçak aşınmasını ve kesim rotasını optimize eder.</li>
+<li>Otomatik takım değiştirici (ATC) ile freze ve bıçak uçlarını operatörsüz değiştirir.</li>
+<li>MES/ERP fabrika entegrasyonu ve NFC operatör yetkilendirmesi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1600 x 2500 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>2000 mm/s | ±0.05 mm</td></tr>
+<tr><td>Hat Mimarisi</td><td>Vakumlu Yükleyici + Konveyör Masa + İstifleyici</td></tr>
+<tr><td>Freze Gücü</td><td>1.8 kW Yüksek Hızlı Router Motoru</td></tr>
+<tr><td>Akıllı Özellikler</td><td>AI Cutting Assistant + ATC + NFC Giriş</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">İnsansız Üretim</span>
+<span class="app-tag">Seri Koli İmalatı</span>
+<span class="app-tag">Kompozit Derzleme</span>
+<span class="app-tag">Endüstri 4.0 Fabrika</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg1625-otomatik-hat" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 12. JWEI SG1635 -->
+<div class="product-card" data-keywords="jwei sg1635 ekstra uzun levha mimari kompozit fuar panel display 1600x3500 2000 mm/s" onclick="openA4Brochure('jwei-sg1635', event)" title="JWEI SG1635 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG1635" src="images/jwei-sg1635.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG1635</h3>
+<p class="card-subtitle">1600 x 3500 mm Geniş Çalışma Alanında 2000 mm/s Hız ile Uzun Levha Üretimi</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>1600 x 3500 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">📏 <strong>3.5 Metre Boy</strong></span>
+<span class="spec-pill">🏢 <strong>Mimari Paneller</strong></span>
+</div>
+<ul class="features-list">
+<li>3.5 metre boyundaki mimari kompozit, cephe panelleri ve displayleri kesintisiz işler.</li>
+<li>Sıfır boşluklu helisel kremayer ve lineer kılavuzlar ile 3.5 metre boyunca mikron sapmasız kesim.</li>
+<li>MES bağlantısı ve NFC kartlı operatör güvenlik erişimi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>1600 x 3500 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>2000 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takımlar</td><td>POT/EOT Salınımlı, 1.8kW Freze, V-Cut, Kırım</td></tr>
+<tr><td>Voltaj</td><td>380V 3 Faz / 50Hz</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Uzun Cephe Tabelası</span>
+<span class="app-tag">Mimari Kompozit</span>
+<span class="app-tag">Fuar Stant Paneli</span>
+<span class="app-tag">Geniş Display</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg1635" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 13. JWEI SG2132 -->
+<div class="product-card" data-keywords="jwei sg2132 super genis agir sanayi freze pnomatik bicak kompozit conta 2100x3200" onclick="openA4Brochure('jwei-sg2132', event)" title="JWEI SG2132 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG2132" src="images/jwei-sg2132.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG2132</h3>
+<p class="card-subtitle">2100 x 3200 mm Süper Geniş Ebatta 2000 mm/s Ultra Hızlı Ağır Sanayi CNC Kesim</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>2100 x 3200 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">💪 <strong>Ağır Sanayi CNC</strong></span>
+<span class="spec-pill">🪓 <strong>V-Cut &amp; Frezeleme</strong></span>
+</div>
+<ul class="features-list">
+<li>2.1 x 3.2 metre tablası ile Türkiye'deki en büyük kompozit levhaları tek seferde masaya bağlar.</li>
+<li>Alüminyum kompozitte 90 derece büküm derzleri açar, pleksiyi frezeler, contayı salınımlı bıçakla keser.</li>
+<li>Güçlü vakum petek zonları ile geniş malzemeleri mükemmel sabitler.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>2100 x 3200 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>2000 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takım Sayısı</td><td>2 veya 3 Takım Yuvası + Freze</td></tr>
+<tr><td>Güç Tüketimi</td><td>380V ±10% / 50Hz, 15 kW</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">Kompozit Cephe Derzi</span>
+<span class="app-tag">Totem &amp; Yol Tabelası</span>
+<span class="app-tag">Sanayi Contaları</span>
+<span class="app-tag">Polietilen &amp; Kestamid</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg2132" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 14. JWEI SG3216 -->
+<div class="product-card" data-keywords="jwei sg3216 3.2m plaka eni enleme yukleme dijital kesim merkezi 3200x1600 2000 mm/s" onclick="openA4Brochure('jwei-sg3216', event)" title="JWEI SG3216 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG3216" src="images/jwei-sg3216.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG3216</h3>
+<p class="card-subtitle">3200 x 1600 mm Formatında 3.2 Metrelik Levhaları Enlemesine Hızla İşleyen Güç</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>3200 x 1600 mm</strong></span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">↔️ <strong>3.2m Enleme Tabla</strong></span>
+<span class="spec-pill">👁️ <strong>CCD Kamera</strong></span>
+</div>
+<ul class="features-list">
+<li>3.2 metrelik plakaları operatörün kolayca yükleyebilmesi için enlemesine yerleştirir.</li>
+<li>2000 mm/s hız ve CCD kamera ile geniş format baskılı afiş, tabela ve levhaları saniyeler içinde sıfırlar.</li>
+<li>Havacılık standardı vakum emişi ile malzeme dalgalanmalarını sıfırlar.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>3200 x 1600 mm</td></tr>
+<tr><td>Hız &amp; Hassasiyet</td><td>2000 mm/s | ±0.05 mm</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takım Sistemi</td><td>2 veya 3 Takım Kafası (POT, EOT, Freze, Kırım)</td></tr>
+<tr><td>Voltaj</td><td>380V ±10% / 50Hz</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">3.2m Enli Levhalar</span>
+<span class="app-tag">Büyük Tabela</span>
+<span class="app-tag">Banner Sonlandırma</span>
+<span class="app-tag">Mobilya Panelleri</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg3216" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+<!-- 15. JWEI SG3232 -->
+<div class="product-card" data-keywords="jwei sg3232 3200x3200 10m2 devasa kare format endustriyel cnc kesim amiral gemisi 2000 mm/s" onclick="openA4Brochure('jwei-sg3232', event)" title="JWEI SG3232 - Ayrı Sayfada A4 Broşürü Görüntülemek İçin Tıklayın">
+<div class="card-top">
+<span class="brand-tag tag-jwei">JWEI SG Serisi</span>
+<div class="card-media">
+<img alt="JWEI SG3232" src="images/jwei-sg3232.jpg"/>
+</div>
+<h3 class="card-title">JWEI SG3232</h3>
+<p class="card-subtitle">3200 x 3200 mm Devasa 10 m² Kare Format Endüstriyel CNC Kesim Sistemi</p>
+<div class="specs-pills">
+<span class="spec-pill">📐 <strong>3200 x 3200 mm</strong> (10.2 m²)</span>
+<span class="spec-pill">🚀 <strong>2000 mm/s</strong> Hız</span>
+<span class="spec-pill">👑 <strong>Serinin En Büyük Modeli</strong></span>
+<span class="spec-pill">🏭 <strong>Ağır Sanayi Üretimi</strong></span>
+</div>
+<ul class="features-list">
+<li>10.24 metrekare devasa tek parça kesim alanı ile SG serisinin en büyük modelidir.</li>
+<li>Devasa cephe kaplamaları, havalimanı ve AVM tabelalarını bölmeden tek parçada işler.</li>
+<li>Otomatik takım değiştirici (ATC), MES entegrasyonu ve 18 kW toplam güç kapasitesi.</li>
+</ul>
+<table class="spec-table">
+<tr><td>Çalışma Alanı</td><td>3200 x 3200 mm (10.24 m²)</td></tr>
+<tr><td>Maks. Kesim Hızı</td><td>2000 mm/s (±0.05 mm)</td></tr>
+<tr><td>Maks. Kalınlık</td><td>50 mm</td></tr>
+<tr><td>Takım &amp; ATC</td><td>POT, EOT, Güçlü Freze Router + Otomatik Takım Değiştirici</td></tr>
+<tr><td>Güç Tüketimi</td><td>380V ±10% / 50Hz, 18 kW</td></tr>
+</table>
+</div>
+<div class="app-tags">
+<span class="app-tag">10 m² Dev Kesim Alanı</span>
+<span class="app-tag">Havalimanı &amp; AVM Tabelaları</span>
+<span class="app-tag">Ağır Sanayi Üretimi</span>
+<span class="app-tag">Mimari Cephe Kaplama</span>
+</div>
+<div class="card-a4-bar">
+<span class="card-badge-a4">📄 A4 Yazdırma Formatı</span>
+<a class="a4-link-btn" href="a4_brosur.html?model=jwei-sg3232" onclick="event.stopPropagation()" target="_blank">
+            A4 Broşürü Aç ↗
+          </a>
+</div></div>
+</div>
+</div>
+<!-- SECTION 9: SELECTION & COMPARISON GUIDE -->
+<div class="comparison-section">
+<h3>Sektörel İhtiyaç &amp; Makine Seçim Rehberi</h3>
+<p>Doğru iş modeli için Lidya Grup portföyünden önerilen ideal makine kombinasyonları:</p>
+<div class="table-responsive">
+<table class="guide-table">
+<thead>
+<tr>
+<th>Sektör / Üretim İhtiyacı</th>
+<th>Önerilen Birincil Makine</th>
+<th>Tamamlayıcı / Sonlandırma Çözümü</th>
+<th>Temel Avantaj</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lüks Kutu, Davetiye &amp; Ambalaj</strong></td>
+<td>Xerox Iridesse™ (6 Renk Metalik)</td>
+<td>Duplo DuSense DDC-810 (3D Lak &amp; Folyo)</td>
+<td>Altın, gümüş, dokusal lak ile katma değerli yüksek karlı üretim</td>
+</tr>
+<tr>
+<td><strong>Yüksek Hacimli Matbaa (Katalog/Broşür)</strong></td>
+<td>Xerox Versant® 4100 Press</td>
+<td>Duplo DC-648 Slitter/Cutter/Creaser</td>
+<td>Kuşe kağıtlarda çatlamayan kırım, sıfır ayar süresi ve tam otomasyon</td>
+</tr>
+<tr>
+<td><strong>Oluklu Mukavva &amp; Koli Ambalaj</strong></td>
+<td>EFI™ Nozomi 14000 LED / AQ</td>
+<td>Flora XTRA 3220LED Plaka Baskı</td>
+<td>Tek geçişli dakikada 75m hız, kalıpsız anında kutu üretimi</td>
+</tr>
+<tr>
+<td><strong>Büyük Reklam Panoları &amp; Bina Giydirme</strong></td>
+<td>Flora XTRA 5000H (5m Hibrit)</td>
+<td>EFI Pro 32r+ (3.2m LED UV)</td>
+<td>Saatte 440 m² üretim ve aynı anda çoklu rulo besleme</td>
+</tr>
+<tr>
+<td><strong>Sert Plaka Baskısı (Cam/Ahşap/Pleksi)</strong></td>
+<td>Keundo SQ-2513 UV Flatbed</td>
+<td>Keundo K6090UV (Kompakt/Şişe)</td>
+<td>Ricoh Gen6 kafa hassasiyeti, hava yastıklı masa ve 3D kabartma</td>
+</tr>
+<tr>
+<td><strong>Hem Rulo Hem Sert Levha (Hibrit)</strong></td>
+<td>EFI™ Pro 30h+ Hibrit LED</td>
+<td>Keundo SQ-3200H Hibrit UV</td>
+<td>5 cm kalınlığa kadar levhalar ile rulo vinile tek makinede baskı</td>
+</tr>
+<tr>
+<td><strong>Araç Kaplama &amp; Premium Tabela</strong></td>
+<td>Epson SureColor SC-S9100</td>
+<td>Keundo K2-18S Eko-Solvent</td>
+<td>Pantone %98.2 renk kapsamı, 10 renk kokusuz eko-solvent boyalar</td>
+</tr>
+<tr>
+<td><strong>Kalıpsız Etiket &amp; Kutu Kesimi</strong></td>
+<td>Duplo PFi Blade B2+</td>
+<td>Duplo DC-618 Sonlandırıcı</td>
+<td>Kalıp masrafı olmadan bilgisayardan anında prototip ve seri kesim</td>
+</tr>
+<tr>
+<td><strong>Tişört, Forma &amp; Tekstil Transferi</strong></td>
+<td>Sutec DTF 3200 Entegre Hat</td>
+<td>Epson Geniş Format Destek</td>
+<td>Pamuklu ve sentetik tüm kumaşlara firesiz, ayıklamasız 60°C dayanımlı baskı</td>
+</tr>
+<tr>
+<td><strong>Kitap &amp; Dergi Ciltleme</strong></td>
+<td>Duplo PFi BIND 2100 PUR</td>
+<td>Duplo DBM-700 Kitapçık Hattı</td>
+<td>Dağılmayan PUR tutkallı ciltleme ve saatte 5.200 adet tel dikişli kitapçık</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="footer-content">
+<div class="footer-col">
+<div style="margin-bottom: 1.25rem;">
+<img alt="Lidya Grup Logo" src="lidya_grup_logo.png" style="height: 64px; width: auto; border-radius: 4px; box-shadow: 0 3px 10px rgba(0,0,0,0.35);"/>
+</div>
+<p><strong>Adres:</strong> Şerifali Mahallesi, Şehit Sokak No: 6 Ümraniye / İSTANBUL</p>
+<p><strong>Çağrı Merkezi:</strong> 0542 352 72 99</p>
+<p><strong>E-Posta:</strong> yasin.albostanli@lidyagrup.com.tr</p>
+<p><strong>Web Sitesi:</strong> <a href="https://www.lidyagrup.com.tr" target="_blank">www.lidyagrup.com.tr</a></p>
+</div>
+<div class="footer-col">
+<h4>TEMSİL EDİLEN MARKALAR</h4>
+<ul>
+<li><a href="#xerox" onclick="filterCategory('xerox')">Xerox Dijital Üretim Presleri</a></li>
+<li><a href="#efi" onclick="filterCategory('efi')">EFI Endüstriyel UV &amp; Ambalaj</a></li>
+<li><a href="#keundo" onclick="filterCategory('keundo')">Keundo Flatbed, Hibrit &amp; Rulo UV</a></li>
+<li><a href="#flora" onclick="filterCategory('flora')">Flora Süper Geniş Format UV</a></li>
+<li><a href="#duplo" onclick="filterCategory('duplo')">Duplo Baskı Sonrası &amp; Lak</a></li>
+<li><a href="#epson" onclick="filterCategory('epson')">Epson Signage &amp; CAD Yazıcılar</a></li>
+<li><a href="#sutec" onclick="filterCategory('sutec')">Sutec Tekstil DTF &amp; Özel UV</a></li>
+<li><a href="#jwei" onclick="filterCategory('jwei')">JWEI Endüstriyel Dijital Kesim &amp; CNC (15 Model)</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>HİZMETLERİMİZ &amp; AVANTAJLAR</h4>
+<ul>
+<li>7/24 Kesintisiz Teknik Servis &amp; Uzaktan Destek</li>
+<li>Orijinal Boya, Toner ve Yedek Parça Stoğu</li>
+<li>Özel ICC Profil ve Renk Yönetimi Eğitimi</li>
+<li>Esnek Leasing ve Finansman Modelleri</li>
+<li>Anahtar Teslim Kurulum ve Operatör Eğitimi</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Lidya Grup. Tüm Hakları Saklıdır. Bu katalog, Lidya Grup resmi ürün portföyü verileri esas alınarak hazırlanmıştır.</p>
+</div>
+</footer>
+<script>
+    function filterCategory(category, clickedBtn) {
+      // Update tab styles
+      const targetBtn = clickedBtn || document.querySelector(`.tab-btn[data-cat-btn="${category}"]`) || (category === 'all' ? document.querySelector('.tab-btn') : null);
+      if (targetBtn) {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        targetBtn.classList.add('active');
+      }
+
+      // Reset card display within blocks
+      document.querySelectorAll('.product-card').forEach(c => c.style.display = 'flex');
+
+      const blocks = document.querySelectorAll('.category-block');
+      blocks.forEach(block => {
+        if (category === 'all' || block.getAttribute('data-category') === category) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+
+      // Scroll smoothly to content
+      if (category !== 'all') {
+        const targetBlock = document.getElementById(category);
+        if (targetBlock) {
+          targetBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+
+    function filterMachines() {
+      const query = document.getElementById('machineSearch').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.product-card');
+      // Reset card display within blocks
+      document.querySelectorAll('.product-card').forEach(c => c.style.display = 'flex');
+
+      const blocks = document.querySelectorAll('.category-block');
+
+      if (!query) {
+        cards.forEach(card => card.style.display = 'flex');
+        blocks.forEach(block => block.style.display = 'block');
+        return;
+      }
+
+      blocks.forEach(block => {
+        let visibleCount = 0;
+        const blockCards = block.querySelectorAll('.product-card');
+        blockCards.forEach(card => {
+          const text = (card.innerText + " " + (card.getAttribute('data-keywords') || '')).toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (visibleCount > 0) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+    }
+  
+    // URL Hash handling on page load (e.g. index.html#jwei)
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash && ['xerox', 'efi', 'keundo', 'flora', 'duplo', 'epson', 'sutec', 'jwei'].includes(hash)) {
+        filterCategory(hash);
+      }
+    });
+
+  
+    function openA4Brochure(slug, event) {
+      if (event && event.target && event.target.tagName === 'A') {
+        return; // Allow direct link clicks
+      }
+      window.open(`a4_brosur.html?model=${slug}`, '_blank');
+    }
+</script>
+</body>
+</html>

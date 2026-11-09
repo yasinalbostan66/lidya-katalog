@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40" width="110" height="30">
+  <rect x="0" y="4" width="150" height="32" rx="4" fill="#0f172a"/>
+  <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="2">JWEI</text>
+  <path d="M132 8 L142 8 L136 28 Z" fill="#d71920"/>
+</svg>

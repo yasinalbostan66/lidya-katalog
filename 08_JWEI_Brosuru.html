@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIDYA GRUP | JWEI DİJİTAL KESİM VE SONLANDIRMA SİSTEMLERİ ÜRÜN BROŞÜRÜ | Lidya Grup Resmi Ürün Kataloğu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lidya-red: #d71920;
+      --lidya-red-dark: #b9151b;
+      --lidya-navy: #0f172a;
+      --lidya-slate: #1e293b;
+      --lidya-muted: #475569;
+      --lidya-border: #cbd5e1;
+      --lidya-border-light: #e2e8f0;
+      --lidya-bg: #f8fafc;
+      --lidya-emerald: #059669;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b1120;
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--lidya-slate);
+      line-height: 1.35;
+      padding-bottom: 3rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Screen Top Toolbar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      padding: 0.65rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .top-bar .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .top-bar .logo-wrap img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .top-bar .logo-wrap span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f8fafc;
+      border-left: 1px solid rgba(255,255,255,0.25);
+      padding-left: 12px;
+    }
+
+    .top-bar .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary {
+      background: var(--lidya-red);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(215, 25, 32, 0.4);
+    }
+    .btn-primary:hover {
+      background: var(--lidya-red-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.16);
+    }
+
+    /* Multi-Sheet Vertical Catalog Container */
+    .catalog-wrapper {
+      max-width: 210mm;
+      margin: 1.5rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Cover Page (Screen & Base) */
+    .cover-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 18mm 14mm 14mm 14mm;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      position: relative;
+      box-sizing: border-box;
+      min-height: 285mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cover-page::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 70%, #0f172a 70%, #0f172a 100%);
+    }
+
+    .cover-page h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.4px;
+    }
+    .cover-page .subtitle-meta {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-bottom: 0.8rem;
+      line-height: 1.35;
+    }
+    .cover-page pre {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.56rem;
+      line-height: 1.24;
+      color: #1e293b;
+      margin: 0.8rem 0;
+      overflow: hidden;
+    }
+
+    /* ========================================================
+       VERTICAL (DİKEY) PRODUCT SHEET (1 Full Page per Machine)
+       Large Hero Image + Vertical Natural Flow
+       ======================================================== */
+    .product-page-sheet {
+      background: #ffffff;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      padding: 5mm 9mm 4mm 9mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      min-height: 285mm;
+    }
+
+    /* Red Corporate Header Ribbon */
+    .product-page-sheet::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4mm;
+      background: linear-gradient(90deg, #d71920 0%, #d71920 68%, #0f172a 68%, #0f172a 100%);
+    }
+
+    /* Header Bar */
+    .sheet-header-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+
+    .header-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-logo-group img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+    .header-company-text {
+      border-left: 2px solid #cbd5e1;
+      padding-left: 7px;
+    }
+    .comp-name {
+      font-size: 0.80rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.1;
+    }
+    .comp-name span { color: var(--lidya-red); }
+    .comp-sub {
+      font-size: 0.56rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .header-badge-group {
+      text-align: right;
+    }
+    .header-phone {
+      font-size: 0.63rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .header-phone strong {
+      color: var(--lidya-red);
+    }
+
+    /* Title & Slogan */
+    .product-title-section {
+      margin-top: 1.5mm;
+      margin-bottom: 1.5mm;
+    }
+    .title-row-flex {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .machine-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      line-height: 1.15;
+      letter-spacing: -0.2px;
+    }
+    .machine-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #047857;
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .machine-slogan {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #475569;
+      font-style: italic;
+      margin-top: 1.5px;
+    }
+
+    /* ========================================================
+       PROMINENT LARGE HERO IMAGE FRAME (Full Width Dikey)
+       ======================================================== */
+    .hero-image-frame {
+      width: 100%;
+      height: 60mm;
+      background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      overflow: hidden;
+      margin-bottom: 1.8mm;
+    }
+
+    .hero-image-frame img {
+      max-width: 95%;
+      max-height: 94%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+    }
+
+    .hero-image-frame .stamp-badge {
+      position: absolute;
+      bottom: 4px;
+      right: 7px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #ffffff;
+      font-size: 0.52rem;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    /* Middle Modular Ribbon (Overview & Key Features Side by Side) */
+    .overview-ribbon {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5mm;
+      margin-bottom: 1.8mm;
+    }
+
+    .section-pill-label {
+      font-size: 0.63rem;
+      font-weight: 800;
+      color: var(--lidya-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 1.2mm;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section-pill-label::before {
+      content: "";
+      width: 2.5px;
+      height: 8px;
+      background: var(--lidya-red);
+      display: inline-block;
+      border-radius: 1px;
+    }
+
+    .desc-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+      font-size: 0.67rem;
+      color: #334155;
+      line-height: 1.28;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .bullets-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 2mm 2.5mm;
+    }
+    .bullets-card ul {
+      list-style: none;
+    }
+    .bullets-card li {
+      font-size: 0.64rem;
+      color: #334155;
+      line-height: 1.24;
+      margin-bottom: 1mm;
+      position: relative;
+      padding-left: 12px;
+    }
+    .bullets-card li:last-child { margin-bottom: 0; }
+    .bullets-card li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--lidya-emerald);
+      font-weight: 900;
+      font-size: 0.62rem;
+    }
+
+    /* Full-Width Engineering Specs Table */
+    .specs-table-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #ffffff;
+      margin-bottom: 1.8mm;
+    }
+
+    .table-head-strip {
+      background: var(--lidya-navy);
+      color: #ffffff;
+      font-size: 0.60rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 2.5px 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    table.specs-table-dikey {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.64rem;
+    }
+
+    table.specs-table-dikey td {
+      padding: 2px 6px;
+      border-bottom: 1px solid #f1f5f9;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    table.specs-table-dikey tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    table.specs-table-dikey td.k-col {
+      font-weight: 700;
+      color: #475569;
+      width: 32%;
+      background: #f1f5f9;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    table.specs-table-dikey td.v-col {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* 4-Pillar Distributor Guarantee Ribbon */
+    .guarantee-bar-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8mm;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 4px;
+      padding: 1.5mm 2.2mm;
+      margin-bottom: 1.5mm;
+    }
+    .g-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .g-title {
+      font-size: 0.58rem;
+      font-weight: 800;
+      color: #991b1b;
+      line-height: 1.15;
+    }
+    .g-desc {
+      font-size: 0.52rem;
+      color: #7f1d1d;
+      line-height: 1.18;
+    }
+
+    /* Footer */
+    .sheet-footer-line {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 1.5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.57rem;
+      color: #64748b;
+      line-height: 1.25;
+    }
+    .sheet-footer-line strong {
+      color: #0f172a;
+    }
+    .stamp-dist {
+      font-weight: 800;
+      color: var(--lidya-red);
+      font-size: 0.61rem;
+      text-transform: uppercase;
+    }
+
+    /* Summary / Closing Page */
+    .summary-page {
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      padding: 10mm 14mm;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      min-height: 285mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ========================================================
+       PRINT & PDF PERFECTION: DIKEY (PORTRAIT) 1 MACHINE = 1 FULL PAGE
+       ZERO BLANK PAGES, EXACT 296mm FIT, NO OVERFLOW
+       ======================================================== */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      html, body {
+        width: 210mm !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .top-bar {
+        display: none !important;
+      }
+
+      .catalog-wrapper {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: block !important;
+      }
+
+      /* Cover Page: Exactly 1 A4 Page */
+      .cover-page {
+        page-break-before: avoid !important;
+        break-before: avoid !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm 6mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      /* Product Sheet: Exactly 1 A4 Page */
+      .product-page-sheet {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 4mm 9mm 3.5mm 9mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      .hero-image-frame {
+        height: 56mm !important;
+        max-height: 56mm !important;
+        margin-bottom: 1.5mm !important;
+        padding: 4px 8px !important;
+      }
+      .hero-image-frame img {
+        max-height: 50mm !important;
+      }
+
+      .product-title-section {
+        margin-top: 1mm !important;
+        margin-bottom: 1.5mm !important;
+      }
+      .machine-title {
+        font-size: 1.15rem !important;
+        line-height: 1.15 !important;
+      }
+      .machine-slogan {
+        font-size: 0.68rem !important;
+        margin-top: 1px !important;
+      }
+
+      .overview-ribbon {
+        margin-bottom: 1.5mm !important;
+        gap: 2.2mm !important;
+      }
+      .desc-card {
+        padding: 1.5mm 2.2mm !important;
+        font-size: 0.63rem !important;
+        line-height: 1.24 !important;
+        max-height: 38mm !important;
+        overflow: hidden !important;
+      }
+      .bullets-card {
+        padding: 1.5mm 2.2mm !important;
+      }
+      .bullets-card li {
+        font-size: 0.61rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.7mm !important;
+      }
+
+      .specs-table-card {
+        margin-bottom: 1.5mm !important;
+      }
+      .table-head-strip {
+        padding: 2px 6px !important;
+        font-size: 0.56rem !important;
+      }
+      table.specs-table-dikey td {
+        padding: 1.7px 5px !important;
+        font-size: 0.61rem !important;
+        line-height: 1.16 !important;
+      }
+
+      .guarantee-bar-strip {
+        margin-bottom: 1.2mm !important;
+        padding: 1.2mm 2mm !important;
+      }
+      .g-title {
+        font-size: 0.54rem !important;
+      }
+      .g-desc {
+        font-size: 0.48rem !important;
+        line-height: 1.14 !important;
+      }
+
+      .sheet-footer-line {
+        padding-top: 1.2mm !important;
+        font-size: 0.54rem !important;
+      }
+
+      /* Summary Page: Exactly 1 A4 Page */
+      .summary-page {
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 210mm !important;
+        height: 296mm !important;
+        max-height: 296mm !important;
+        box-sizing: border-box !important;
+        padding: 8mm 12mm !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls Bar (No Print) -->
+  <div class="top-bar">
+    <div class="logo-wrap">
+      <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+      <span>JWEI Resmi Ürün Kataloğu</span>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="window.print()">
+        🖨️ PDF Olarak İndir / Yazdır (A4)
+      </button>
+      <a href="index.html" class="btn btn-outline">🏠 Ana Portal</a>
+    </div>
+  </div>
+
+  <div class="catalog-wrapper">
+    
+    <!-- COVER & TOC PAGE (EXACTLY 1 A4 PAGE) -->
+    <div class="cover-page">
+      <div class="sheet-header-line" style="border-bottom: 2.5px solid #d71920; padding-bottom: 2.5mm; margin-bottom: 3.5mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo" style="height:44px; width:auto; object-fit:contain;">
+          <div class="header-company-text" style="padding-left:10px;">
+            <div style="font-size:1.0rem; font-weight:800; color:var(--lidya-navy); letter-spacing:0.3px;">LİDYA GRUP <span style="color:var(--lidya-red);">BİLİŞİM SİSTEMLERİ</span></div>
+            <div style="font-size:0.62rem; font-weight:600; color:#64748b;">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:28px; max-width:125px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden; display:flex; flex-direction:column; justify-content:center;">
+        <div style="display:inline-block; font-size:0.65rem; font-weight:800; color:#047857; background:#d1fae5; border:1px solid #6ee7b7; padding:2px 8px; border-radius:3px; margin-bottom:6px; align-self:flex-start;">
+          RESMİ DİSTRİBÜTÖR ÜRÜN VE ÇÖZÜM KATALOĞU (2026)
+        </div>
+        <h1 style="font-size:1.6rem; font-weight:800; color:var(--lidya-navy); line-height:1.2; margin-bottom:0.5rem; letter-spacing:-0.3px;">
+          BÖLÜM 1: IG SERİSİ - LST AKILLI OTOMATİK KUTU VE ETİKET KESİM SİSTEMLERİ
+        </h1>
+        <div class="subtitle-meta">Lidya Grup Resmi Distribütörlüğü Güvencesiyle JWEI Endüstriyel Dijital Kesim ve CNC Masaları</div><div class="subtitle-meta">Web: <a href="https://www.lidyagrup.com.tr/marka/jwei/?all=1" target="_blank" style="color:var(--lidya-red);">www.lidyagrup.com.tr/marka/jwei/?all=1</a> | Servis & Bilgi Hattı: 0542 352 72 99 | E-posta: yasin.albostanli@lidyagrup.com.tr</div><div class="subtitle-meta">Genel Merkez: Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İstanbul</div>
+        <p style="color:#334155; font-size:0.75rem; line-height:1.4; margin-bottom:0.5rem;">JWEI; matbaa, ambalaj, reklam-tabela, teknik tekstil, otomotiv ve kompozit sektörleri için kalıpsız (dieless), yapay zeka destekli, konveyörlü ve tam otomatik beslemeli 3 resmi seride toplam 15 model sunmaktadır:</p><p style="color:#334155; font-size:0.75rem; line-height:1.4; margin-bottom:0.5rem;">Kalıp (die) maliyeti ve bekleme süresini sıfıra indiren, otomatik vakumlu tabaka besleyicisi, CCD kamera görsel konumlandırması, QR kod ile iş tanıma ve otomatik toplama tablası ile operatörsüz (unattended) çalışan ambalaj ve etiket sonlandırma çözümleri.</p>
+        
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:6px 10px; margin:0.6rem 0; overflow:hidden;">
+        <div style="font-size:0.62rem; font-weight:800; color:var(--lidya-navy); text-transform:uppercase; margin-bottom:4px; letter-spacing:0.5px;">📋 JWEI MODEL GAMI & ÜRÜN İNDEKSİ</div>
+        <pre style="font-family:'JetBrains Mono', monospace; font-size:0.52rem; line-height:1.2; color:#1e293b; background:transparent; border:none; padding:0; margin:0; overflow:hidden;"><code>JWEI DİJİTAL KESİM SİSTEMLERİ PORTFÖYÜ
+├── 1. IG SERİSİ - LST AKILLI OTOMATİK KUTU VE ETİKET KESİM SİSTEMLERİ (3 Model)
+│   ├── 1. JWEI LST03-0604-RM (600 x 400 mm Kompakt Otomatik Beslemeli Kesim)
+│   ├── 2. JWEI LST03Ⅱ-0806-RM (800 x 600 mm B2 Formatı Operatörsüz Otomatik Kutu & Kırım)
+│   └── 3. JWEI LST03Ⅱ-0912-RM (900 x 1200 mm Geniş Format Otomatik Ambalaj Kesim)
+│
+├── 2. SC SERİSİ - ÇOK İŞLEVLİ PROFESYONEL DİJİTAL KESİM MASALARI (1800 mm/s - 5 Model)
+│   ├── 4. JWEI SC1311 (1300 x 1100 mm Kompakt Prototip & Ambalaj Kesim Masası)
+│   ├── 5. JWEI SC1325 (1300 x 2500 mm Reklam & Tabela Levha Kesim Masası)
+│   ├── 6. JWEI SC1618 (1600 x 1800 mm Oluklu Mukavva & Stand Kesim Masası)
+│   ├── 7. JWEI SC1625 (1600 x 2500 mm Endüstriyel Standart Levha Kesim Merkezi)
+│   └── 8. JWEI SC2030 (2000 x 3000 mm Büyük Format Ağır Hizmet Kesim Masası)
+│
+└── 3. SG SERİSİ - ULTRA YÜKSEK HIZLI OTOMATİK YÜKLEMELİ CNC KESİM (2000 mm/s - 7 Model)
+    ├── 9. JWEI SG1311 (1300 x 1100 mm Tam Otomatik Besleme & Boşaltmalı Kesim)
+    ├── 10. JWEI SG1612 (1600 x 1200 mm Kompakt Ultra Yüksek Hızlı Konveyörlü CNC)
+    ├── 11. JWEI SG1625 (1600 x 2500 mm AI Destekli Tam Otomatik CNC Kesim Hattı)
+    ├── 12. JWEI SG1635 (1600 x 3500 mm Ekstra Uzun Levha & Panel Kesim Sistemi)
+    ├── 13. JWEI SG2132 (2100 x 3200 mm Ağır Sanayi Freze & Pnömatik Bıçaklı Kesim)
+    ├── 14. JWEI SG3216 (3200 x 1600 mm 3.2m Plaka Eni Dijital Kesim Merkezi)
+    └── 15. JWEI SG3232 (3200 x 3200 mm Devasa 10 m² Kare Format Endüstriyel CNC)</code></pre>
+      </div>
+
+      </div>
+
+      <!-- Distributor Credentials Card -->
+      <div class="guarantee-bar-strip" style="margin-top:auto; margin-bottom:2.5mm;">
+        <div class="g-item">
+          <div class="g-title">🏢 Resmi Distribütör</div>
+          <div class="g-desc">Lidya Grup güvencesiyle 100% orijinal donanım & parça.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">🛠️ Sertifikalı Hizmet</div>
+          <div class="g-desc">Doğrudan üretici eğitimli uzman mühendis kadrosu.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 Kesintisiz İletişim</div>
+          <div class="g-desc">0542 352 72 99 & yasin.albostanli@lidyagrup.com.tr</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Finansman Kolaylığı</div>
+          <div class="g-desc">Leasing, proje finansmanı ve avantajlı taksit modelleri.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • A4 KATALOG BASKISI</div>
+      </div>
+    </div>
+
+    <!-- PRODUCT PAGE: JWEI LST03-0604-RM Kompakt Otomatik Dijital Kesim ve Kırım Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI LST03-0604-RM Kompakt Otomatik Dijital Kesim ve Kırım Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Kompakt Alanda Kalıpsız Kutu, Prototip ve Etiket Üretim Gücü"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-lst03-0604-rm.jpg" alt="JWEI LST03-0604-RM">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI LST03-0604-RM, kısa tirajlı ve kişiselleştirilmiş ambalaj üretimi yapan matbaalar, ajanslar ve butik üreticiler için geliştirilmiş kompakt bir dijital kesim ve kırım çözümüdür. Kalıp ihtiyacını ortadan kaldırarak üretim süreçlerini hızlandırır ve maliyetleri düşürür. Otomatik vakumlu besleme, kesim ve toplama süreçlerini tek bir kompakt gövdede birleştirir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Otomatik Vakumlu Besleme</td><td class="v-col">Tabakaları üstten vakumla alıp kesim alanına otomatik taşır, operatör bağımlılığını en aza indirir.</td></tr><tr><td class="k-col">Çoklu Takım Başlığı</td><td class="v-col">Salınımlı bıçak (EOT), yarım kesim (kiss-cut) bıçağı ve kırım (creasing) tekeri ile tam kesim, etiket kesimi ve katlama çizgilerini tek seferde tamamlar.</td></tr><tr><td class="k-col">CCD Kamera Konumlandırma</td><td class="v-col">Yüksek çözünürlüklü CCD optik kamera ile baskılı malzemelerin kros işaretlerini ve QR kodlarını okuyarak sıfır kayma ile kesim yapar.</td></tr><tr><td class="k-col">Kompakt Tasarım</td><td class="v-col">Küçük atölyeler ve dar alanlar için ideal yerleşim ölçüleri, 220V standart monofaze elektrik ile çalışma.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI LST03-0604-RM</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">600 x 400 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1500 mm/saniye</td></tr><tr><td class="k-col">Kesim Hassasiyeti</td><td class="v-col">±0.1 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI LST03Ⅱ-0806-RM Otomatik Dijital Kutu Kesim ve Kırım Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI LST03Ⅱ-0806-RM Otomatik Dijital Kutu Kesim ve Kırım Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"B2 Formatında Tam Otomatik, İnsansız (Unattended) Dijital Ambalaj Üretimi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-lst03-0806-rm.jpg" alt="JWEI LST03Ⅱ-0806-RM">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI LST03Ⅱ-0806-RM, 800 x 600 mm B2 tabaka ebadı ile kısa ve orta tirajlı kutu, etiket ve ambalaj üretimleri için geliştirilmiş yeni nesil endüstriyel ambalaj kesim sistemidir. Optimize edilmiş vakumlu besleme sistemi %95'e varan otomatik alma başarısı ile operatör müdahalesine gerek kalmadan saatlerce kesintisiz çalışır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Operatörsüz (Unattended) Üretim</td><td class="v-col">Otomatik tabaka asansöründen vakumla kağıt besleme, kesim masasında işleme ve biten tabakaları alıcı istifleme tablasına aktarma döngüsü tamamen otomatiktir.</td></tr><tr><td class="k-col">Akıllı QR Kod İş Tanıma</td><td class="v-col">Tabaka üzerindeki QR kodu CCD kamera ile okuyarak kesim dosyasını JWPS yazılımından otomatik çağırır; farklı ebat ve tasarımdaki işler art arda kesilebilir.</td></tr><tr><td class="k-col">Gelişmiş Takım Yelpazesi</td><td class="v-col">Elektronik salınımlı bıçak (EOT), yarım kesim (kiss-cut), V-cut açılı kesim ve ayarlanabilir basınçlı kırım tekeri ile oluklu mukavva ve karton kutularda kusursuz katlama hatları oluşturur.</td></tr><tr><td class="k-col">JWPS Entegre Ambalaj Yazılımı</td><td class="v-col">1000'den fazla hazır parametrik kutu tasarımına tek tıkla ulaşılır, ölçüler saniyeler içinde değiştirilip 3D olarak ön izlenebilir.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI LST03Ⅱ-0806-RM</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">800 x 600 mm (B2 Tabaka Formatı)</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1500 mm/saniye</td></tr><tr><td class="k-col">Kesim Hassasiyeti</td><td class="v-col">±0.1 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI LST03Ⅱ-0912-RM Geniş Format Otomatik Ambalaj Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI LST03Ⅱ-0912-RM Geniş Format Otomatik Ambalaj Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"900 x 1200 mm Geniş Kesim Alanında Kalıpsız Endüstriyel Kutu İmalatı"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-lst03-0912-rm.jpg" alt="JWEI LST03Ⅱ-0912-RM">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI LST03Ⅱ-0912-RM, ambalaj ve baskı sonrası üretim hatlarında kalıpsız büyük ebatlı kutu ihtiyacını karşılamak için geliştirilmiş tam otomatik dijital kesim sistemidir. 900 x 1200 mm ekstra geniş çalışma alanı sayesinde büyük ebatlı koli, mukavva kutu ve teşhir standı parçalarını tek tabakada işler.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Büyük Ebat Ambalaj İşleme</td><td class="v-col">900 x 1200 mm kesim tablası ile 70x100 cm ve daha büyük ofset ya da dijital baskılı tabakaları rahatlıkla işler.</td></tr><tr><td class="k-col">Entegre Üretim Sürekliliği</td><td class="v-col">Otomatik besleme, yüksek hızlı kesim-kırım ve otomatik toplama tablası ile vardiyalı çalışmaya uygun endüstriyel yapı.</td></tr><tr><td class="k-col">Kalıp Maliyetine Son</td><td class="v-col">Kısa ve orta tirajlarda bıçak kalıp yaptırma süresini ve kalıp arşivleme maliyetini sıfıra indirir.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI LST03Ⅱ-0912-RM</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">900 x 1200 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1500 mm/saniye</td></tr><tr><td class="k-col">Kesim Hassasiyeti</td><td class="v-col">±0.1 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">10 mm (Karton, oluklu mukavva, PVC, fotoblok)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SC1311 Profesyonel Dijital Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SC1311 Profesyonel Dijital Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1300 x 1100 mm Kompakt Alanda 1800 mm/s Yüksek Hassasiyetli Kesim & Freze"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sc1311.jpg" alt="JWEI SC1311">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SC1311; kompakt atölyeler, dijital baskı merkezleri ve ambalaj tasarım laboratuvarları için 1300 x 1100 mm net çalışma alanı sunar. 1800 mm/s hızı ve ±0.05 mm tekrarlama hassasiyeti ile ince folyodan sert pleksiye kadar geniş malzeme yelpazesini kusursuz işler.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Çoklu Takım Seçenekleri</td><td class="v-col">Salınımlı bıçak (EOT), pnömatik salınımlı bıçak (POT), teğetsel bıçak, kırım tekeri ve 1kW yüksek devirli freze router motoru.</td></tr><tr><td class="k-col">Gelişmiş Bölgesel Vakum</td><td class="v-col">Küçük parçaların dahi masadan oynamasını önleyen bağımsız bölümlü güçlü türbin vakumu.</td></tr><tr><td class="k-col">Lazer Takım Sıfırlayıcı</td><td class="v-col">Bıçak ve freze uçlarının boyunu tek tuşla otomatik ölçerek derinliği mikron hassasiyetinde ayarlar.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SC1311</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1300 x 1100 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1800 mm/saniye</td></tr><tr><td class="k-col">Konumlandırma Hassasiyeti</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm (malzeme ve takıma bağlı)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SC1325 Profesyonel Reklam & Tabela Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SC1325 Profesyonel Reklam & Tabela Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1300 x 2500 mm Standart Levha Formatında Güçlü Endüstriyel Çözüm"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sc1325.jpg" alt="JWEI SC1325">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SC1325, reklam ve tabela sektöründe en yaygın kullanılan 1.25 x 2.50 metre standart plaka ölçülerini tek seferde masaya alıp işlemek üzere optimize edilmiştir. 1800 mm/s kesim hızı ile hem yumuşak grafik materyalleri hem de sert kompozit ve pleksileri pürüzsüz keser.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Tam Boy Levha İşleme</td><td class="v-col">Standart 125x250 cm pleksi, dekota ve alüminyum kompozit plakaları bölmeden tek parçada işler.</td></tr><tr><td class="k-col">Güçlendirilmiş Çelik Şase</td><td class="v-col">Titreşimi emen yekpare ağır gövde yapısı sayesinde yüksek hızda bile pürüzsüz kenar kalitesi sağlar.</td></tr><tr><td class="k-col">Akıllı Vakum Yönetimi</td><td class="v-col">İşlenen alanın büyüklüğüne göre vakum çekimini yoğunlaştıran zonlu vakum sistemi.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SC1325</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1300 x 2500 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1800 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SC1618 Oluklu Mukavva ve Stand Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SC1618 Oluklu Mukavva ve Stand Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1600 x 1800 mm Genişlikte Ambalaj, Koli ve POP Teşhir Standı Üretim Merkezi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sc1618.jpg" alt="JWEI SC1618">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SC1618, ambalaj üreticileri ve POP/POS teşhir standı imalatçıları için özel olarak 1600 x 1800 mm ebadında tasarlanmıştır. Kalın oluklu mukavvalar, petek paneller (re-board) ve kalın plastik levhalarda yüksek hassasiyetli kesim ve pilyaj yapar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Ambalaj & Stand Odaklı Format</td><td class="v-col">1.6 metre enleme tablası ile orta boy koli ve teşhir standı parçalarını fire vermeden yerleştirir.</td></tr><tr><td class="k-col">Pnömatik Salınımlı Bıçak (POT)</td><td class="v-col">Güçlü hava pistonu tahriki ile 50 mm kalınlığa kadar sert petek panel ve ağır oluklu mukavvaları kolayca keser.</td></tr><tr><td class="k-col">Derin Pilyaj & Kırım</td><td class="v-col">Çeşitli profillerdeki kırım tekerleri ile mukavvada çatlama yapmadan kusursuz katlama çizgileri oluşturur.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SC1618</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1600 x 1800 mm</td></tr><tr><td class="k-col">Maksimum Hız</td><td class="v-col">1800 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 mm (Petek panel, re-board, fotoblok, conta)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SC1625 Endüstriyel Standart Levha Kesim Merkezi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SC1625 Endüstriyel Standart Levha Kesim Merkezi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1600 x 2500 mm İdeal Ebatta Matbaa, Reklam ve Endüstriyel İmalat Gücü"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sc1625.jpg" alt="JWEI SC1625">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SC1625, Türkiye ve dünya pazarında reklam, ambalaj ve endüstriyel sonlandırmada en çok tercih edilen 1.6 x 2.5 metre çalışma alanına sahiptir. Hem 1.5x2.5m levha malzemeleri hem de geniş format dijital baskı çıktılarını eş zamanlı işleyebilen çok yönlü bir üretim merkezidir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">En Çok Tercih Edilen Format</td><td class="v-col">1600 x 2500 mm ebadı ile piyasadaki tüm standart plaka (pleksi, foreks, kompozit) ve rulo baskı ebatlarıyla tam uyumludur.</td></tr><tr><td class="k-col">Çift Takım + Freze</td><td class="v-col">Salınımlı bıçak ve kırım tekeri ile ambalaj keserken, 1kW router freze ile pleksi ve kompozit derz açma işlemlerini aynı masada gerçekleştirir.</td></tr><tr><td class="k-col">Otomatik Takım Kalibratörü</td><td class="v-col">Lazer optik sensör ile bıçak ve freze ucu boyunu otomatik sıfırlayarak tabla koruyucu keçesini kesilmekten korur.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SC1625</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1600 x 2500 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">1800 mm/saniye</td></tr><tr><td class="k-col">Tekrarlanabilirlik</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SC2030 Büyük Format Ağır Hizmet Kesim Masası -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SC2030 Büyük Format Ağır Hizmet Kesim Masası</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"2000 x 3000 mm Devasa Alanda Ağır Hizmet Tipi Endüstriyel Kesim & Freze"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sc2030.jpg" alt="JWEI SC2030">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SC2030; büyük ebatlı açık hava reklam panoları, 2x3 metre plaka pleksi/dekota kesimleri ve endüstriyel üretim hatları için tasarlanmış geniş tablalı kesim sistemidir. Güçlendirilmiş çift taraflı köprü portalı ve yüksek güçlü vakum sistemi ile en zorlu plakalarda bile sıfır esneme ile çalışır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">2x3 Metre Kesintisiz Tabla</td><td class="v-col">Piyasadaki en büyük standart levha ölçüsü olan 2000 x 3000 mm malzemeleri tek seferde masaya bağlar.</td></tr><tr><td class="k-col">Ağır Şase & Sıfır Salınım</td><td class="v-col">Güçlendirilmiş portal yapısı sayesinde 1800 mm/s hızda dönerken köprü titreşimi yapmaz, pürüzsüz yay ve daire kesimleri üretir.</td></tr><tr><td class="k-col">Yüksek Emişli Çift Türbin Vakumu</td><td class="v-col">Geniş yüzeydeki en ufak parçayı dahi güçlü şekilde vakumlayarak hassas frezeleme ve bıçak kesimi sağlar.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SC2030</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">2000 x 3000 mm</td></tr><tr><td class="k-col">Maksimum Hız</td><td class="v-col">1800 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG1311 Otomatik Yükleme & Boşaltmalı Dijital Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG1311 Otomatik Yükleme & Boşaltmalı Dijital Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1300 x 1100 mm Alanda 2000 mm/s Ultra Hız ve Sürekli Konveyörlü Otomasyon"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg1311.jpg" alt="JWEI SG1311">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG1311; kompakt boyutlarda ultra yüksek üretim hızı ve otomatik malzeme akışı arayan işletmeler için tasarlanmıştır. 2000 mm/s maksimum kesim hızı ve konveyör bandı sayesinde rulo veya tabaka malzemeleri otomatik içeri çeker, keser ve arkadaki toplama masasına boşaltır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">2000 mm/s Ultra Kesim Hızı</td><td class="v-col">Gelişmiş dijital servo sürücüler ile standart kesim masalarına göre %40 daha hızlı iş tamamlama.</td></tr><tr><td class="k-col">Konveyörlü Sürekli Akış</td><td class="v-col">Otomatik besleme ünitesi malzemeyi masaya sürer, kesim tamamlandığında konveyör bandı işi dışarı taşır.</td></tr><tr><td class="k-col">AI Destekli Akıllı Kesim</td><td class="v-col">Köşelerde hız optimizasyonu yaparak malzemeyi yakmadan ve yıpratmadan maksimum hızda döner.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG1311</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1300 x 1100 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG1612 Kompakt Ultra Yüksek Hızlı Konveyörlü CNC Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG1612 Kompakt Ultra Yüksek Hızlı Konveyörlü CNC Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1600 x 1200 mm Genişlikte 2000 mm/s Hız ve Kesintisiz Konveyör Akışı"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg1612.jpg" alt="JWEI SG1612">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG1612; tekstil, tabela, conta ve ambalaj atölyelerinde 1.6 metre rulo ve tabaka genişliğini ultra hızda işlemek üzere optimize edilmiştir. 2000 mm/s kesim hızı ile seri imalat gerektiren siparişleri rekor sürede tamamlar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">1.6 Metre Malzeme Uyumu</td><td class="v-col">160 cm enindeki rulo tekstil, branda, vinil veya tabaka malzemeleri doğrudan işler.</td></tr><tr><td class="k-col">Sürekli Rulo Besleme</td><td class="v-col">Opsiyonel rulo açıcı ünitesi ile rulo halindeki tekstil ve folyoları operatörsüz aralıksız keser.</td></tr><tr><td class="k-col">Hassas Lazer Takım Başlatıcı</td><td class="v-col">Bıçak ucunu mikron hassasiyetinde kalibre ederek tabla ömrünü uzatır.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG1612</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1600 x 1200 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG1625 AI Destekli Tam Otomatik CNC Kesim Hattı -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG1625 AI Destekli Tam Otomatik CNC Kesim Hattı</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"Otomatik Yükleme, Kesim ve İstifleme Boşaltmalı Endüstriyel Amiral Gemisi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg1625.jpg" alt="JWEI SG1625">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG1625; tam otomatik levha yükleme asansörü, 2000 mm/s konveyörlü kesim masası ve kesilen parçaları toplayan otomatik boşaltma masası ile tam teşekküllü bir insansız üretim hattıdır. AI Cutting Assistant yapay zeka algoritması ile kesim yollarını optimize eder.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">Uçtan Uca Otomatik Üretim Hattı</td><td class="v-col">Vakumlu robotik besleme tablası levhayı alır → konveyörlü kesim masasında 2000 mm/s hızla işlenir → biten parçalar toplama masasına aktarılır.</td></tr><tr><td class="k-col">AI Cutting Assistant</td><td class="v-col">Yapay zeka kesim asistanı bıçak aşınmasını izler, kesim rotasını malzeme ısınmasını ve deformasyonunu engelleyecek şekilde otomatik sıralar.</td></tr><tr><td class="k-col">Otomatik Takım Değiştirici (ATC)</td><td class="v-col">Frezeleme ve bıçak uçlarını operatör müdahalesine gerek kalmadan magazin yuvasından otomatik değiştirir.</td></tr><tr><td class="k-col">Endüstri 4.0 & MES Entegrasyonu</td><td class="v-col">Üretim adetlerini, sürelerini ve fire oranlarını doğrudan fabrika yönetim yazılımına (MES/ERP) aktarır.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG1625 Otomatik Hat</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1600 x 2500 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Tekrarlanabilirlik</td><td class="v-col">±0.05 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG1635 Ekstra Uzun Levha & Panel Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG1635 Ekstra Uzun Levha & Panel Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"1600 x 3500 mm Geniş Çalışma Alanında 2000 mm/s Hız ile Uzun Levha Üretimi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg1635.jpg" alt="JWEI SG1635">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG1635; 3.5 metre boyundaki ekstra uzun kompozit paneller, mimari cephe kaplamaları ve büyük boy display panelleri için tasarlanmıştır. 2000 mm/s kesim hızı ve ±0.05 mm tekrar hassasiyeti ile uzun malzemelerde bile hatasız ve stabil çalışma sunar.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">3.5 Metre Kesintisiz Boy</td><td class="v-col">Standart 3 metre ve 3.5 metre boyundaki mimari kompozit, pleksi ve ahşap levhaları bölmeden işler.</td></tr><tr><td class="k-col">Gelişmiş Servo & Helisel Dişli</td><td class="v-col">Sıfır boşluklu helisel kremayer ve lineer kılavuzlar sayesinde 3.5 metre boyunca sıfır sapma sağlar.</td></tr><tr><td class="k-col">MES Entegrasyonu & NFC Giriş</td><td class="v-col">Operatör yetkilendirmesi NFC kartla yapılır, makine çalışma verileri anlık olarak buluta iletilir.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG1635</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">1600 x 3500 mm</td></tr><tr><td class="k-col">Maksimum Hız</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG2132 Ağır Sanayi Freze & Pnömatik Bıçaklı Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG2132 Ağır Sanayi Freze & Pnömatik Bıçaklı Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"2100 x 3200 mm Süper Geniş Ebatta 2000 mm/s Ultra Hızlı Ağır Sanayi CNC Kesim"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg2132.jpg" alt="JWEI SG2132">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG2132; büyük ebatlı reklam panoları, alüminyum kompozit cephe levhaları, ağır sanayi contaları ve endüstriyel plastik üreticileri için 2.1 x 3.2 metre devasa çalışma alanı sunar. 2000 mm/s hız, pnömatik salınımlı bıçak ve güçlü freze motoru tek platformda birleşir.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">2.1 x 3.2 Metre Devasa Alan</td><td class="v-col">Türkiye'de satılan en büyük kompozit levhaları ve 2 metrelik pleksileri rahatlıkla masaya bağlar.</td></tr><tr><td class="k-col">Kesim, Çizim, Freze ve V-Cut Tek Platformda</td><td class="v-col">Alüminyum kompozitte 90 derece büküm derzlerini V-cut ile açar, kalın pleksileri freze ile pürüzsüz keser, contaları salınımlı bıçakla işler.</td></tr><tr><td class="k-col">NFC Güvenlik & MES Bağlantısı</td><td class="v-col">Yetkili personel NFC kartla sistemi açar, iş başlangıç ve bitişleri otomatik loglanır.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG2132</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">2100 x 3200 mm</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Tekrarlanabilirlik</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG3216 3.2 Metre Plaka Eni Dijital Kesim Merkezi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG3216 3.2 Metre Plaka Eni Dijital Kesim Merkezi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"3200 x 1600 mm Formatında 3.2 Metrelik Levhaları Enlemesine Hızla İşleyen Güç"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg3216.jpg" alt="JWEI SG3216">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG3216; 3200 mm genişlik ve 1600 mm derinlik ile 3.2 metrelik geniş levhaları enlemesine yükleyip kesmek isteyen işletmeler için tasarlanmıştır. 2000 mm/s hızı ve ±0.05 mm hassasiyeti ile geniş levhalarda operatörün malzeme yüklemesini kolaylaştırır.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">3.2 Metre Enleme Yükleme</td><td class="v-col">Levha ön taraftan genişçe yerleştirilir, operatörün masanın arka kısmına uzanmasına gerek kalmaz.</td></tr><tr><td class="k-col">Yüksek Hızlı Optik Tanıma</td><td class="v-col">CCD kamera 3.2 metre boyunca baskı kroslarını saniyeler içinde okuyarak otomatik sıfırlar.</td></tr><tr><td class="k-col">Yüksek Vakum Stabilitesi</td><td class="v-col">Geniş alanda malzeme kalkmalarını önleyen güçlü vakum peteği.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG3216</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">3200 x 1600 mm</td></tr><tr><td class="k-col">Maksimum Hız</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kalınlık</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT PAGE: JWEI SG3232 Devasa 10 m² Kare Format Endüstriyel CNC Kesim Sistemi -->
+    <section class="product-page-sheet">
+      
+      <!-- Top Header Line -->
+      <div class="sheet-header-line">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:2px;">
+            <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain;">
+          </div>
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <!-- Title & Slogan -->
+      <div class="product-title-section">
+        <div class="title-row-flex">
+          <h2 class="machine-title">JWEI SG3232 Devasa 10 m² Kare Format Endüstriyel CNC Kesim Sistemi</h2>
+          <span class="machine-badge">Resmi Ürün Şartnamesi</span>
+        </div>
+        <div class="machine-slogan">"3200 x 3200 mm Devasa Kesim Alanı ile SG Serisinin En Büyük Endüstriyel Amiral Gemisi"</div>
+      </div>
+
+      <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN) -->
+      <div class="hero-image-frame">
+        <img src="images/jwei-sg3232.jpg" alt="JWEI SG3232">
+        <div class="stamp-badge">JWEI ORİJİNAL EKİPMAN</div>
+      </div>
+
+      <!-- Overview & Bullets Ribbon -->
+      <div class="overview-ribbon">
+        <div class="desc-card">
+          <div class="section-pill-label">Yönetici Özeti & Genel Bakış</div>
+          <p>JWEI SG3232, SG serisinin en büyük çalışma alanına sahip modelidir. 3.2 x 3.2 metre (10.24 metrekare) devasa çalışma alanı sayesinde tek parçada dev panelleri, cephe kaplamalarını ve yüksek hacimli seri kesimleri işler.</p>
+        </div>
+        <div class="bullets-card">
+          <div class="section-pill-label">Öne Çıkan Mühendislik & Avantajlar</div>
+          <ul>
+            <li>Yüksek hızlı endüstriyel üretim performansı ve üstün dayanıklılık.</li><li>Düşük işletme ve minimum birim parça maliyeti.</li><li>Ağır sanayi tipi rijit şase ve mikron seviyesinde hassasiyet.</li><li>Lidya Grup 7/24 teknik servis ve orijinal yedek parça güvencesi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Full-Width Engineering Specs Table -->
+      <div class="specs-table-card">
+        <div class="table-head-strip">
+          <span>MÜHENDİSLİK & TEKNİK ŞARTNAME TABLOSU</span>
+          <span style="font-size:0.56rem;opacity:0.85;">RESMİ FABRİKA VERİLERİ</span>
+        </div>
+        <table class="specs-table-dikey">
+          <tbody>
+            <tr><td class="k-col">10 m² Devasa Tek Parça Kesim Alanı</td><td class="v-col">Büyük ebatlı tabela, kompozit panel, akrilik, PVC ve endüstriyel malzemeleri bölmeden tek parçada işler.</td></tr><tr><td class="k-col">2000 mm/s Hız & ±0.05 mm Hassasiyet</td><td class="v-col">Devasa köprü yapısına rağmen sıfır esnemeli çelik gövdesi ve yüksek torklu servo motorları ile mikron hassasiyetini korur.</td></tr><tr><td class="k-col">Otomatik Takım Değiştirici & MES</td><td class="v-col">Seri imalat hatlarında freze uçları ve bıçakları otomatik değiştirerek insansız üretime olanak sağlar.</td></tr><tr><td class="k-col">Model Kodu</td><td class="v-col">JWEI SG3232</td></tr><tr><td class="k-col">Çalışma / Kesim Alanı</td><td class="v-col">3200 x 3200 mm (10.24 m²)</td></tr><tr><td class="k-col">Maksimum Kesim Hızı</td><td class="v-col">2000 mm/saniye</td></tr><tr><td class="k-col">Hassasiyet</td><td class="v-col">±0.05 mm</td></tr><tr><td class="k-col">Maksimum Kesim Kalınlığı</td><td class="v-col">50 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4-Pillar Distributor Guarantee Ribbon -->
+      <div class="guarantee-bar-strip">
+        <div class="g-item">
+          <div class="g-title">🛠️ Yetkili Kurulum & Eğitim</div>
+          <div class="g-desc">Sertifikalı mühendislerce anahtar teslim montaj ve eğitim.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📦 Orijinal Sarf Stoğu</div>
+          <div class="g-desc">Yerel depoda hazır bıçak, yedek parça ve sarf malzemesi.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">📞 7/24 Teknik Destek</div>
+          <div class="g-desc">0542 352 72 99 hattı ve uzaktan bağlantıyla anında çözüm.</div>
+        </div>
+        <div class="g-item">
+          <div class="g-title">💳 Lidya Finansman</div>
+          <div class="g-desc">Esnek leasing, operasyonel kiralama ve vadeli modeller.</div>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-TDS</div>
+      </div>
+
+    </section>
+
+
+    <!-- CORPORATE SUMMARY & WARRANTY CLOSING PAGE -->
+    <div class="summary-page">
+      <div class="sheet-header-line" style="border-bottom:2px solid #d71920; padding-bottom:2mm; margin-bottom:3mm;">
+        <div class="header-logo-group">
+          <img src="images/lidya_grup_logo.png" onerror="this.src='lidya_grup_logo.png'" alt="Lidya Grup Logo">
+          <div class="header-company-text">
+            <div class="comp-name">LİDYA GRUP <span>BİLİŞİM SİSTEMLERİ</span></div>
+            <div class="comp-sub">DİJİTAL BASKI, AMBALAJ & KESİM TEKNOLOJİLERİ</div>
+          </div>
+        </div>
+        <div class="header-badge-group">
+          <img src="images/brands/jwei.svg" alt="JWEI Logo" style="height:26px; max-width:115px; object-fit:contain; margin-bottom:2px;">
+          <div class="header-phone">Yetkili Distribütör | Tel: <strong>0850 800 06 00</strong></div>
+        </div>
+      </div>
+
+      <div style="flex:1; overflow:hidden;">
+        <h2 style="font-size:1.25rem; font-weight:800; color:var(--lidya-navy); margin-bottom:0.8rem; border-left:4px solid var(--lidya-red); padding-left:8px;">
+          🏢 Lidya Grup Satış Sonrası ve Teknik Hizmet Güvencesi
+        </h2>
+        <div style="font-size:0.75rem; line-height:1.45; color:#334155;">
+          <p style="margin-bottom:0.6rem;">JWEI dijital kesim ve CNC masaları, Lidya Grup güvencesiyle kullanıcılara sunulmaktadır:</p>
+<ul style="list-style:disc;margin-left:1.2rem;margin-bottom:0.8rem;"><li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Yetkili Kurulum & Eğitim:</strong> Fabrika sertifikalı uzman mühendis kadrosu tarafından anahtar teslim kurulum ve operatör eğitimi.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Orijinal Bıçak, Freze Ucu ve Sarf Malzeme:</strong> Lidya Grup depolarında sürekli hazır orijinal bıçaklar, freze uçları, tabla keçeleri ve yedek parçalar.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>7/24 Teknik Destek Hattı:</strong> 0542 352 72 99 numaralı destek hattı üzerinden uzaktan bağlantı ve sahada hızlı teknik servis müdahalesi.</li>
+<li style="margin-bottom:0.35rem;padding-left:4px;"><strong>Finansman & Kiralama:</strong> Lidya Finansman çözümleri ile leasing ve taksit imkanları.</li>
+</ul><p style="margin-bottom:0.6rem;">*© 2026 Lidya Grup. Tüm hakları saklıdır. Resmi distribütör garantisindedir.*</p>
+        </div>
+      </div>
+
+      <!-- Footer Line -->
+      <div class="sheet-footer-line" style="margin-top:auto;">
+        <div><strong>Genel Merkez:</strong> Şerifali Mah. Şehit Sok. No: 6 Ümraniye / İSTANBUL | Tel: <strong>0542 352 72 99</strong> | lidyagrup.com.tr</div>
+        <div><span class="stamp-dist">LİDYA GRUP RESMİ DİSTRİBÜTÖRLÜĞÜ</span> • DOKÜMAN: LGB-2026-GARANTİ</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

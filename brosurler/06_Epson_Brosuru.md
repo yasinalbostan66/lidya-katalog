@@ -13,7 +13,7 @@
 ## 1. Epson SureColor SC-S Serisi (SC-S9100 / SC-S8100 / SC-S7100)
 > **"Tabela, Reklam ve Araç Giydirmede Zirve Renk Doğruluğu ve Çevre Dostu Eko-Solvent"**
 
-![Epson SureColor SC-S Serisi](images/epson_scs8100.webp)
+![Epson SureColor SC-S Serisi](images/epson_scs8100.jpg)
 
 ### Genel Bakış
 Epson’un yeni nesil SureColor SC-S serisi, iç ve dış mekan reklamcılığında dünya lideri renk gamutu, fotogerçekçi baskı kalitesi ve düşük sahip olma maliyetini bir araya getirir.

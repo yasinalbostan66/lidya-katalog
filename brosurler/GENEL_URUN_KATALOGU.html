@@ -541,6 +541,72 @@
       color: #94a3b8;
     }
 
+    /* Mobile Responsive Screen View */
+    @media screen and (max-width: 768px) {
+      .top-bar {
+        position: relative !important;
+        top: auto !important;
+        padding: 0.6rem 0.85rem !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0.5rem !important;
+      }
+      .top-bar .logo-wrap {
+        justify-content: center !important;
+      }
+      .top-bar .btn-group {
+        justify-content: center !important;
+      }
+      .catalog-wrapper {
+        max-width: 100% !important;
+        margin: 0.5rem auto !important;
+        padding: 0 0.5rem !important;
+        gap: 1.25rem !important;
+      }
+      .cover-page, .product-page-sheet {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        border-radius: 8px !important;
+        padding: 1rem 0.85rem !important;
+        overflow: visible !important;
+      }
+      .hero-image-frame {
+        height: auto !important;
+        min-height: 180px !important;
+        max-height: 260px !important;
+        padding: 0.75rem !important;
+      }
+      .hero-image-frame img {
+        max-height: 240px !important;
+      }
+      .overview-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+      }
+      .desc-card, .bullets-card {
+        padding: 0.85rem !important;
+        font-size: 0.82rem !important;
+        line-height: 1.5 !important;
+      }
+      .specs-grid-table td {
+        padding: 6px 8px !important;
+        font-size: 0.78rem !important;
+      }
+      .guarantee-ribbon {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem !important;
+        padding: 0.75rem !important;
+      }
+      .sheet-header, .sheet-footer {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: flex-start !important;
+      }
+    }
+
     /* ========================================================
        PRINT & PDF PERFECTION:
        HER MAKİNE = 1 TAM A4 SAYFA • BAŞLIKLAR EN BAŞTA
@@ -775,7 +841,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_iridesse.avif" alt="Xerox Iridesse™ Production Press">
+        <img src="images/xerox_iridesse.jpg" alt="Xerox Iridesse™ Production Press">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1051,7 +1117,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_primelink_c9200.avif" alt="Xerox PrimeLink® C9200 Serisi">
+        <img src="images/xerox_primelink_c9200.jpg" alt="Xerox PrimeLink® C9200 Serisi">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1189,7 +1255,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_igen5.avif" alt="Xerox iGen® 5 Press">
+        <img src="images/xerox_igen5.jpg" alt="Xerox iGen® 5 Press">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1327,7 +1393,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_px500.webp" alt="Xerox Proficio™ PX500">
+        <img src="images/xerox_px500.jpg" alt="Xerox Proficio™ PX500">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1465,7 +1531,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_px300.webp" alt="Xerox Proficio™ PX300">
+        <img src="images/xerox_px300.jpg" alt="Xerox Proficio™ PX300">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1603,7 +1669,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_primelink_c9200.avif" alt="Xerox PrimeLink® C9200 Serisi">
+        <img src="images/xerox_primelink_c9200.jpg" alt="Xerox PrimeLink® C9200 Serisi">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1741,7 +1807,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/xerox_primelink_b9100.avif" alt="Xerox PrimeLink® B9100 Series">
+        <img src="images/xerox_primelink_b9100.jpg" alt="Xerox PrimeLink® B9100 Series">
         <div class="stamp-badge">XEROX ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -1879,7 +1945,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/efi_nozomi.webp" alt="EFI™ Nozomi 14000 LED / AQ Serisi">
+        <img src="images/efi_nozomi.jpg" alt="EFI™ Nozomi 14000 LED / AQ Serisi">
         <div class="stamp-badge">EFI ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -2017,7 +2083,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/efi_pro32r.webp" alt="EFI™ Pro 32r+ Roll-to-Roll UV LED">
+        <img src="images/efi_pro32r.jpg" alt="EFI™ Pro 32r+ Roll-to-Roll UV LED">
         <div class="stamp-badge">EFI ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -2155,7 +2221,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/efi_pro30h.webp" alt="EFI™ Pro 30h+ Hibrit LED UV">
+        <img src="images/efi_pro30h.jpg" alt="EFI™ Pro 30h+ Hibrit LED UV">
         <div class="stamp-badge">EFI ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -6295,7 +6361,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/epson_scs8100.webp" alt="Epson SureColor SC-S9100 / SC-S8100">
+        <img src="images/epson_scs8100.jpg" alt="Epson SureColor SC-S9100 / SC-S8100">
         <div class="stamp-badge">EPSON ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 
@@ -6433,7 +6499,7 @@
 
       <!-- PROMINENT LARGE HERO IMAGE (DİKEY TAM EN BÜYÜK RESİM) -->
       <div class="hero-image-frame">
-        <img src="images/epson_surecolor_sample.webp" alt="Epson SureColor SC-T3405 / SC-T5405">
+        <img src="images/epson_surecolor_sample.jpg" alt="Epson SureColor SC-T3405 / SC-T5405">
         <div class="stamp-badge">EPSON ORİJİNAL EKİPMAN • RESMİ DİSTRİBÜTÖR</div>
       </div>
 

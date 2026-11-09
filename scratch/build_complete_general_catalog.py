@@ -775,6 +775,72 @@ catalog_html = f"""<!DOCTYPE html>
       color: #94a3b8;
     }}
 
+    /* Mobile Responsive Screen View */
+    @media screen and (max-width: 768px) {{
+      .top-bar {{
+        position: relative !important;
+        top: auto !important;
+        padding: 0.6rem 0.85rem !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0.5rem !important;
+      }}
+      .top-bar .logo-wrap {{
+        justify-content: center !important;
+      }}
+      .top-bar .btn-group {{
+        justify-content: center !important;
+      }}
+      .catalog-wrapper {{
+        max-width: 100% !important;
+        margin: 0.5rem auto !important;
+        padding: 0 0.5rem !important;
+        gap: 1.25rem !important;
+      }}
+      .cover-page, .product-page-sheet {{
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        border-radius: 8px !important;
+        padding: 1rem 0.85rem !important;
+        overflow: visible !important;
+      }}
+      .hero-image-frame {{
+        height: auto !important;
+        min-height: 180px !important;
+        max-height: 260px !important;
+        padding: 0.75rem !important;
+      }}
+      .hero-image-frame img {{
+        max-height: 240px !important;
+      }}
+      .overview-grid {{
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+      }}
+      .desc-card, .bullets-card {{
+        padding: 0.85rem !important;
+        font-size: 0.82rem !important;
+        line-height: 1.5 !important;
+      }}
+      .specs-grid-table td {{
+        padding: 6px 8px !important;
+        font-size: 0.78rem !important;
+      }}
+      .guarantee-ribbon {{
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem !important;
+        padding: 0.75rem !important;
+      }}
+      .sheet-header, .sheet-footer {{
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: flex-start !important;
+      }}
+    }}
+
     /* ========================================================
        PRINT & PDF PERFECTION:
        HER MAKİNE = 1 TAM A4 SAYFA • BAŞLIKLAR EN BAŞTA

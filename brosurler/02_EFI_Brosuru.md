@@ -13,7 +13,7 @@
 ## 1. EFI™ Nozomi 14000 LED / AQ / SD Serisi
 > **"Ambalaj ve Oluklu Mukavvada Tek Geçişli (Single-Pass) Dijital Devrim"**
 
-![EFI™ Nozomi 14000 LED / AQ](images/efi_nozomi.webp)
+![EFI™ Nozomi 14000 LED / AQ](images/efi_nozomi.jpg)
 
 ### Genel Bakış
 EFI™ Nozomi serisi, oluklu mukavva, kutu ve ambalaj üreticileri için tasarlanmış dünyanın en gelişmiş endüstriyel tek geçişli dijital baskı platformudur. Ofset ve flekso kalitesini dijitalin sağladığı kalıpsız ve anlık kişiselleştirme gücüyle buluşturur.
@@ -40,7 +40,7 @@ EFI™ Nozomi serisi, oluklu mukavva, kutu ve ambalaj üreticileri için tasarla
 ## 2. EFI™ Pro 32r+ Roll-to-Roll LED Baskı Sistemi
 > **"3.2 Metre Rulodan Ruloya Üstün LED UV Verimliliği"**
 
-![EFI™ Pro 32r+ Roll-to-Roll UV LED](images/efi_pro32r.webp)
+![EFI™ Pro 32r+ Roll-to-Roll UV LED](images/efi_pro32r.jpg)
 
 ### Genel Bakış
 EFI™ Pro 32r+, açık hava reklamcılığı, araç giydirme, arkadan aydınlatmalı (backlit) tabelalar ve tekstil baskı uygulamaları için geliştirilmiş yüksek hızlı 3.2 m rulo UV LED baskı makinesidir.
@@ -66,7 +66,7 @@ EFI™ Pro 32r+, açık hava reklamcılığı, araç giydirme, arkadan aydınlat
 ## 3. EFI™ Pro 30h+ Hibrit LED UV Baskı Sistemi
 > **"Hem Plaka (Flatbed) Hem Rulo (Roll-to-Roll) Tek Gövdede Hibrit Çözüm"**
 
-![EFI™ Pro 30h+ Hibrit LED UV](images/efi_pro30h.webp)
+![EFI™ Pro 30h+ Hibrit LED UV](images/efi_pro30h.jpg)
 
 ### Genel Bakış
 EFI™ Pro 30h+, hem sert levhalara (pleksi, foreks, fotoblok, alüminyum, ahşap) hem de rulo malzemelere geçiş yapabilen 3.2 metre genişliğinde endüstriyel hibrit baskı makinesidir.

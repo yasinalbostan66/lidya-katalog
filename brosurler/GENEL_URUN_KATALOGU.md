@@ -49,7 +49,7 @@ Lidya Grup, 2001 yılından bu yana Türkiye dijital baskı ve doküman yönetim
 ## 3. Bölüm 1: Xerox Dijital Tabaka Baskı Sistemleri
 
 ### Xerox Iridesse™ Production Press
-![Xerox Iridesse](images/xerox_iridesse.avif)
+![Xerox Iridesse](images/xerox_iridesse.jpg)
 - **Konsept:** Tek geçişte 6 renk Color FLX dijital baskı sistemi (CMYK + Altın, Gümüş, Beyaz, Şeffaf Vernik, Floresan Pembe).
 - **Hız & Gramaj:** 120 sayfa/dakika (52 - 400 gsm tüm gramajlarda ve dublekste sabit).
 - **Çözünürlük:** 2400 x 2400 dpi Ultra HD, 10-bit rasterleme.
@@ -57,7 +57,7 @@ Lidya Grup, 2001 yılından bu yana Türkiye dijital baskı ve doküman yönetim
 - **Fayda:** Klasik CMYK baskıya kıyasla yüksek kâr marjı sağlayan metalik, beyaz ve floresan efektli lüks ambalaj ve prestij yayınlar.
 
 ### Xerox iGen® 5 Press
-![Xerox iGen 5 Press](images/xerox_igen5.avif)
+![Xerox iGen 5 Press](images/xerox_igen5.jpg)
 - **Konsept:** 1 milyon sayfa/ay endüstriyel üretim kapasiteli amiral gemisi dijital baskı platformu.
 - **Hız & Format:** 150 sayfa/dakika sabit hız; 364 x 660 mm standart ve 364 x 889 mm XLS ekstra uzun tabaka desteği.
 - **5. Renk İstasyonu:** PANTONE renklerinin %90'ından fazlasını yakalayan Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı tonerler.
@@ -71,28 +71,28 @@ Lidya Grup, 2001 yılından bu yana Türkiye dijital baskı ve doküman yönetim
 - **Fayda:** Ağır gramajlı karton ve dokulu kağıtlarda sıfır fire, düşük maliyet, ofset standardında ticari matbaa kalitesi.
 
 ### Xerox Proficio™ PX500
-![Xerox Proficio PX500](images/xerox_px500.webp)
+![Xerox Proficio PX500](images/xerox_px500.jpg)
 - **Konsept:** Yeni nesil 100 ppm renkli üretim presi ve PredictPrint yapay zeka otomasyonu.
 - **5. Renk İstasyonu:** Floresan Pembe, Clear şeffaf vernik ve Low Gloss Clear özel efektleri.
 - **Hız & Kapasite:** 52-400 gsm tüm onaylı medyalarda 100 sayfa/dk; 330 x 1300 mm ekstra uzun afiş formatı.
 - **Fayda:** Yapay zeka destekli medya yönetimi ve 5. renk katma değeri ile yüksek kârlı ticari matbaa işleri.
 
 ### Xerox Proficio™ PX300
-![Xerox Proficio PX300](images/xerox_px300.webp)
+![Xerox Proficio PX300](images/xerox_px300.jpg)
 - **Konsept:** Dahili yüksek hızlı tarayıcılı ve 5. renk destekli kompakt dijital üretim baskı sistemi.
 - **Hız & Fonksiyon:** 85 sayfa/dakika renkli baskı; entegre 200 ipm tek geçişli çift taraflı doküman tarayıcı ve fotokopi.
 - **5. Renk & Medya:** İsteğe bağlı Floresan Pembe ve Clear vernik; 52 - 400 gsm kağıt ve 330 x 1300 mm banner.
 - **Fayda:** Küçük ve orta ölçekli baskı merkezleri için çok işlevli tarama ve profesyonel üretim tek kompakt gövdede.
 
 ### Xerox PrimeLink® C9200 Serisi
-![Xerox PrimeLink C9200](images/xerox_primelink_c9200.avif)
+![Xerox PrimeLink C9200](images/xerox_primelink_c9200.jpg)
 - **Konsept:** Ofis esnekliği ile üretim presi gücünü buluşturan renkli çok işlevli baskı sistemi.
 - **Hız Seçenekleri:** 65 / 75 / 81 sayfa/dakika (PLC9265, PLC9275, PLC9281).
 - **Tarayıcı & Format:** 270 ipm ultra hızlı çift taraflı tarayıcı; 330 x 1300 mm (13 x 51 inç) afiş ve 350 g/m² dubleks karton.
 - **Fayda:** Xerox Adaptive CMYK Plus kiti ile altın, gümüş, beyaz ve floresan toner yükseltmesi.
 
 ### Xerox PrimeLink® B9100 Series
-![Xerox PrimeLink B9100](images/xerox_primelink_b9100.avif)
+![Xerox PrimeLink B9100](images/xerox_primelink_b9100.jpg)
 - **Konsept:** Kitap, fatura, sınav evrakı ve kurumsal arşivleme için yüksek hızlı monokrom üretim presi.
 - **Hız & Dayanıklılık:** 100 / 110 / 125 / 136 sayfa/dakika rekor S/B hız; 3 milyon sayfa/ay endüstriyel görev döngüsü.
 - **Tarayıcı & Güvenlik:** 270 ipm yüksek hızlı tarayıcı, 330 x 660 mm format desteği, McAfee Whitelisting ve 256-bit AES şifreleme.
@@ -103,19 +103,19 @@ Lidya Grup, 2001 yılından bu yana Türkiye dijital baskı ve doküman yönetim
 ## 4. Bölüm 2: EFI Endüstriyel Baskı ve Ambalaj Sistemleri
 
 ### EFI™ Nozomi 14000 LED / AQ
-![EFI Nozomi 14000](images/efi_nozomi.webp)
+![EFI Nozomi 14000](images/efi_nozomi.jpg)
 - **Uygulama:** Oluklu mukavva, koli ve lüks ambalaj kutusu üretimi.
 - **Teknoloji:** Single-pass (tek geçişli) LED UV veya su bazlı gıdaya uygun AQ mürekkep.
 - **Hız:** Dakikada 75 lineer metre (saatte 10.000 m²).
 - **Avantaj:** Kalıp maliyetini sıfırlayarak kişiselleştirilmiş veya kısa-orta tirajlı kutu siparişlerini anında teslim etme imkanı.
 
 ### EFI™ Pro 32r+ (Roll-to-Roll UV)
-![EFI Pro 32r+](images/efi_pro32r.webp)
+![EFI Pro 32r+](images/efi_pro32r.jpg)
 - **Genişlik / Hız:** 3.20 metre / 256 m²/saat.
 - **Teknoloji:** 7 pl UltraDrop LED UV, dahili çift taraflı baskı sensörü, dahili boyuna dilimleme bıçakları.
 
 ### EFI™ Pro 30h+ (Hibrit UV)
-![EFI Pro 30h+](images/efi_pro30h.webp)
+![EFI Pro 30h+](images/efi_pro30h.jpg)
 - **Genişlik / Hız:** 3.20 metre / 235 m²/saat.
 - **Esneklik:** 5 cm kalınlığa kadar her türlü rijit levha ve rulo malzeme desteği.
 
@@ -262,7 +262,7 @@ Duplo, matbaa ve dijital baskı merkezlerinin tüm sonlandırma iş akışını 
 ## 8. Bölüm 6: Epson Geniş Format Sistemleri
 
 ### SureColor SC-S Serisi (SC-S9100 / 8100 / 7100)
-![Epson SureColor](images/epson_scs8100.webp)
+![Epson SureColor](images/epson_scs8100.jpg)
 - 10 Renk UltraChrome GS3 Eko-Solvent mürekkepler ile sektörün en geniş renk gamutu.
 - GreenGuard Gold sertifikalı iç mekan uyumu.
 

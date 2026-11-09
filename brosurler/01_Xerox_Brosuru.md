@@ -34,7 +34,7 @@ LİDYA GRUP XEROX DİJİTAL ÜRETİM BASKI AİLESİ
 ### 1.1 Xerox Iridesse™ Production Press
 > **"Tek Geçişte 6 Renk Color FLX Teknolojisi, Metalik Parlaklık ve 120 ppm Kesintisiz Hız"**
 
-![Xerox Iridesse™ Production Press](images/xerox_iridesse.avif)
+![Xerox Iridesse™ Production Press](images/xerox_iridesse.jpg)
 
 #### Genel Bakış
 Xerox Iridesse™ Production Press, dijital baskıda sınırları ortadan kaldıran Color FLX teknolojisi sayesinde standart CMYK renklerin yanı sıra tek geçişte Altın, Gümüş, Beyaz, Şeffaf Lak ve Floresan Pembe özel tonerlerini kullanarak eşsiz katma değerli baskılar üretir. 52 g/m²'den 400 g/m²'ye kadar tüm kağıt gramajlarında 120 sayfa/dakika hızını korur. Full Width Array (FWA) otomatik spektrofotometre ile renk ve ön-arka kayıt kalibrasyonunu dakikalar içinde tamamlar.
@@ -72,7 +72,7 @@ Lüks ambalaj ve kozmetik kutuları, prestijli şirket katalogları, metalik dav
 ### 1.2 Xerox iGen® 5 Press
 > **"150 ppm Hız, 5. Renk İstasyonu ve 1 Milyon Sayfa/Ay Endüstriyel Üretim Platformu"**
 
-![Xerox iGen® 5 Press](images/xerox_igen5.avif)
+![Xerox iGen® 5 Press](images/xerox_igen5.jpg)
 
 #### Genel Bakış
 Xerox iGen® 5 Press, ticari matbaalar ve büyük ölçekli üretim merkezleri için geliştirilmiş endüstriyel seviyede amiral gemisi dijital baskı sistemidir. 5. renk istasyonu sayesinde CMYK'ya ek olarak Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı toner kullanılarak PANTONE renklerinin %90'ından fazlası yüksek doğrulukla basılır. 150 sayfa/dakika hızı, 364 x 889 mm XLS uzun tabaka formatı ve 1 milyon sayfa/ay endüstriyel kapasitesi ile yüksek hacimli ambalaj, katalog ve doğrudan pazarlama işlerinde maksimum throughput sağlar.
@@ -145,7 +145,7 @@ Katalog, broşür, kurumsal tanıtım dosyaları, kitap kapakları, menüler, et
 ### 1.4 Xerox Proficio™ PX500
 > **"100 ppm Hız, 5. Renk İstasyonu Desteği ve Gelişmiş PredictPrint Otomasyonu"**
 
-![Xerox Proficio™ PX500](images/xerox_px500.webp)
+![Xerox Proficio™ PX500](images/xerox_px500.jpg)
 
 #### Genel Bakış
 Xerox Proficio™ PX500, yüksek hacimli ticari baskı merkezleri ve kurumsal üretim ortamları için geliştirilen yeni nesil renkli üretim baskı sistemidir. Xerox'un gelişmiş HD EA toner teknolojisi, Ultra HD çözünürlük sistemi ve PredictPrint yapay zeka destekli medya yönetimini bir araya getirir. 52 ila 400 gsm arasındaki tüm malzemelerde hız kaybı yaşamadan 100 ppm sabit hız sunar. İsteğe bağlı 5. renk istasyonu ile Floresan Pembe, Clear ve Low Gloss Clear gibi özel tonerlerle katma değerli baskılar üretir.
@@ -182,7 +182,7 @@ Ticari dijital matbaalar, 5. renk efektli ambalaj ve broşürler, sentetik menü
 ### 1.5 Xerox Proficio™ PX300
 > **"85 ppm Hız, 5. Renk Desteği, Dahili 200 ipm Tarayıcı ve Kompakt Üretim Gücü"**
 
-![Xerox Proficio™ PX300](images/xerox_px300.webp)
+![Xerox Proficio™ PX300](images/xerox_px300.jpg)
 
 #### Genel Bakış
 Xerox Proficio™ PX300, küçük ve orta ölçekli baskı merkezleri, dijital kopyalama ofisleri ve kurumsal reprografi departmanları için geliştirilmiş kompakt ve çok işlevli renkli üretim presidir. 85 ppm baskı hızı, HD EA toner teknolojisi ve Ultra HD LED görüntüleme ile keskin metinler ve zengin renkler sunar. Entegre 200 ipm tek geçişli çift taraflı tarayıcısı ile tarama ve fotokopiyi tek merkezde toplarken, 5. renk desteği ile Floresan Pembe ve Clear efektleri basabilme kabiliyeti kazandırır.
@@ -218,7 +218,7 @@ Kompakt dijital baskı merkezleri, üniversite ve okul reprografi merkezleri, ku
 ### 1.6 Xerox PrimeLink® C9200 Serisi
 > **"65 - 81 ppm Hız, 330 x 1300 mm Afiş Desteği ve 270 ipm Yüksek Hızlı Tarayıcı"**
 
-![Xerox PrimeLink® C9200 Serisi](images/xerox_primelink_c9200.avif)
+![Xerox PrimeLink® C9200 Serisi](images/xerox_primelink_c9200.jpg)
 
 #### Genel Bakış
 Xerox PrimeLink® C9200 Serisi (C9265, C9275, C9281), yoğun ofis ortamları, kurumsal reprografi merkezleri ve hızlı dijital matbaalar için ofis çok işlevliliği ile üretim presi gücünü tek platformda buluşturur. 2400 x 2400 dpi Ultra HD çözünürlük, 270 ipm tek geçişli çift taraflı tarayıcı ve 330 x 1300 mm afiş baskı kabiliyeti sunar. Xerox Adaptive CMYK Plus teknolojisi yükseltmesi ile canlı floresan ve parlak metalik toner efektlerine olanak tanır.
@@ -253,7 +253,7 @@ Kurumsal baskı merkezleri, eğitim ve sınav kitapçıkları, fatura ve sözle�
 ### 1.7 Xerox PrimeLink® B9100 Series
 > **"100 - 136 ppm S/B Hız, 3 Milyon Sayfa Görev Döngüsü ve Endüstriyel Güvenlik"**
 
-![Xerox PrimeLink® B9100 Series](images/xerox_primelink_b9100.avif)
+![Xerox PrimeLink® B9100 Series](images/xerox_primelink_b9100.jpg)
 
 #### Genel Bakış
 Xerox PrimeLink® B9100 Serisi (B9100, B9110, B9125, B9136), kitap yayıncılığı, fatura baskı merkezleri, okul-sınav evrakları ve yoğun ofis arşivleme operasyonları için geliştirilmiş yüksek hızlı monokrom üretim baskı makinesidir. Dakikada 136 sayfaya varan baskı hızı, 2400 x 2400 dpi çözünürlüğü ve 270 ipm çift taraflı tek geçişli tarayıcısı ile yüksek tirajlı siyah-beyaz işlerde benzersiz hız ve en düşük sayfa başı birim maliyeti sunar.

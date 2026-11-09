@@ -6,7 +6,7 @@
     "brand": "Xerox Production",
     "subtitle": "Tek Geçişte 6 Renk Color FLX Teknolojisi, Metalik Parlaklık ve 120 ppm Kesintisiz Hız",
     "description": "Xerox Iridesse™ Production Press, dijital baskıda sınırları ortadan kaldıran Color FLX teknolojisi sayesinde standart CMYK renklerin yanı sıra tek geçişte Altın, Gümüş, Beyaz, Şeffaf Lak ve Floresan Pembe özel tonerlerini kullanarak eşsiz katma değerli baskılar üretir. 52 g/m²'den 400 g/m²'ye kadar tüm kağıt gramajlarında 120 sayfa/dakika hızını korur. Full Width Array (FWA) otomatik spektrofotometre ile renk ve ön-arka kayıt kalibrasyonunu dakikalar içinde tamamlar.",
-    "image": "images/xerox_iridesse.avif",
+    "image": "images/xerox_iridesse.jpg",
     "image_alt": "Xerox Iridesse™ Production Press",
     "pills": [
       "⚡ 120 sayfa/dk Hız",
@@ -179,7 +179,7 @@
     "brand": "Xerox PrimeLink",
     "subtitle": "65 - 81 ppm Hız, 330 x 1300 mm Afiş Desteği ve 270 ipm Yüksek Hızlı Tarayıcı",
     "description": "Xerox PrimeLink® C9200 Serisi (C9265, C9275, C9281), yoğun ofis ortamları, kurumsal reprografi merkezleri ve hızlı dijital matbaalar için ofis çok işlevliliği ile üretim presi gücünü tek platformda buluşturur. 2400 x 2400 dpi Ultra HD çözünürlük, 270 ipm tek geçişli çift taraflı tarayıcı ve 330 x 1300 mm afiş baskı kabiliyeti sunar. Xerox Adaptive CMYK Plus teknolojisi yükseltmesi ile canlı floresan ve parlak metalik toner efektlerine olanak tanır.",
-    "image": "images/xerox_primelink_c9200.avif",
+    "image": "images/xerox_primelink_c9200.jpg",
     "image_alt": "Xerox PrimeLink® C9200 Serisi",
     "pills": [
       "⚡ 65-81 sayfa/dk",
@@ -253,7 +253,7 @@
     "title": "EFI™ Nozomi 14000 LED / AQ Serisi",
     "brand": "EFI Ambalaj",
     "subtitle": "Oluklu Mukavva ve Ambalajda Tek Geçişli (Single-Pass) Devrim",
-    "image": "images/efi_nozomi.webp",
+    "image": "images/efi_nozomi.jpg",
     "image_alt": "EFI™ Nozomi 14000 LED / AQ Serisi",
     "pills": [
       "🚀 75 m/dk Hat Hızı",
@@ -297,7 +297,7 @@
     "title": "EFI™ Pro 32r+ Roll-to-Roll UV LED",
     "brand": "EFI Geniş Format",
     "subtitle": "3.2 Metre Rulo Baskıda Üstün LED UV Verimliliği",
-    "image": "images/efi_pro32r.webp",
+    "image": "images/efi_pro32r.jpg",
     "image_alt": "EFI™ Pro 32r+ Roll-to-Roll UV LED",
     "pills": [
       "⚡ 256 m²/saat Hız",
@@ -341,7 +341,7 @@
     "title": "EFI™ Pro 30h+ Hibrit LED UV",
     "brand": "EFI Hibrit",
     "subtitle": "Hem Sert Plaka Hem Esnek Rulo: Tek Gövdede Hibrit Güç",
-    "image": "images/efi_pro30h.webp",
+    "image": "images/efi_pro30h.jpg",
     "image_alt": "EFI™ Pro 30h+ Hibrit LED UV",
     "pills": [
       "⚡ 235 m²/saat Hız",
@@ -1801,7 +1801,7 @@
     "title": "Epson SureColor SC-S9100 / SC-S8100",
     "brand": "Epson Signage",
     "subtitle": "Tabela ve Araç Giydirmede Dünya Standardı Renk Doğruluğu",
-    "image": "images/epson_scs8100.webp",
+    "image": "images/epson_scs8100.jpg",
     "image_alt": "Epson SureColor SC-S9100 / SC-S8100",
     "pills": [
       "🎨 10 Renk GS3 Seti",
@@ -1840,7 +1840,7 @@
     "title": "Epson SureColor SC-T3405 / SC-T5405",
     "brand": "Epson CAD & Poster",
     "subtitle": "Mimari CAD, Mühendislik Çizimleri ve Perakende Poster Yazıcısı",
-    "image": "images/epson_surecolor_sample.webp",
+    "image": "images/epson_surecolor_sample.jpg",
     "image_alt": "Epson SureColor SC-T3405 / SC-T5405",
     "pills": [
       "⏱️ 22 sn / A1 Çizim",
@@ -3126,7 +3126,7 @@
     "brand": "Xerox Production",
     "subtitle": "150 ppm Hız, 5. Renk İstasyonu ve 1 Milyon Sayfa/Ay Endüstriyel Üretim Platformu",
     "description": "Xerox iGen® 5 Press, ticari matbaalar ve büyük ölçekli üretim merkezleri için geliştirilmiş endüstriyel seviyede amiral gemisi dijital baskı sistemidir. 5. renk istasyonu sayesinde CMYK'ya ek olarak Turuncu, Yeşil, Mavi, Beyaz, Şeffaf veya Floresan Sarı toner kullanılarak PANTONE renklerinin %90'ından fazlası yüksek doğrulukla basılır. 150 sayfa/dakika hızı, 364 x 889 mm XLS uzun tabaka formatı ve 1 milyon sayfa/ay endüstriyel kapasitesi ile yüksek hacimli ambalaj, katalog ve doğrudan pazarlama işlerinde maksimum throughput sağlar.",
-    "image": "images/xerox_igen5.avif",
+    "image": "images/xerox_igen5.jpg",
     "image_alt": "Xerox iGen® 5 Press",
     "pills": [
       "🚀 150 sayfa/dk Hız",
@@ -3206,7 +3206,7 @@
     "brand": "Xerox Production",
     "subtitle": "100 ppm Hız, 5. Renk İstasyonu Desteği ve Gelişmiş PredictPrint Otomasyonu",
     "description": "Xerox Proficio™ PX500, yüksek hacimli ticari baskı merkezleri ve kurumsal üretim ortamları için geliştirilen yeni nesil renkli üretim baskı sistemidir. Xerox'un gelişmiş HD EA toner teknolojisi, Ultra HD çözünürlük sistemi ve PredictPrint yapay zeka destekli medya yönetimini bir araya getirir. 52 ila 400 gsm arasındaki tüm malzemelerde hız kaybı yaşamadan 100 ppm sabit hız sunar. İsteğe bağlı 5. renk istasyonu ile Floresan Pembe, Clear ve Low Gloss Clear gibi özel tonerlerle katma değerli baskılar üretir.",
-    "image": "images/xerox_px500.webp",
+    "image": "images/xerox_px500.jpg",
     "image_alt": "Xerox Proficio™ PX500",
     "pills": [
       "⚡ 100 sayfa/dk Hız",
@@ -3290,7 +3290,7 @@
     "brand": "Xerox Production",
     "subtitle": "85 ppm Hız, 5. Renk Desteği, Dahili 200 ipm Tarayıcı ve Kompakt Üretim Gücü",
     "description": "Xerox Proficio™ PX300, küçük ve orta ölçekli baskı merkezleri, dijital kopyalama ofisleri ve kurumsal reprografi departmanları için geliştirilmiş kompakt ve çok işlevli renkli üretim presidir. 85 ppm baskı hızı, HD EA toner teknolojisi ve Ultra HD LED görüntüleme ile keskin metinler ve zengin renkler sunar. Entegre 200 ipm tek geçişli çift taraflı tarayıcısı ile tarama ve fotokopiyi tek merkezde toplarken, 5. renk desteği ile Floresan Pembe ve Clear efektleri basabilme kabiliyeti kazandırır.",
-    "image": "images/xerox_px300.webp",
+    "image": "images/xerox_px300.jpg",
     "image_alt": "Xerox Proficio™ PX300",
     "pills": [
       "⚡ 85 sayfa/dk Hız",
@@ -3370,7 +3370,7 @@
     "brand": "Xerox PrimeLink",
     "subtitle": "65 - 81 ppm Hız, 330 x 1300 mm Afiş Desteği ve 270 ipm Yüksek Hızlı Tarayıcı",
     "description": "Xerox PrimeLink® C9200 Serisi (C9265, C9275, C9281), yoğun ofis ortamları, kurumsal reprografi merkezleri ve hızlı dijital matbaalar için ofis çok işlevliliği ile üretim presi gücünü tek platformda buluşturur. 2400 x 2400 dpi Ultra HD çözünürlük, 270 ipm tek geçişli çift taraflı tarayıcı ve 330 x 1300 mm afiş baskı kabiliyeti sunar. Xerox Adaptive CMYK Plus teknolojisi yükseltmesi ile canlı floresan ve parlak metalik toner efektlerine olanak tanır.",
-    "image": "images/xerox_primelink_c9200.avif",
+    "image": "images/xerox_primelink_c9200.jpg",
     "image_alt": "Xerox PrimeLink® C9200 Serisi",
     "pills": [
       "⚡ 65-81 sayfa/dk",
@@ -3446,7 +3446,7 @@
     "brand": "Xerox PrimeLink",
     "subtitle": "100 - 136 ppm S/B Hız, 3 Milyon Sayfa Görev Döngüsü ve Endüstriyel Güvenlik",
     "description": "Xerox PrimeLink® B9100 Serisi (B9100, B9110, B9125, B9136), kitap yayıncılığı, fatura baskı merkezleri, okul-sınav dokümanları ve yoğun ofis arşivleme operasyonları için geliştirilmiş yüksek hızlı monokrom üretim baskı makinesidir. Dakikada 136 sayfaya varan baskı hızı, 2400 x 2400 dpi çözünürlüğü ve 270 ipm çift taraflı tek geçişli tarayıcısı ile yüksek tirajlı siyah-beyaz işlerde benzersiz hız ve en düşük sayfa başı birim maliyeti sunar.",
-    "image": "images/xerox_primelink_b9100.avif",
+    "image": "images/xerox_primelink_b9100.jpg",
     "image_alt": "Xerox PrimeLink® B9100 Series",
     "pills": [
       "⚡ 100-136 sayfa/dk",
